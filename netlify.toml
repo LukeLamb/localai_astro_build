@@ -1,9 +1,15 @@
 [build]
   publish = "dist"
   command = "npm run build"
+  
+  # Skip builds if only specific files changed
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ':!README.md' ':!*.md' ':!docs/'"
 
 [build.environment]
   NODE_VERSION = "20"
+  # Optimize build performance
+  NODE_ENV = "production"
+  NPM_CONFIG_PRODUCTION = "false"
 
 [[redirects]]
   from = "/*"
