@@ -285,6 +285,8 @@ const fullCanonicalUrl = canonicalUrl || `${siteUrl}${Astro.url.pathname}`;
     </script>
 
     <!-- Service Worker Registration -->
+    <!-- Temporarily disabled for debugging -->
+    <!--
     <script>
       if ("serviceWorker" in navigator) {
         window.addEventListener("load", () => {
@@ -299,6 +301,7 @@ const fullCanonicalUrl = canonicalUrl || `${siteUrl}${Astro.url.pathname}`;
         });
       }
     </script>
+    -->
 
     <!-- Scroll-Triggered Animations -->
     <script>
@@ -330,6 +333,7 @@ const fullCanonicalUrl = canonicalUrl || `${siteUrl}${Astro.url.pathname}`;
     </script>
 
     <!-- Core Web Vitals Monitoring -->
-    <script src="/web-vitals.js" is:inline></script>
+    <!-- Temporarily disabled for debugging -->
+    <!-- <script src="/web-vitals.js" is:inline></script> -->
   </body>
 </html>
