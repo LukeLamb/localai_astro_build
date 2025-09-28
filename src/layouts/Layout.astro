@@ -591,6 +591,9 @@ const fullCanonicalUrl = canonicalUrl || `${siteUrl}${Astro.url.pathname}`;
       });
     </script>
 
+    <!-- CSS Loader for deployment compatibility -->
+    <script src="/css-loader.js" is:inline></script>
+
     <!-- Core Web Vitals Monitoring -->
     <!-- Temporarily disabled for debugging -->
     <!-- <script src="/web-vitals.js" is:inline></script> -->
