@@ -1,26 +1,13 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
-import tailwindcss from '@tailwindcss/vite';
+import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://localaifinance.com',
-  vite: {
-    plugins: [tailwindcss()],
-    build: {
-      cssCodeSplit: true,
-      rollupOptions: {
-        output: {
-          manualChunks: {
-            vendor: ['astro']
-          }
-        }
-      }
-    }
-  },
+  integrations: [tailwind()],
   compressHTML: true,
   build: {
-    inlineStylesheets: 'auto',
     assets: '_astro'
   }
 });
