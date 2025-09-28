@@ -1,51 +1,41 @@
-// Service Worker for LocalAI Finance
-// Provides basic offline functionality and caching
+// Service Worker Cleanup for LocalAI Finance
+// This service worker immediately unregisters itself to prevent caching issues
 
-const CACHE_NAME = 'localai-finance-v1';
-const urlsToCache = [
-  '/',
-  '/assets/neurotrader_icon.png',
-  '/assets/favicon.svg',
-  '/assets/apple-touch-icon.png'
-];
-
-// Install Service Worker
 self.addEventListener('install', (event) => {
-  event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then((cache) => {
-        console.log('Opened cache');
-        return cache.addAll(urlsToCache);
-      })
-  );
+  console.log('Service Worker installing - will self-destruct');
+  // Skip waiting and immediately activate
+  self.skipWaiting();
 });
 
-// Fetch event - serve from cache when offline
-self.addEventListener('fetch', (event) => {
-  event.respondWith(
-    caches.match(event.request)
-      .then((response) => {
-        // Return cached version or fetch from network
-        if (response) {
-          return response;
-        }
-        return fetch(event.request);
-      }
-    )
-  );
-});
-
-// Activate event - clean up old caches
 self.addEventListener('activate', (event) => {
+  console.log('Service Worker activating - clearing all caches');
+  
   event.waitUntil(
     caches.keys().then((cacheNames) => {
+      // Delete all caches
       return Promise.all(
         cacheNames.map((cacheName) => {
-          if (cacheName !== CACHE_NAME) {
-            return caches.delete(cacheName);
-          }
+          console.log('Deleting cache:', cacheName);
+          return caches.delete(cacheName);
         })
       );
+    }).then(() => {
+      console.log('All caches cleared, unregistering service worker');
+      // Unregister this service worker
+      return self.registration.unregister();
+    }).then(() => {
+      // Force reload of all clients
+      return self.clients.matchAll();
+    }).then((clients) => {
+      clients.forEach(client => {
+        client.navigate(client.url);
+      });
     })
   );
+});
+
+// Don't handle any fetch requests
+self.addEventListener('fetch', (event) => {
+  // Let all requests go to network
+  return;
 });
