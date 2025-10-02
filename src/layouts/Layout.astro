@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import Analytics from "@vercel/analytics/astro";
 
 export interface Props {
   title: string;
@@ -777,5 +778,8 @@ const fullCanonicalUrl = canonicalUrl || `${siteUrl}${Astro.url.pathname}`;
     <!-- Core Web Vitals Monitoring -->
     <!-- Temporarily disabled for debugging -->
     <!-- <script src="/web-vitals.js" is:inline></script> -->
+
+    <!-- Vercel Analytics -->
+    <Analytics />
   </body>
 </html>
