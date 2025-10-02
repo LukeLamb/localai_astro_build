@@ -1,22 +1,30 @@
-# Astro Starter Kit: Minimal
+# LocalAI Finance - Professional AI Financial Assistant
 
-```sh
-npm create astro@latest -- --template minimal
-```
+🚀 **Live Site:** [https://localaifinance.com/](https://localaifinance.com/)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+A professional financial AI assistant website promoting secure, private financial analysis powered by local AI technology.
+
+## 🏗️ Built With
+
+- **Framework:** Astro v5.14.1 (Static Site Generator)
+- **Styling:** Tailwind CSS v3.4.17
+- **Deployment:** Vercel
+- **Image Optimization:** Sharp + Astro's built-in Image component
+- **PWA:** Service Worker with offline capabilities
 
 ## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
-
 ```text
-/
-├── public/
+localai_astro_build/
+├── public/              # Static assets
 ├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+│   ├── components/      # Reusable Astro components
+│   ├── layouts/         # Page layouts
+│   ├── pages/           # Pages (routes)
+│   └── styles/          # Global styles
+├── astro.config.mjs     # Astro configuration
+├── tailwind.config.js   # Tailwind CSS configuration
+└── vercel.json          # Vercel deployment config
 ```
 
 Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
@@ -27,7 +35,7 @@ Any static assets, like images, can be placed in the `public/` directory.
 
 ## 🧞 Commands
 
-All commands are run from the root of the project, from a terminal:
+All commands are run from the root of the project:
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
@@ -36,8 +44,25 @@ All commands are run from the root of the project, from a terminal:
 | `npm run build`           | Build your production site to `./dist/`          |
 | `npm run preview`         | Preview your build locally, before deploying     |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
+## 🌟 Key Features
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- ✅ **Performance Optimized** - Image optimization, lazy loading, bundle optimization
+- ✅ **SEO Ready** - Structured data, sitemap, meta tags
+- ✅ **PWA Enabled** - Service worker for offline functionality
+- ✅ **Responsive Design** - Mobile-first, touch-optimized
+- ✅ **Accessible** - WCAG compliant with proper ARIA labels
+- ✅ **Secure** - Security headers and best practices
+
+## 🚀 Deployment
+
+This site is automatically deployed to Vercel:
+
+- **Production URL:** <https://localaifinance.com/>
+- **Vercel Dashboard:** <https://vercel.com/lukelambs-projects/localai-astro-build>
+
+Every push to `master` branch triggers an automatic deployment.
+
+## 📝 License
+
+© 2024 LocalAI Finance. All rights reserved.

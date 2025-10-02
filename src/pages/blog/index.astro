@@ -10,6 +10,9 @@ import Footer from "../../components/Footer.astro";
 >
   <Navigation slot="navigation" />
 
+  <!-- Newsletter form handler -->
+  <script src="/newsletter-form.js" is:inline></script>
+
   <main>
     <!-- Hero Section -->
     <section class="bg-gradient-to-br from-primary-50 to-secondary-50 py-20">
@@ -289,22 +292,37 @@ import Footer from "../../components/Footer.astro";
 
           <!-- Newsletter Form -->
           <form
-            name="newsletter"
+            action="https://api.web3forms.com/submit"
             method="POST"
-            data-netlify="true"
-            netlify-honeypot="bot-field"
             class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto"
+            id="newsletter-form"
           >
-            <input type="hidden" name="form-name" value="newsletter" />
+            <!-- Web3Forms Access Key -->
+            <input
+              type="hidden"
+              name="access_key"
+              value="db5f2a1d-22b0-446f-a71b-0cd8f3f4436a"
+            />
 
-            <!-- Honeypot field -->
-            <div style="display: none;">
-              <label
-                >Don't fill this out if you're human: <input
-                  name="bot-field"
-                /></label
-              >
-            </div>
+            <!-- Form identifier -->
+            <input
+              type="hidden"
+              name="from_name"
+              value="LocalAI Finance Newsletter"
+            />
+            <input
+              type="hidden"
+              name="subject"
+              value="New Newsletter Subscription - LocalAI Finance"
+            />
+
+            <!-- Honeypot Spam Protection -->
+            <input
+              type="checkbox"
+              name="botcheck"
+              class="hidden"
+              style="display: none;"
+            />
 
             <input
               type="email"

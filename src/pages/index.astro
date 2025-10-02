@@ -372,22 +372,37 @@ import Footer from "../components/Footer.astro";
         <div class="bg-gray-50 rounded-2xl p-8">
           <h3 class="text-xl font-bold text-gray-900 mb-6">Quick Contact</h3>
           <form
-            name="quick-contact"
+            action="https://api.web3forms.com/submit"
             method="POST"
-            data-netlify="true"
-            netlify-honeypot="bot-field"
             class="space-y-4"
+            id="quick-contact-form"
           >
-            <input type="hidden" name="form-name" value="quick-contact" />
+            <!-- Web3Forms Access Key -->
+            <input
+              type="hidden"
+              name="access_key"
+              value="db5f2a1d-22b0-446f-a71b-0cd8f3f4436a"
+            />
 
-            <!-- Honeypot field -->
-            <div style="display: none;">
-              <label
-                >Don't fill this out if you're human: <input
-                  name="bot-field"
-                /></label
-              >
-            </div>
+            <!-- Form identifier -->
+            <input
+              type="hidden"
+              name="from_name"
+              value="LocalAI Finance Quick Contact"
+            />
+            <input
+              type="hidden"
+              name="subject"
+              value="Quick Contact from LocalAI Finance Homepage"
+            />
+
+            <!-- Honeypot Spam Protection -->
+            <input
+              type="checkbox"
+              name="botcheck"
+              class="hidden"
+              style="display: none;"
+            />
 
             <div>
               <label
@@ -457,5 +472,100 @@ import Footer from "../components/Footer.astro";
   </section>
 
   <!-- Footer -->
+  <!-- Footer -->
   <Footer slot="footer" />
 </Layout>
+
+<script>
+  // Handle Quick Contact Form submission
+  document.addEventListener("DOMContentLoaded", function () {
+    const quickForm = document.getElementById(
+      "quick-contact-form"
+    ) as HTMLFormElement;
+
+    if (quickForm) {
+      quickForm.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        const submitButton = quickForm.querySelector(
+          'button[type="submit"]'
+        ) as HTMLButtonElement;
+
+        // Show loading state
+        if (submitButton) {
+          const originalText = submitButton.innerHTML;
+          submitButton.disabled = true;
+          submitButton.innerHTML = `
+            <svg class="animate-spin h-5 w-5 mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            </svg>
+          `;
+        }
+
+        const formData = new FormData(quickForm);
+
+        // Convert FormData to JSON
+        const object = {};
+        formData.forEach((value, key) => {
+          object[key] = value;
+        });
+        const json = JSON.stringify(object);
+
+        try {
+          const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json",
+            },
+            body: json,
+          });
+
+          const data = await response.json();
+
+          if (data.success) {
+            // Show success message
+            if (submitButton) {
+              submitButton.innerHTML = "✓ Message Sent!";
+              submitButton.classList.remove(
+                "bg-primary-600",
+                "hover:bg-primary-700"
+              );
+              submitButton.classList.add("bg-green-600");
+            }
+
+            // Reset form
+            quickForm.reset();
+
+            // Reset button after 3 seconds
+            setTimeout(() => {
+              if (submitButton) {
+                submitButton.disabled = false;
+                submitButton.innerHTML = "Send Message";
+                submitButton.classList.remove("bg-green-600");
+                submitButton.classList.add(
+                  "bg-primary-600",
+                  "hover:bg-primary-700"
+                );
+              }
+            }, 3000);
+          } else {
+            throw new Error("Submission failed");
+          }
+        } catch (error) {
+          console.error("Quick form error:", error);
+          if (submitButton) {
+            submitButton.innerHTML = "Error - Try Again";
+            submitButton.disabled = false;
+            setTimeout(() => {
+              submitButton.innerHTML = "Send Message";
+            }, 3000);
+          }
+        }
+      });
+    }
+  });
+</script>
+```
+
