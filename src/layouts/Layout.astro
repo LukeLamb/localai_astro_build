@@ -80,12 +80,15 @@ const fullCanonicalUrl = canonicalUrl || `${siteUrl}${Astro.url.pathname}`;
     <link rel="manifest" href="/site.webmanifest" />
 
     <!-- Theme and Mobile Optimization -->
-    <meta name="theme-color" content="#2563eb" />
-    <meta name="color-scheme" content="light" />
+    <meta name="theme-color" content="#B8860B" />
+    <meta name="color-scheme" content="dark" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
     <meta name="apple-mobile-web-app-title" content="LocalAI Finance" />
 
     <!-- Performance and Security -->
@@ -112,7 +115,7 @@ const fullCanonicalUrl = canonicalUrl || `${siteUrl}${Astro.url.pathname}`;
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;600;700;800&family=Cinzel:wght@400;600;700&family=Orbitron:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&family=EB+Garamond:wght@400;600&display=swap"
       rel="stylesheet"
     />
 
@@ -234,8 +237,8 @@ const fullCanonicalUrl = canonicalUrl || `${siteUrl}${Astro.url.pathname}`;
           Ubuntu,
           Cantarell,
           sans-serif;
-        background-color: white;
-        color: #111827;
+        background: linear-gradient(135deg, #3e2723 0%, #0a0e27 100%);
+        color: #f5f5dc;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
       }
@@ -320,36 +323,36 @@ const fullCanonicalUrl = canonicalUrl || `${siteUrl}${Astro.url.pathname}`;
 
       /* Colors */
       .text-gray-900 {
-        color: #111827;
+        color: #f5f5dc;
       }
       .text-gray-700 {
-        color: #374151;
+        color: #e5e5cc;
       }
       .text-gray-600 {
-        color: #4b5563;
+        color: #d5d5bc;
       }
       .text-white {
-        color: white;
+        color: #f5f5dc;
       }
       .bg-white {
-        background-color: white;
+        background: linear-gradient(135deg, #3e2723 0%, #0a0e27 100%);
       }
       .bg-gray-50 {
-        background-color: #f9fafb;
+        background-color: #1a1e3f;
       }
       .bg-gray-900 {
-        background-color: #111827;
+        background-color: #0a0e27;
       }
 
-      /* Primary Colors */
+      /* Primary Colors - Brass/Copper */
       .text-primary-600 {
-        color: #2563eb;
+        color: #b8860b;
       }
       .bg-primary-600 {
-        background-color: #2563eb;
+        background-color: #b8860b;
       }
       .bg-primary-50 {
-        background-color: #eff6ff;
+        background-color: #3e2723;
       }
 
       /* Buttons */
@@ -364,30 +367,43 @@ const fullCanonicalUrl = canonicalUrl || `${siteUrl}${Astro.url.pathname}`;
       }
 
       .btn-primary {
-        background: linear-gradient(to right, #2563eb, #059669);
-        color: white;
-        box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+        background: linear-gradient(135deg, #b8860b, #cd7f32);
+        border: 2px solid #654321;
+        color: #f5f5dc;
+        box-shadow:
+          inset 0 2px 5px rgba(255, 255, 255, 0.3),
+          0 5px 15px rgba(0, 0, 0, 0.3),
+          0 0 10px rgba(0, 240, 255, 0.2);
       }
 
       .btn-primary:hover {
         transform: scale(1.05);
-        box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+        box-shadow:
+          inset 0 2px 5px rgba(255, 255, 255, 0.3),
+          0 0 20px rgba(0, 240, 255, 0.5),
+          0 5px 15px rgba(0, 0, 0, 0.3);
       }
 
       .btn-outline {
-        border: 2px solid white;
-        color: white;
+        border: 2px solid #00f0ff;
+        color: #00f0ff;
         background: transparent;
+        box-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
       }
 
       .btn-outline:hover {
-        background: white;
-        color: #2563eb;
+        background: rgba(0, 240, 255, 0.1);
+        box-shadow: 0 0 20px rgba(0, 240, 255, 0.5);
       }
 
       /* Gradients */
       .gradient-text {
-        background: linear-gradient(to right, #2563eb, #059669);
+        background: linear-gradient(
+          135deg,
+          #b8860b 0%,
+          #00f0ff 50%,
+          #8b00ff 100%
+        );
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
@@ -398,17 +414,17 @@ const fullCanonicalUrl = canonicalUrl || `${siteUrl}${Astro.url.pathname}`;
       }
 
       .from-blue-50 {
-        --tw-gradient-from: #eff6ff;
+        --tw-gradient-from: #1a1e3f;
       }
       .via-white {
-        --tw-gradient-to: white;
+        --tw-gradient-to: #0a0e27;
       }
       .to-emerald-50 {
-        --tw-gradient-to: #ecfdf5;
+        --tw-gradient-to: #1a2329;
       }
 
       .bg-gradient-primary {
-        background: linear-gradient(135deg, #2563eb 0%, #059669 100%);
+        background: linear-gradient(135deg, #b8860b 0%, #00f0ff 100%);
       }
 
       /* Sections */
@@ -458,7 +474,11 @@ const fullCanonicalUrl = canonicalUrl || `${siteUrl}${Astro.url.pathname}`;
       }
 
       .bg-white\/95 {
-        background-color: rgba(255, 255, 255, 0.95);
+        background: linear-gradient(
+          135deg,
+          rgba(62, 39, 35, 0.95),
+          rgba(10, 14, 39, 0.95)
+        );
       }
       .backdrop-blur-md {
         backdrop-filter: blur(12px);
@@ -467,7 +487,7 @@ const fullCanonicalUrl = canonicalUrl || `${siteUrl}${Astro.url.pathname}`;
         border-bottom-width: 1px;
       }
       .border-gray-200 {
-        border-color: #e5e7eb;
+        border-color: #b8860b;
       }
 
       /* Spacing */
@@ -612,16 +632,23 @@ const fullCanonicalUrl = canonicalUrl || `${siteUrl}${Astro.url.pathname}`;
 
       /* Feature Cards */
       .feature-card {
-        background: white;
+        background: linear-gradient(135deg, #3e2723 0%, #0a0e27 100%);
         padding: 1.5rem;
         border-radius: 0.75rem;
-        box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+        border: 1px solid #b8860b;
+        box-shadow:
+          0 4px 6px -1px rgba(0, 0, 0, 0.3),
+          inset 0 0 20px rgba(184, 134, 11, 0.1),
+          0 0 0 1px rgba(0, 240, 255, 0.2);
         transition: all 0.3s ease;
       }
 
       .feature-card:hover {
         transform: translateY(-0.25rem);
-        box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+        box-shadow:
+          0 10px 15px -3px rgba(0, 0, 0, 0.3),
+          inset 0 0 20px rgba(184, 134, 11, 0.2),
+          0 0 20px rgba(0, 240, 255, 0.4);
       }
     </style>
   </head>

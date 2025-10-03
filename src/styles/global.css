@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Import Victorian/Cyber fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Cinzel:wght@400;600;700&family=Orbitron:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&family=EB+Garamond:wght@400;600&display=swap');
+
 @layer base {
   * {
     scroll-behavior: smooth;
@@ -9,26 +12,138 @@
   
   body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: #0A0E27; /* Deep void background */
+    color: #F5F5DC; /* Parchment text */
+  }
+  
+  /* Neon glow animation */
+  @keyframes neon-flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
+  }
+  
+  /* Steam puff animation */
+  @keyframes steam-puff {
+    0% { opacity: 0.6; transform: scale(1) translateY(0); }
+    100% { opacity: 0; transform: scale(1.5) translateY(-20px); }
+  }
+  
+  /* Gear rotation */
+  @keyframes gear-rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
   }
 }
 
 @layer components {
-  /* Button Components */
+  /* Victorian Frame Component */
+  .victorian-frame {
+    border: 3px solid #B8860B;
+    box-shadow: 
+      inset 0 0 10px rgba(184, 134, 11, 0.3),
+      0 0 20px rgba(0, 240, 255, 0.2);
+    background: linear-gradient(
+      135deg,
+      rgba(62, 39, 35, 0.9),
+      rgba(10, 14, 39, 0.95)
+    );
+    position: relative;
+  }
+  
+  /* Brass corners */
+  .victorian-frame::before,
+  .victorian-frame::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #B8860B;
+  }
+  
+  .victorian-frame::before {
+    top: -2px;
+    left: -2px;
+    border-right: none;
+    border-bottom: none;
+  }
+  
+  .victorian-frame::after {
+    bottom: -2px;
+    right: -2px;
+    border-left: none;
+    border-top: none;
+  }
+
+  /* Button Components - Brass Mechanical Style */
   .btn {
-    @apply px-6 py-3 rounded-lg font-medium text-center inline-block transition-all duration-300 transform hover:scale-105 active:scale-95;
+    @apply px-6 py-3 rounded-lg font-medium text-center inline-block transition-all duration-300 transform hover:scale-105 active:scale-95 relative;
   }
 
   .btn-primary {
-    @apply bg-gradient-to-r from-primary-600 to-secondary-600 text-white shadow-lg hover:shadow-xl;
+    background: linear-gradient(135deg, #B8860B, #CD7F32);
+    border: 2px solid #654321;
+    color: #F5F5DC;
+    box-shadow: 
+      inset 0 2px 5px rgba(255, 255, 255, 0.3),
+      0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .btn-primary:hover {
+    box-shadow: 
+      inset 0 2px 5px rgba(255, 255, 255, 0.3),
+      0 0 20px rgba(0, 240, 255, 0.5),
+      0 5px 15px rgba(0, 0, 0, 0.3);
   }
 
   .btn-secondary {
-    @apply bg-white text-primary-600 border-2 border-primary-600 hover:bg-primary-50;
+    @apply bg-transparent text-electric border-2 border-electric hover:bg-electric hover:text-void;
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
+  }
+  
+  .btn-secondary:hover {
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.6);
   }
 
-  /* Text Effects */
+  /* Neon Text Effects */
+  .neon-text {
+    color: #00F0FF;
+    text-shadow:
+      0 0 5px rgba(0, 240, 255, 0.8),
+      0 0 10px rgba(0, 240, 255, 0.6),
+      0 0 20px rgba(0, 240, 255, 0.4),
+      0 0 40px rgba(0, 240, 255, 0.2);
+    animation: neon-flicker 2s infinite alternate;
+  }
+  
+  .neon-text-pink {
+    color: #FF006E;
+    text-shadow:
+      0 0 5px rgba(255, 0, 110, 0.8),
+      0 0 10px rgba(255, 0, 110, 0.6),
+      0 0 20px rgba(255, 0, 110, 0.4);
+  }
+  
+  .neon-text-green {
+    color: #39FF14;
+    text-shadow:
+      0 0 5px rgba(57, 255, 20, 0.8),
+      0 0 10px rgba(57, 255, 20, 0.6),
+      0 0 20px rgba(57, 255, 20, 0.4);
+  }
+
+  /* Victorian + Cyber Hybrid Text */
   .gradient-text {
-    @apply bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent;
+    background: linear-gradient(135deg, #B8860B 0%, #00F0FF 50%, #8B00FF 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .brass-text {
+    background: linear-gradient(135deg, #B8860B, #CD7F32);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
 
   .text-hero {
@@ -39,9 +154,21 @@
     @apply text-3xl sm:text-4xl md:text-5xl;
   }
 
-  /* Card Components */
+  /* Card Components - Victorian with Neon Accents */
   .card {
-    @apply bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 p-6;
+    @apply bg-mahogany rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 p-6 border border-brass;
+    box-shadow: 
+      0 4px 6px -1px rgba(0, 0, 0, 0.3),
+      inset 0 0 20px rgba(184, 134, 11, 0.1),
+      0 0 0 1px rgba(0, 240, 255, 0.2);
+  }
+  
+  .card:hover {
+    box-shadow: 
+      0 10px 15px -3px rgba(0, 0, 0, 0.3),
+      inset 0 0 20px rgba(184, 134, 11, 0.2),
+      0 0 20px rgba(0, 240, 255, 0.4);
+    transform: translateY(-4px);
   }
 
   /* Layout Components */
@@ -57,13 +184,39 @@
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 
-  /* Navigation */
+  /* Navigation - Brass with Neon Highlights */
   .mobile-menu {
-    @apply fixed inset-0 z-50 bg-white transform transition-transform duration-300 ease-in-out;
+    @apply fixed inset-0 z-50 transform transition-transform duration-300 ease-in-out;
+    background: linear-gradient(135deg, #3E2723 0%, #0A0E27 100%);
   }
 
   .mobile-menu.hidden {
     @apply translate-x-full;
+  }
+  
+  /* Telegraph-style divider */
+  .divider-telegraph {
+    height: 2px;
+    background: linear-gradient(
+      to right,
+      transparent,
+      #B8860B 20%,
+      #00F0FF 50%,
+      #B8860B 80%,
+      transparent
+    );
+    position: relative;
+  }
+  
+  .divider-telegraph::before {
+    content: '━━━';
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #B8860B;
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 0.5em;
   }
 }
 
@@ -82,23 +235,59 @@
   .animate-float {
     animation: float 3s ease-in-out infinite;
   }
-
-  /* Shadow Effects */
-  .shadow-glow {
-    box-shadow: 0 0 20px rgba(37, 99, 235, 0.15);
+  
+  .animate-neon-pulse {
+    animation: neon-flicker 2s infinite alternate;
+  }
+  
+  .animate-gear {
+    animation: gear-rotate 20s linear infinite;
   }
 
-  .shadow-glow-emerald {
-    box-shadow: 0 0 20px rgba(16, 185, 129, 0.15);
+  /* Shadow Effects - Victorian + Cyber */
+  .shadow-brass {
+    box-shadow: 0 4px 6px -1px rgba(184, 134, 11, 0.3), 0 2px 4px -1px rgba(184, 134, 11, 0.2);
+  }
+  
+  .shadow-neon-blue {
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.5), 0 0 40px rgba(0, 240, 255, 0.3);
+  }
+  
+  .shadow-neon-pink {
+    box-shadow: 0 0 20px rgba(255, 0, 110, 0.5), 0 0 40px rgba(255, 0, 110, 0.3);
+  }
+  
+  .shadow-neon-green {
+    box-shadow: 0 0 20px rgba(57, 255, 20, 0.5), 0 0 40px rgba(57, 255, 20, 0.3);
+  }
+  
+  .shadow-victorian {
+    box-shadow: 
+      inset 0 0 10px rgba(184, 134, 11, 0.3),
+      0 0 20px rgba(0, 240, 255, 0.2);
   }
 
   /* Text Effects */
   .text-shadow {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .text-shadow-brass {
+    text-shadow: 2px 2px 8px rgba(184, 134, 11, 0.6);
+  }
+  
+  .text-shadow-neon {
+    text-shadow: 
+      0 0 5px rgba(0, 240, 255, 0.8),
+      0 0 10px rgba(0, 240, 255, 0.4);
   }
 
   .glow {
-    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
+  }
+  
+  .glow-brass {
+    box-shadow: 0 0 20px rgba(184, 134, 11, 0.4);
   }
 
   @keyframes fadeIn {
@@ -117,5 +306,29 @@
   @keyframes float {
     0%, 100% { transform: translateY(0px); }
     50% { transform: translateY(-10px); }
+  }
+  
+  /* Background patterns */
+  .bg-circuit {
+    background-image: 
+      repeating-linear-gradient(
+        90deg,
+        rgba(0, 240, 255, 0.03) 0px,
+        transparent 1px,
+        transparent 40px
+      ),
+      repeating-linear-gradient(
+        0deg,
+        rgba(0, 240, 255, 0.03) 0px,
+        transparent 1px,
+        transparent 40px
+      );
+  }
+  
+  .bg-parchment-texture {
+    background-color: #F5F5DC;
+    background-image: 
+      radial-gradient(circle at 20% 50%, rgba(184, 134, 11, 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(184, 134, 11, 0.05) 0%, transparent 50%);
   }
 }

@@ -7,8 +7,7 @@ const currentPath = Astro.url.pathname;
 const navItems = [
   { name: "Home", href: "/", current: currentPath === "/" },
   { name: "Features", href: "/#features", current: false },
-  { name: "How It Works", href: "/#how-it-works", current: false },
-  { name: "Pricing", href: "/#pricing", current: false },
+  { name: "Beta", href: "/beta", current: currentPath === "/beta" },
   { name: "Blog", href: "/blog", current: currentPath.startsWith("/blog") },
   { name: "Contact", href: "/contact", current: currentPath === "/contact" },
 ];
@@ -25,13 +24,13 @@ const navItems = [
         <Image
           src={neurotraderIcon}
           alt="LocalAI Finance"
-          class="h-8 w-8 transition-transform duration-300 group-hover:scale-110"
+          class="h-8 w-8 transition-transform duration-300 group-hover:scale-110 group-hover:drop-shadow-[0_0_8px_rgba(184,134,11,0.5)]"
           width={32}
           height={32}
           loading="eager"
         />
         <span
-          class="font-bold text-xl text-gray-900 group-hover:text-primary-600 transition-colors duration-300"
+          class="font-display font-bold text-xl brass-text group-hover:text-electric transition-colors duration-300"
           >LocalAI Finance</span
         >
       </a>
@@ -43,7 +42,7 @@ const navItems = [
           navItems.map((item) => (
             <a
               href={item.href}
-              class={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:text-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 ${item.current ? "text-primary-600 bg-primary-50" : "text-gray-700 hover:bg-gray-50"}`}
+              class={`px-3 py-2 rounded-md text-sm font-medium font-mono transition-all duration-300 hover:text-electric focus:outline-none focus:ring-2 focus:ring-electric focus:ring-offset-2 focus:ring-offset-void ${item.current ? "text-electric bg-electric/10 shadow-neon-blue" : "text-parchment/80 hover:bg-mahogany/30"}`}
               aria-current={item.current ? "page" : undefined}
             >
               {item.name}
@@ -54,16 +53,14 @@ const navItems = [
     </div>
 
     <div class="hidden md:block">
-      <a href="/contact" class="btn btn-primary text-sm px-4 py-2"
-        >Get Started</a
-      >
+      <a href="/beta" class="btn btn-primary text-sm px-4 py-2">Join Beta</a>
     </div>
 
     <div class="md:hidden">
       <button
         type="button"
         id="mobile-menu-button"
-        class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-primary-600 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500 transition-colors duration-300"
+        class="inline-flex items-center justify-center p-2 rounded-md text-parchment/80 hover:text-electric hover:bg-mahogany/30 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-electric transition-colors duration-300"
         aria-controls="mobile-menu"
         aria-expanded="false"
         aria-label="Toggle navigation menu"
@@ -106,7 +103,7 @@ const navItems = [
 
 <div
   id="mobile-menu"
-  class="md:hidden fixed inset-0 top-16 z-30 bg-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out"
+  class="md:hidden fixed inset-0 top-16 z-30 bg-gradient-to-b from-charcoal to-void border-t-2 border-brass/30 shadow-brass transform translate-x-full transition-transform duration-300 ease-in-out"
   style="height: calc(100vh - 4rem);"
 >
   <div class="px-2 pt-2 pb-3 space-y-1 h-full flex flex-col">
@@ -115,7 +112,7 @@ const navItems = [
         navItems.map((item) => (
           <a
             href={item.href}
-            class={`block px-3 py-3 rounded-md text-base font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 ${item.current ? "text-primary-600 bg-primary-50" : "text-gray-900 hover:text-primary-600 hover:bg-gray-50"}`}
+            class={`block px-3 py-3 rounded-md text-base font-medium font-mono transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-electric focus:ring-offset-2 focus:ring-offset-void ${item.current ? "text-electric bg-electric/10 shadow-neon-blue" : "text-parchment/80 hover:text-electric hover:bg-mahogany/30"}`}
             aria-current={item.current ? "page" : undefined}
           >
             {item.name}
@@ -124,9 +121,9 @@ const navItems = [
       }
     </div>
 
-    <div class="border-t border-gray-200 pt-4 pb-6 px-3">
-      <a href="/contact" class="btn btn-primary w-full justify-center"
-        >Get Started</a
+    <div class="border-t border-brass/30 pt-4 pb-6 px-3">
+      <a href="/beta" class="btn btn-primary w-full justify-center shadow-brass"
+        >Join Beta</a
       >
     </div>
   </div>

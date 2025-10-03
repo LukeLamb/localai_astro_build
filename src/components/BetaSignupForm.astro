@@ -1,0 +1,593 @@
+---
+// Beta Signup Form Component
+// Reusable form for collecting beta waitlist signups
+---
+
+<div class="beta-signup-wrapper">
+  <form id="beta-signup-form" class="space-y-6">
+    <!-- Web3Forms Access Key -->
+    <input
+      type="hidden"
+      name="access_key"
+      value="db5f2a1d-22b0-446f-a71b-0cd8f3f4436a"
+    />
+    <input
+      type="hidden"
+      name="subject"
+      value="New Beta Signup - Local AI Finance"
+    />
+    <input
+      type="hidden"
+      name="from_name"
+      value="LocalAI Finance Beta Program"
+    />
+
+    <!-- Honeypot Spam Protection -->
+    <input
+      type="checkbox"
+      name="botcheck"
+      class="hidden"
+      style="display: none;"
+    />
+
+    <!-- Email & Name -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div>
+        <label
+          for="beta-name"
+          class="block text-sm font-medium text-gray-700 mb-2"
+        >
+          Name *
+        </label>
+        <input
+          type="text"
+          id="beta-name"
+          name="name"
+          required
+          class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+          placeholder="Your name"
+        />
+      </div>
+
+      <div>
+        <label
+          for="beta-email"
+          class="block text-sm font-medium text-gray-700 mb-2"
+        >
+          Email *
+        </label>
+        <input
+          type="email"
+          id="beta-email"
+          name="email"
+          required
+          class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+          placeholder="your@email.com"
+        />
+      </div>
+    </div>
+
+    <!-- Trading Experience -->
+    <div>
+      <label class="block text-sm font-medium text-gray-700 mb-3">
+        Trading Experience *
+      </label>
+      <div class="space-y-2">
+        <label
+          class="flex items-center gap-3 p-4 border-2 border-gray-200 rounded-lg cursor-pointer hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 experience-option"
+        >
+          <input
+            type="radio"
+            name="experience"
+            value="none"
+            required
+            class="w-4 h-4 text-blue-600"
+          />
+          <div>
+            <span class="font-medium text-gray-900">Complete Beginner</span>
+            <p class="text-sm text-gray-600">
+              Never traded before - perfect! We'll start from zero.
+            </p>
+          </div>
+        </label>
+
+        <label
+          class="flex items-center gap-3 p-4 border-2 border-gray-200 rounded-lg cursor-pointer hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 experience-option"
+        >
+          <input
+            type="radio"
+            name="experience"
+            value="lost"
+            class="w-4 h-4 text-blue-600"
+          />
+          <div>
+            <span class="font-medium text-gray-900"
+              >Tried before, lost money 😞</span
+            >
+            <p class="text-sm text-gray-600">
+              You're not alone. Let's learn the right way together.
+            </p>
+          </div>
+        </label>
+
+        <label
+          class="flex items-center gap-3 p-4 border-2 border-gray-200 rounded-lg cursor-pointer hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 experience-option"
+        >
+          <input
+            type="radio"
+            name="experience"
+            value="some"
+            class="w-4 h-4 text-blue-600"
+          />
+          <div>
+            <span class="font-medium text-gray-900"
+              >Some experience, want to improve</span
+            >
+            <p class="text-sm text-gray-600">
+              Build on what you know with structured learning.
+            </p>
+          </div>
+        </label>
+
+        <label
+          class="flex items-center gap-3 p-4 border-2 border-gray-200 rounded-lg cursor-pointer hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 experience-option"
+        >
+          <input
+            type="radio"
+            name="experience"
+            value="experienced"
+            class="w-4 h-4 text-blue-600"
+          />
+          <div>
+            <span class="font-medium text-gray-900"
+              >Experienced, want better tools</span
+            >
+            <p class="text-sm text-gray-600">
+              Advanced features and multi-asset support for pros.
+            </p>
+          </div>
+        </label>
+      </div>
+    </div>
+
+    <!-- Gaming Background -->
+    <div>
+      <label
+        for="beta-gaming"
+        class="block text-sm font-medium text-gray-700 mb-2"
+      >
+        Gaming Background *
+      </label>
+      <select
+        id="beta-gaming"
+        name="gaming"
+        required
+        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+      >
+        <option value="">Select one...</option>
+        <option value="active">🎮 Active Gamer (10+ hrs/week)</option>
+        <option value="casual">🕹️ Casual Gamer</option>
+        <option value="former">👾 Former Gamer</option>
+        <option value="not">📚 Not a Gamer</option>
+      </select>
+    </div>
+
+    <!-- Asset Interests -->
+    <div>
+      <label class="block text-sm font-medium text-gray-700 mb-3">
+        Asset Interests (Select all that apply) *
+      </label>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+        <label
+          class="flex items-center gap-2 p-3 border-2 border-gray-200 rounded-lg cursor-pointer hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 asset-option"
+        >
+          <input
+            type="checkbox"
+            name="asset"
+            value="stocks"
+            class="w-4 h-4 text-blue-600"
+          />
+          <span class="text-2xl">📈</span>
+          <span class="text-sm font-medium">Stocks/ETFs</span>
+        </label>
+
+        <label
+          class="flex items-center gap-2 p-3 border-2 border-gray-200 rounded-lg cursor-pointer hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 asset-option"
+        >
+          <input
+            type="checkbox"
+            name="asset"
+            value="crypto"
+            class="w-4 h-4 text-blue-600"
+          />
+          <span class="text-2xl">💎</span>
+          <span class="text-sm font-medium">Crypto</span>
+        </label>
+
+        <label
+          class="flex items-center gap-2 p-3 border-2 border-gray-200 rounded-lg cursor-pointer hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 asset-option"
+        >
+          <input
+            type="checkbox"
+            name="asset"
+            value="forex"
+            class="w-4 h-4 text-blue-600"
+          />
+          <span class="text-2xl">💱</span>
+          <span class="text-sm font-medium">Forex</span>
+        </label>
+
+        <label
+          class="flex items-center gap-2 p-3 border-2 border-gray-200 rounded-lg cursor-pointer hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 asset-option"
+        >
+          <input
+            type="checkbox"
+            name="asset"
+            value="options"
+            class="w-4 h-4 text-blue-600"
+          />
+          <span class="text-2xl">🎲</span>
+          <span class="text-sm font-medium">Options</span>
+        </label>
+
+        <label
+          class="flex items-center gap-2 p-3 border-2 border-gray-200 rounded-lg cursor-pointer hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 asset-option"
+        >
+          <input
+            type="checkbox"
+            name="asset"
+            value="commodities"
+            class="w-4 h-4 text-blue-600"
+          />
+          <span class="text-2xl">🏭</span>
+          <span class="text-sm font-medium">Commodities</span>
+        </label>
+
+        <label
+          class="flex items-center gap-2 p-3 border-2 border-gray-200 rounded-lg cursor-pointer hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 asset-option"
+        >
+          <input
+            type="checkbox"
+            name="asset"
+            value="all"
+            class="w-4 h-4 text-blue-600"
+          />
+          <span class="text-2xl">🌍</span>
+          <span class="text-sm font-medium">All Assets</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Beta Tier Preference -->
+    <div>
+      <label class="block text-sm font-medium text-gray-700 mb-3">
+        Beta Tier Interest *
+      </label>
+      <div class="space-y-3">
+        <label
+          class="flex items-start gap-3 p-4 border-2 border-gray-200 rounded-lg cursor-pointer hover:bg-amber-50 hover:border-amber-300 transition-all duration-200 tier-option"
+        >
+          <input
+            type="radio"
+            name="tier"
+            value="free"
+            required
+            class="w-4 h-4 mt-1 text-blue-600"
+          />
+          <div class="flex-1">
+            <div class="flex items-center gap-2 mb-1">
+              <span class="text-2xl">🥉</span>
+              <span class="font-bold text-gray-900">Bronze (Free)</span>
+            </div>
+            <p class="text-sm text-gray-600">
+              Paper trading (Levels 1-10), basic education, community access
+            </p>
+          </div>
+        </label>
+
+        <label
+          class="flex items-start gap-3 p-4 border-2 border-blue-300 rounded-lg cursor-pointer hover:bg-blue-50 hover:border-blue-400 transition-all duration-200 tier-option"
+        >
+          <input
+            type="radio"
+            name="tier"
+            value="silver"
+            class="w-4 h-4 mt-1 text-blue-600"
+          />
+          <div class="flex-1">
+            <div class="flex items-center gap-2 mb-1">
+              <span class="text-2xl">🥈</span>
+              <span class="font-bold text-gray-900">Silver ($15/mo)</span>
+              <span
+                class="px-2 py-0.5 bg-blue-500 text-white text-xs rounded-full font-bold"
+                >POPULAR</span
+              >
+            </div>
+            <p class="text-sm text-gray-600">
+              Everything in Bronze + AI assistant, guilds, advanced analytics
+              (Levels 11-25)
+            </p>
+          </div>
+        </label>
+
+        <label
+          class="flex items-start gap-3 p-4 border-2 border-purple-300 rounded-lg cursor-pointer hover:bg-purple-50 hover:border-purple-400 transition-all duration-200 tier-option"
+        >
+          <input
+            type="radio"
+            name="tier"
+            value="gold"
+            class="w-4 h-4 mt-1 text-blue-600"
+          />
+          <div class="flex-1">
+            <div class="flex items-center gap-2 mb-1">
+              <span class="text-2xl">🥇</span>
+              <span class="font-bold text-gray-900">Gold ($50/mo)</span>
+            </div>
+            <p class="text-sm text-gray-600">
+              Everything in Silver + live trading, real-time data, priority
+              support (Level 26+)
+            </p>
+          </div>
+        </label>
+      </div>
+    </div>
+
+    <!-- How did you hear about us? -->
+    <div>
+      <label
+        for="beta-source"
+        class="block text-sm font-medium text-gray-700 mb-2"
+      >
+        How did you hear about us? (Optional)
+      </label>
+      <select
+        id="beta-source"
+        name="source"
+        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+      >
+        <option value="">Select one...</option>
+        <option value="reddit">Reddit</option>
+        <option value="twitter">Twitter/X</option>
+        <option value="tiktok">TikTok</option>
+        <option value="youtube">YouTube</option>
+        <option value="discord">Discord</option>
+        <option value="friend">Friend/Referral</option>
+        <option value="search">Search Engine</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <!-- Submit Button -->
+    <div>
+      <button
+        type="submit"
+        class="w-full px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+      >
+        🚀 Join Beta Waitlist
+      </button>
+    </div>
+
+    <!-- Success Message (Hidden by default) -->
+    <div
+      id="success-message"
+      class="hidden p-6 bg-green-50 border-2 border-green-200 rounded-lg text-center"
+    >
+      <div class="text-4xl mb-3">🎉</div>
+      <h3 class="text-xl font-bold text-green-900 mb-2">You're on the list!</h3>
+      <p class="text-green-800 mb-4">
+        Check your email for next steps. We'll send you updates as we build.
+      </p>
+      <div class="space-y-2 text-sm text-green-700">
+        <p>✅ Beta access guaranteed</p>
+        <p>✅ Join our Discord community</p>
+        <p>✅ Get exclusive development updates</p>
+      </div>
+    </div>
+
+    <!-- Trust Signals -->
+    <div
+      class="text-center text-sm text-gray-600 space-y-2 pt-4 border-t border-gray-200"
+    >
+      <p class="font-semibold text-gray-900">
+        ✅ <span id="signup-count">752</span> traders have already joined
+      </p>
+      <p>✅ No spam, unsubscribe anytime</p>
+      <p>✅ Priority access guaranteed</p>
+      <p>✅ Your data is never shared</p>
+    </div>
+  </form>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const betaForm = document.getElementById(
+      "beta-signup-form"
+    ) as HTMLFormElement;
+
+    if (betaForm) {
+      // Add visual feedback for radio/checkbox selections
+      const experienceOptions = betaForm.querySelectorAll(".experience-option");
+      experienceOptions.forEach((option) => {
+        const radio = option.querySelector(
+          'input[type="radio"]'
+        ) as HTMLInputElement;
+        radio?.addEventListener("change", () => {
+          experienceOptions.forEach((opt) =>
+            opt.classList.remove("border-blue-500", "bg-blue-50")
+          );
+          if (radio.checked) {
+            option.classList.add("border-blue-500", "bg-blue-50");
+          }
+        });
+      });
+
+      const tierOptions = betaForm.querySelectorAll(".tier-option");
+      tierOptions.forEach((option) => {
+        const radio = option.querySelector(
+          'input[type="radio"]'
+        ) as HTMLInputElement;
+        radio?.addEventListener("change", () => {
+          tierOptions.forEach((opt) =>
+            opt.classList.remove("border-blue-500", "bg-blue-50")
+          );
+          if (radio.checked) {
+            option.classList.add("border-blue-500", "bg-blue-50");
+          }
+        });
+      });
+
+      const assetOptions = betaForm.querySelectorAll(".asset-option");
+      assetOptions.forEach((option) => {
+        const checkbox = option.querySelector(
+          'input[type="checkbox"]'
+        ) as HTMLInputElement;
+        checkbox?.addEventListener("change", () => {
+          if (checkbox.checked) {
+            option.classList.add("border-blue-500", "bg-blue-50");
+          } else {
+            option.classList.remove("border-blue-500", "bg-blue-50");
+          }
+        });
+      });
+
+      // Handle form submission
+      betaForm.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        const submitButton = betaForm.querySelector(
+          'button[type="submit"]'
+        ) as HTMLButtonElement;
+        const successMessage = document.getElementById("success-message");
+
+        // Show loading state
+        if (submitButton) {
+          submitButton.disabled = true;
+          submitButton.innerHTML = `
+            <svg class="animate-spin h-6 w-6 mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            </svg>
+          `;
+        }
+
+        const formData = new FormData(betaForm);
+
+        // Collect all checked assets
+        const assetCheckboxes = betaForm.querySelectorAll(
+          'input[name="asset"]:checked'
+        );
+        const assets: string[] = [];
+        assetCheckboxes.forEach((cb) => {
+          assets.push((cb as HTMLInputElement).value);
+        });
+        formData.set("assets", assets.join(", "));
+
+        // Convert FormData to JSON
+        const object: Record<string, any> = {};
+        formData.forEach((value, key) => {
+          if (key !== "asset") {
+            // Skip individual asset checkboxes since we combined them
+            object[key] = value;
+          }
+        });
+        const json = JSON.stringify(object);
+
+        try {
+          const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json",
+            },
+            body: json,
+          });
+
+          const data = await response.json();
+
+          if (data.success) {
+            // Also send to MailerLite for email automation
+            try {
+              await fetch("https://connect.mailerlite.com/api/subscribers", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                  Authorization:
+                    "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0IiwianRpIjoiYzQyMTk3NDQ3ZDU0MmMyNjA3MTY5YTc1M2I1ODI4ZTE4NGJjYjE3Mjk4NzRlZjY3ODBjOTRlYWI3N2VlY2FlOWEzNzFhZjBlNjYzODMwMDUiLCJpYXQiOjE3NTk0OTU5OTIuMTU5MTA1LCJuYmYiOjE3NTk0OTU5OTIuMTU5MTA4LCJleHAiOjQ5MTUxNjk1OTIuMTUyMzQzLCJzdWIiOiIxODQ5NDk4Iiwic2NvcGVzIjpbXX0.nWmJtj0r888960iwgsy7UdmIAoqf7T7gavNhD6a92WiJpLqEZXUe_iyz2SihUnXGoXETy907uB1G_cudgg-VKh4S8ttXwwQA5V4JBjssuOfahmiq7aBuPid3rsZ5VtYctvUGJTA9efHbEbJvIUBYifXhI5nWM3guf-EK0n7q54Vka7KfB9FyXRjhMaLNqRCgYoHcXRDPL09yQpHBSKmgBlP356pD89CI_VP917ojtSkXaGFqHuXkikdfd7iM6xBeRNYNPwq0FrWyfS9sqNWWPPW9ehJYZg_xQFPX3FzVOsIF5P4Ps9Z6eI5nerPuDFqyEscPloKHJhuOSD9BYM6IcQhdBJqEZ7anK849EJzH8RKGlFqUO6ahzvPVmt7S4arpmiq-ChpyA4AFBkb5UK_HE_5QjrjQ722jpGY5RvNRxV4TWInIJrniaBYy404vbMyP095lXj60Qg7YUQO5LCnEDD61oubbNGZ7_gcqwAoheUefLD7sdJ3qiNw6mDRLyUUl4wI8N5T9Ppc6UKuhNViirr7OHFWiWUBYco5lawYYmV4b2aoycHhsHD6m01Q5igbdUFutf1ksXiFbobgygq1WvcTYKT8FA20_pzwkZBpdbVCQ5r8OTL0imCTDFvYLPg19r62XkhW1ZaMbBpchfHASZgmRMNC4oBp76AJKWeUtrgk",
+                },
+                body: JSON.stringify({
+                  email: object.email,
+                  fields: {
+                    name: object.name,
+                    experience: object.experience,
+                    gaming: object.gaming,
+                    assets: object.assets,
+                    tier: object.tier,
+                    source: object.source,
+                  },
+                  groups: ["138840775656014149"], // Beta Signups group
+                }),
+              });
+              console.log("✅ Added to MailerLite automation");
+            } catch (mailerliteError) {
+              console.error(
+                "MailerLite submission failed (non-critical):",
+                mailerliteError
+              );
+              // Don't fail the whole form if MailerLite fails - Web3Forms succeeded
+            }
+
+            // Show success message
+            if (successMessage) {
+              successMessage.classList.remove("hidden");
+              betaForm.style.display = "none";
+            }
+
+            // Track conversion in analytics
+            if (window.gtag) {
+              window.gtag("event", "beta_signup", {
+                event_category: "engagement",
+                event_label: object.tier || "not_selected",
+              });
+            }
+
+            // Update signup count
+            const countElement = document.getElementById("signup-count");
+            if (countElement) {
+              const currentCount = parseInt(countElement.textContent || "752");
+              countElement.textContent = (currentCount + 1).toString();
+            }
+
+            // Scroll to success message
+            successMessage?.scrollIntoView({
+              behavior: "smooth",
+              block: "center",
+            });
+          } else {
+            throw new Error("Submission failed");
+          }
+        } catch (error) {
+          console.error("Beta form error:", error);
+          if (submitButton) {
+            submitButton.innerHTML = "❌ Error - Please try again";
+            submitButton.disabled = false;
+            setTimeout(() => {
+              submitButton.innerHTML = "🚀 Join Beta Waitlist";
+            }, 3000);
+          }
+          alert(
+            "Something went wrong. Please try again or email us at info@localaifinance.com"
+          );
+        }
+      });
+    }
+  });
+</script>
+
+<style>
+  .experience-option:has(input:checked),
+  .tier-option:has(input:checked),
+  .asset-option:has(input:checked) {
+    @apply border-blue-500 bg-blue-50;
+  }
+</style>

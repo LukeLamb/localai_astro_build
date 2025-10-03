@@ -4,29 +4,46 @@ import { Image } from "astro:assets";
 import neurotraderIcon from "../../public/assets/neurotrader_icon.png";
 ---
 
-<footer class="section-compact bg-gray-900 text-white">
-  <div class="container-custom">
+<footer
+  class="section-compact bg-gradient-to-b from-charcoal to-void text-parchment relative overflow-hidden"
+>
+  <!-- Telegraph divider -->
+  <div class="divider-telegraph mb-8"></div>
+
+  <!-- Victorian gear decorations -->
+  <div
+    class="absolute top-10 right-10 w-24 h-24 border-2 border-brass/10 rounded-full animate-gear opacity-30"
+  >
+  </div>
+  <div
+    class="absolute bottom-10 left-10 w-32 h-32 border-2 border-electric/10 rounded-full animate-gear opacity-20"
+  >
+  </div>
+
+  <div class="container-custom relative z-10">
     <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
       <div class="md:col-span-2">
-        <div class="flex items-center space-x-2 mb-4">
+        <div class="flex items-center space-x-2 mb-4 group">
           <Image
             src={neurotraderIcon}
             alt="LocalAI Finance"
-            class="h-8 w-8"
+            class="h-8 w-8 transition-transform duration-300 group-hover:scale-110 group-hover:drop-shadow-[0_0_8px_rgba(184,134,11,0.5)]"
             width={32}
             height={32}
             loading="lazy"
           />
-          <span class="text-xl font-bold">LocalAI Finance</span>
+          <span class="text-xl font-display font-bold gradient-text"
+            >LocalAI Finance</span
+          >
         </div>
-        <p class="text-gray-400 mb-4 max-w-md">
+        <p class="text-parchment/70 mb-4 max-w-md font-serif">
           Professional AI Financial Assistant - Secure, private financial
           analysis and trading insights powered by local AI technology.
         </p>
         <div class="flex space-x-4">
           <a
             href="mailto:contact@localaifinance.com"
-            class="text-gray-400 hover:text-white transition-colors"
+            class="text-brass hover:text-electric transition-colors hover:drop-shadow-[0_0_6px_rgba(0,240,255,0.8)]"
             aria-label="Contact us via email"
           >
             <span class="sr-only">Email</span>
@@ -39,80 +56,130 @@ import neurotraderIcon from "../../public/assets/neurotrader_icon.png";
               ></path>
             </svg>
           </a>
+          <a
+            href="https://discord.gg/4YKHBRyVXJ"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-brass hover:text-electric transition-colors hover:drop-shadow-[0_0_6px_rgba(0,240,255,0.8)]"
+            aria-label="Join our Discord community"
+          >
+            <span class="sr-only">Discord</span>
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z"
+              ></path>
+            </svg>
+          </a>
         </div>
       </div>
 
       <div>
-        <h3 class="text-lg font-semibold mb-4">Product</h3>
+        <h3 class="text-lg font-victorian font-semibold mb-4 brass-text">
+          Product
+        </h3>
         <ul class="space-y-2">
           <li>
             <a
               href="/#features"
-              class="text-gray-400 hover:text-white transition-colors"
-              >Features</a
+              class="text-parchment/70 hover:text-electric transition-colors font-serif flex items-center group"
             >
+              <span
+                class="text-electric mr-2 opacity-0 group-hover:opacity-100 transition-opacity"
+                >▸</span
+              >
+              Features
+            </a>
           </li>
           <li>
             <a
               href="/#how-it-works"
-              class="text-gray-400 hover:text-white transition-colors"
-              >How It Works</a
+              class="text-parchment/70 hover:text-electric transition-colors font-serif flex items-center group"
             >
+              <span
+                class="text-electric mr-2 opacity-0 group-hover:opacity-100 transition-opacity"
+                >▸</span
+              >
+              How It Works
+            </a>
           </li>
           <li>
             <a
               href="/#pricing"
-              class="text-gray-400 hover:text-white transition-colors"
-              >Pricing</a
+              class="text-parchment/70 hover:text-electric transition-colors font-serif flex items-center group"
             >
+              <span
+                class="text-electric mr-2 opacity-0 group-hover:opacity-100 transition-opacity"
+                >▸</span
+              >
+              Pricing
+            </a>
           </li>
         </ul>
       </div>
 
       <div>
-        <h3 class="text-lg font-semibold mb-4">Resources</h3>
+        <h3 class="text-lg font-victorian font-semibold mb-4 brass-text">
+          Resources
+        </h3>
         <ul class="space-y-2">
           <li>
             <a
               href="/blog/"
-              class="text-gray-400 hover:text-white transition-colors">Blog</a
+              class="text-parchment/70 hover:text-electric transition-colors font-serif flex items-center group"
             >
+              <span
+                class="text-electric mr-2 opacity-0 group-hover:opacity-100 transition-opacity"
+                >▸</span
+              >
+              Blog
+            </a>
           </li>
           <li>
             <a
               href="/blog/local-ai-financial-privacy.html"
-              class="text-gray-400 hover:text-white transition-colors"
-              >Privacy Guide</a
+              class="text-parchment/70 hover:text-electric transition-colors font-serif flex items-center group"
             >
+              <span
+                class="text-electric mr-2 opacity-0 group-hover:opacity-100 transition-opacity"
+                >▸</span
+              >
+              Privacy Guide
+            </a>
           </li>
           <li>
             <a
               href="mailto:support@localaifinance.com"
-              class="text-gray-400 hover:text-white transition-colors"
-              >Support</a
+              class="text-parchment/70 hover:text-electric transition-colors font-serif flex items-center group"
             >
+              <span
+                class="text-electric mr-2 opacity-0 group-hover:opacity-100 transition-opacity"
+                >▸</span
+              >
+              Support
+            </a>
           </li>
         </ul>
       </div>
     </div>
 
-    <div class="border-t border-gray-800 pt-8">
+    <!-- Telegraph divider -->
+    <div class="divider-telegraph my-8"></div>
+
+    <div class="border-t-2 border-brass/30 pt-8">
       <div class="flex flex-col md:flex-row justify-between items-center">
-        <p class="text-gray-400 text-sm">
+        <p class="text-parchment/60 text-sm font-mono">
           © 2024 LocalAI Finance. All rights reserved.
         </p>
         <div class="flex space-x-6 mt-4 md:mt-0">
           <a
             href="/privacy"
-            class="text-gray-400 hover:text-white text-sm transition-colors"
+            class="text-brass hover:text-electric text-sm transition-colors font-mono"
             >Privacy Policy</a
-          >
           >
           <a
             href="/terms"
-            class="text-gray-400 hover:text-white text-sm transition-colors"
+            class="text-brass hover:text-electric text-sm transition-colors font-mono"
             >Terms of Service</a
-          >
           >
         </div>
       </div>
