@@ -101,7 +101,7 @@ export default {
         
         // Modern tech
         sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif'],
-        cyber: ['Orbitron', 'Exo 2', 'monospace'],
+        cyber: ['Orbitron', 'Michroma', 'Exo 2', 'monospace'],
         
         // Code/Matrix style
         mono: ['JetBrains Mono', 'Fira Code', 'monospace'],

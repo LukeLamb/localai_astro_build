@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* Import Victorian/Cyber fonts */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Cinzel:wght@400;600;700&family=Orbitron:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&family=EB+Garamond:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Cinzel:wght@400;600;700&family=Orbitron:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&family=EB+Garamond:wght@400;600&family=Michroma&display=swap');
 
 @layer base {
   * {
