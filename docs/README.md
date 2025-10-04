@@ -9,6 +9,7 @@ Last Updated: October 4, 2025
 ## 📁 Documentation Structure
 
 ### 🎨 **design/**
+
 Visual design, branding, typography, and aesthetic documentation.
 
 - **AESTHETIC_IMPLEMENTATION.md** - Victorian-Cyberpunk aesthetic guidelines
@@ -20,6 +21,7 @@ Visual design, branding, typography, and aesthetic documentation.
 - **TRANSFORMATION_COMPLETE.md** - Complete transformation documentation
 
 ### 💻 **development/**
+
 Technical implementation, component updates, and code-related documentation.
 
 - **COMPONENT_UPDATE_CHECKLIST.md** - Component update tracking
@@ -32,6 +34,7 @@ Technical implementation, component updates, and code-related documentation.
 - **WEB3FORMS_TESTING.md** - Form testing documentation
 
 ### 🚀 **deployment/**
+
 Deployment processes, fixes, and hosting documentation.
 
 - **DEPLOYMENT.md** - General deployment guide
@@ -39,6 +42,7 @@ Deployment processes, fixes, and hosting documentation.
 - **DEPLOYMENT_SUCCESS.md** - Successful deployment documentation
 
 ### 📢 **marketing/**
+
 Marketing materials, social media, email automation, and community management.
 
 - **DISCORD_QUICK_CHECKLIST.md** - Discord setup checklist
@@ -48,14 +52,17 @@ Marketing materials, social media, email automation, and community management.
 - **GRAPHICS_PROGRESS.md** - Social media graphics progress tracker
 - **GRAPHICS_QUICK_START.md** - Canva tutorial for creating graphics
 - **MAILERLITE_SETUP_GUIDE.md** - MailerLite integration guide
+- **SOCIAL_MEDIA_ACCOUNT_SETUP.md** - Step-by-step guide for creating business social accounts
 - **SOCIAL_MEDIA_GRAPHICS.md** - Complete social media design system
 
 ### 📖 **guides/**
+
 Quick references and user-friendly guides.
 
 - **QUICK_STATUS.md** - Quick project status overview
 
 ### 📦 **archive/**
+
 Completed phases, tasks, and historical documentation.
 
 - **PHASE2_STATUS.md** - Phase 2 status documentation
@@ -69,20 +76,25 @@ Completed phases, tasks, and historical documentation.
 ## 🔍 Quick Navigation
 
 ### Getting Started
+
 - **Design System**: `design/AESTHETIC_QUICK_REFERENCE.md`
 - **Typography**: `design/MICHROMA_VISUAL_GUIDE.md`
 - **Quick Status**: `guides/QUICK_STATUS.md`
 
 ### Marketing & Community
+
+- **Social Media Account Setup**: `marketing/SOCIAL_MEDIA_ACCOUNT_SETUP.md` ⭐ **NEW**
 - **Social Media Graphics**: `marketing/GRAPHICS_QUICK_START.md`
 - **Email Templates**: `marketing/EMAIL_TEMPLATES.md`
 - **Discord Setup**: `marketing/DISCORD_SETUP_GUIDE.md`
 
 ### Development
+
 - **Component Updates**: `development/COMPONENT_UPDATE_CHECKLIST.md`
 - **Forms Integration**: `development/WEB3FORMS_COMPLETE.md`
 
 ### Deployment
+
 - **Deploy Guide**: `deployment/DEPLOYMENT.md`
 - **Troubleshooting**: `deployment/DEPLOYMENT_FIX.md`
 
@@ -91,6 +103,7 @@ Completed phases, tasks, and historical documentation.
 ## 📊 Project Status
 
 **Current Phase**: Week 1 Complete ✅
+
 - ✅ Victorian transformation (6 pages)
 - ✅ Discord integration
 - ✅ Email automation (MailerLite)
@@ -100,6 +113,7 @@ Completed phases, tasks, and historical documentation.
 **Live Site**: [localaifinance.com](https://localaifinance.com)
 
 **Tech Stack**:
+
 - Astro 5.x
 - Tailwind CSS
 - TypeScript
@@ -112,11 +126,13 @@ Completed phases, tasks, and historical documentation.
 ## 🎯 Recent Updates
 
 **October 4, 2025**:
+
 - Completed Priority 1 social media graphics (Twitter profile, Twitter header, Instagram post)
 - Organized documentation into structured folders
 - Ready for social media deployment
 
 **October 3, 2025**:
+
 - Integrated Michroma cyberpunk font across entire site
 - Created comprehensive social media graphics design system
 - Started graphics creation process
@@ -126,6 +142,7 @@ Completed phases, tasks, and historical documentation.
 ## 💡 Contributing
 
 When adding new documentation:
+
 1. Choose the appropriate folder based on content type
 2. Use descriptive filenames with UPPERCASE_WITH_UNDERSCORES.md format
 3. Include creation date and purpose at the top of each file
@@ -136,6 +153,7 @@ When adding new documentation:
 ## 📞 Support
 
 For questions or issues:
+
 - Check relevant documentation folder first
 - Review `guides/QUICK_STATUS.md` for current project state
 - Refer to `archive/` for historical context
