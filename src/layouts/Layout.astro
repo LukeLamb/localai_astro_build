@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import Analytics from "@vercel/analytics/astro";
+import CookieConsent from "../components/CookieConsent.astro";
 
 export interface Props {
   title: string;
@@ -802,18 +803,37 @@ const fullCanonicalUrl = canonicalUrl || `${siteUrl}${Astro.url.pathname}`;
     <!-- Vercel Analytics -->
     <Analytics />
 
-    <!-- Google Analytics 4 -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-HC8MVG5FP3"
-    ></script>
+    <!-- Google Analytics 4 with Consent Mode -->
     <script>
+      // Initialize dataLayer before GA loads
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
+
+      // Set default consent state (will be updated by CookieConsent component)
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'analytics_storage': 'denied',
+        'functionality_storage': 'denied',
+        'personalization_storage': 'denied',
+        'security_storage': 'granted'
+      });
+
       gtag("js", new Date());
-      gtag("config", "G-HC8MVG5FP3");
+      gtag("config", "G-HC8MVG5FP3", {
+        'anonymize_ip': true,
+        'cookie_flags': 'SameSite=None;Secure'
+      });
     </script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HC8MVG5FP3"
+    ></script>
+
+    <!-- Cookie Consent Banner -->
+    <CookieConsent />
   </body>
 </html>

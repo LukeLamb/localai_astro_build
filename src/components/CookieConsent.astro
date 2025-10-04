@@ -1,0 +1,141 @@
+---
+// Cookie Consent Banner Component
+// GDPR-compliant with Google Consent Mode v2
+---
+
+<div
+  id="cookie-consent-banner"
+  class="hidden fixed bottom-0 left-0 right-0 z-50 p-4 bg-dark-card/95 backdrop-blur-lg border-t border-dark-border shadow-2xl"
+>
+  <div class="container-custom">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex-1 text-sm text-light-muted">
+        <p class="mb-2">
+          🍪 <strong class="text-light">We use cookies</strong> to improve your experience and analyze site traffic.
+        </p>
+        <p class="text-xs">
+          By clicking "Accept All", you consent to our use of cookies for analytics and marketing.
+          <a href="/privacy" class="text-primary hover:underline">Privacy Policy</a>
+        </p>
+      </div>
+      <div class="flex gap-3">
+        <button
+          id="cookie-reject"
+          class="px-4 py-2 text-sm font-medium text-light-muted hover:text-light border border-dark-border rounded-lg hover:bg-dark-card transition-colors"
+        >
+          Reject All
+        </button>
+        <button
+          id="cookie-accept"
+          class="btn btn-primary text-sm px-4 py-2"
+        >
+          Accept All
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Google Consent Mode v2 - Default deny all
+  window.dataLayer = window.dataLayer || [];
+  function gtag(...args: any[]) {
+    window.dataLayer.push(args);
+  }
+
+  // Set default consent to 'denied' as a placeholder
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied',
+    'analytics_storage': 'denied',
+    'functionality_storage': 'denied',
+    'personalization_storage': 'denied',
+    'security_storage': 'granted' // Always granted for security
+  });
+
+  // Cookie consent logic
+  const CONSENT_KEY = 'cookie_consent';
+  const banner = document.getElementById('cookie-consent-banner');
+  const acceptBtn = document.getElementById('cookie-accept');
+  const rejectBtn = document.getElementById('cookie-reject');
+
+  // Check if user has already made a choice
+  const savedConsent = localStorage.getItem(CONSENT_KEY);
+
+  if (savedConsent === 'accepted') {
+    // User previously accepted
+    updateConsent('granted');
+  } else if (savedConsent === 'rejected') {
+    // User previously rejected
+    updateConsent('denied');
+  } else {
+    // Show banner if no choice has been made
+    banner?.classList.remove('hidden');
+  }
+
+  // Accept button click
+  acceptBtn?.addEventListener('click', () => {
+    localStorage.setItem(CONSENT_KEY, 'accepted');
+    updateConsent('granted');
+    banner?.classList.add('hidden');
+
+    // Track consent acceptance
+    if (window.gtag) {
+      window.gtag('event', 'cookie_consent_accept', {
+        event_category: 'engagement',
+        event_label: 'accepted'
+      });
+    }
+  });
+
+  // Reject button click
+  rejectBtn?.addEventListener('click', () => {
+    localStorage.setItem(CONSENT_KEY, 'rejected');
+    updateConsent('denied');
+    banner?.classList.add('hidden');
+
+    // Track consent rejection (if allowed)
+    if (window.gtag) {
+      window.gtag('event', 'cookie_consent_reject', {
+        event_category: 'engagement',
+        event_label: 'rejected'
+      });
+    }
+  });
+
+  function updateConsent(value: 'granted' | 'denied') {
+    gtag('consent', 'update', {
+      'ad_storage': value,
+      'ad_user_data': value,
+      'ad_personalization': value,
+      'analytics_storage': value,
+      'functionality_storage': value,
+      'personalization_storage': value
+    });
+  }
+
+  // Allow users to reset their choice (for testing or privacy settings)
+  // You can expose this function via a "Cookie Settings" link
+  (window as any).resetCookieConsent = () => {
+    localStorage.removeItem(CONSENT_KEY);
+    banner?.classList.remove('hidden');
+  };
+</script>
+
+<style>
+  #cookie-consent-banner {
+    animation: slideUp 0.5s ease-out;
+  }
+
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+</style>
