@@ -4,126 +4,131 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Steampunk Base Colors
-        brass: {
-          DEFAULT: '#B8860B',
-          light: '#DAA520',
-          dark: '#967117',
-        },
-        copper: {
-          DEFAULT: '#CD7F32',
-          light: '#E8A75C',
-          dark: '#A66029',
-        },
-        mahogany: {
-          DEFAULT: '#3E2723',
-          light: '#5D4037',
-          dark: '#1B0000',
-        },
-        leather: {
-          DEFAULT: '#654321',
-          light: '#8B6B47',
-          dark: '#3E2415',
-        },
-        patina: {
-          DEFAULT: '#2E8B57',
-          light: '#3CB371',
-          dark: '#1E5A3A',
-        },
-        
-        // Cyberpunk Neon Colors
-        electric: {
-          DEFAULT: '#00F0FF',
-          light: '#80F8FF',
-          dark: '#00B8CC',
-        },
-        neon: {
-          pink: '#FF006E',
-          green: '#39FF14',
-          purple: '#8B00FF',
-          blue: '#00F0FF',
-        },
-        matrix: {
-          DEFAULT: '#00FF41',
-          light: '#80FF98',
-          dark: '#00CC33',
-        },
-        
-        // Neutral Foundation
-        void: {
-          DEFAULT: '#0A0E27',
-          light: '#1A1E3F',
-          dark: '#000000',
-        },
-        charcoal: {
-          DEFAULT: '#36454F',
-          light: '#556570',
-          dark: '#1A2329',
-        },
-        parchment: {
-          DEFAULT: '#F5F5DC',
-          light: '#FFFFF0',
-          dark: '#E5E5CC',
-        },
-        
-        // Legacy mappings for existing components
+        // Modern AI/Tech Color Palette
         primary: {
-          DEFAULT: '#B8860B', // Brass gold
-          50: '#F5F5DC',
-          100: '#E5E5CC',
-          200: '#DAA520',
-          300: '#CD7F32',
-          400: '#B8860B',
-          500: '#967117',
-          600: '#7A5C12',
-          700: '#654321',
-          800: '#4E3419',
-          900: '#3E2723',
+          DEFAULT: '#6366F1', // Indigo
+          50: '#EEF2FF',
+          100: '#E0E7FF',
+          200: '#C7D2FE',
+          300: '#A5B4FC',
+          400: '#818CF8',
+          500: '#6366F1',
+          600: '#4F46E5',
+          700: '#4338CA',
+          800: '#3730A3',
+          900: '#312E81',
         },
         secondary: {
-          DEFAULT: '#00F0FF', // Electric blue
-          50: '#E0FEFF',
-          100: '#C0FDFF',
-          200: '#80F8FF',
-          300: '#40F4FF',
-          400: '#00F0FF',
-          500: '#00B8CC',
-          600: '#009099',
-          700: '#006866',
-          800: '#004033',
-          900: '#001819',
+          DEFAULT: '#8B5CF6', // Purple
+          50: '#FAF5FF',
+          100: '#F3E8FF',
+          200: '#E9D5FF',
+          300: '#D8B4FE',
+          400: '#C084FC',
+          500: '#A855F7',
+          600: '#9333EA',
+          700: '#7E22CE',
+          800: '#6B21A8',
+          900: '#581C87',
+        },
+        accent: {
+          DEFAULT: '#06B6D4', // Cyan
+          50: '#ECFEFF',
+          100: '#CFFAFE',
+          200: '#A5F3FC',
+          300: '#67E8F9',
+          400: '#22D3EE',
+          500: '#06B6D4',
+          600: '#0891B2',
+          700: '#0E7490',
+          800: '#155E75',
+          900: '#164E63',
+        },
+        success: {
+          DEFAULT: '#10B981', // Emerald
+          50: '#ECFDF5',
+          100: '#D1FAE5',
+          200: '#A7F3D0',
+          300: '#6EE7B7',
+          400: '#34D399',
+          500: '#10B981',
+          600: '#059669',
+          700: '#047857',
+          800: '#065F46',
+          900: '#064E3B',
+        },
+        warning: {
+          DEFAULT: '#F59E0B', // Amber
+          50: '#FFFBEB',
+          100: '#FEF3C7',
+          200: '#FDE68A',
+          300: '#FCD34D',
+          400: '#FBBF24',
+          500: '#F59E0B',
+          600: '#D97706',
+          700: '#B45309',
+          800: '#92400E',
+          900: '#78350F',
+        },
+        danger: {
+          DEFAULT: '#EF4444', // Red
+          50: '#FEF2F2',
+          100: '#FEE2E2',
+          200: '#FECACA',
+          300: '#FCA5A5',
+          400: '#F87171',
+          500: '#EF4444',
+          600: '#DC2626',
+          700: '#B91C1C',
+          800: '#991B1B',
+          900: '#7F1D1D',
+        },
+        // Dark theme backgrounds
+        dark: {
+          DEFAULT: '#0F172A', // Slate 900
+          lighter: '#1E293B', // Slate 800
+          card: '#1E293B',    // Card background
+          border: '#334155',  // Slate 700
+        },
+        // Light text on dark
+        light: {
+          DEFAULT: '#F1F5F9', // Slate 100
+          muted: '#94A3B8',   // Slate 400
         },
       },
       fontFamily: {
-        // Victorian elegance
-        display: ['Playfair Display', 'Georgia', 'serif'],
-        victorian: ['Cinzel', 'Georgia', 'serif'],
-        
-        // Modern tech
-        sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif'],
-        cyber: ['Orbitron', 'Michroma', 'Exo 2', 'monospace'],
-        
-        // Code/Matrix style
-        mono: ['JetBrains Mono', 'Fira Code', 'monospace'],
-        
-        // Historical documents
-        serif: ['EB Garamond', 'Georgia', 'serif'],
+        // Modern futuristic heading
+        display: ['Orbitron', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+
+        // Body text - clean and readable
+        sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+
+        // Code/data display
+        mono: ['JetBrains Mono', 'Fira Code', 'Consolas', 'Monaco', 'monospace'],
       },
       boxShadow: {
-        'brass': '0 4px 6px -1px rgba(184, 134, 11, 0.3), 0 2px 4px -1px rgba(184, 134, 11, 0.2)',
-        'neon-blue': '0 0 20px rgba(0, 240, 255, 0.5), 0 0 40px rgba(0, 240, 255, 0.3)',
-        'neon-pink': '0 0 20px rgba(255, 0, 110, 0.5), 0 0 40px rgba(255, 0, 110, 0.3)',
-        'neon-green': '0 0 20px rgba(57, 255, 20, 0.5), 0 0 40px rgba(57, 255, 20, 0.3)',
-        'victorian': 'inset 0 0 10px rgba(184, 134, 11, 0.3), 0 0 20px rgba(0, 240, 255, 0.2)',
+        // Modern glow effects
+        'glow-sm': '0 0 10px rgba(99, 102, 241, 0.3)',
+        'glow': '0 0 20px rgba(99, 102, 241, 0.4), 0 0 40px rgba(99, 102, 241, 0.2)',
+        'glow-lg': '0 0 30px rgba(99, 102, 241, 0.5), 0 0 60px rgba(99, 102, 241, 0.3)',
+        'glow-purple': '0 0 20px rgba(139, 92, 246, 0.4), 0 0 40px rgba(139, 92, 246, 0.2)',
+        'glow-cyan': '0 0 20px rgba(6, 182, 212, 0.4), 0 0 40px rgba(6, 182, 212, 0.2)',
+        'glow-success': '0 0 20px rgba(16, 185, 129, 0.4), 0 0 40px rgba(16, 185, 129, 0.2)',
+        // Glass morphism
+        'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
       },
       backgroundImage: {
-        'brass-gradient': 'linear-gradient(135deg, #B8860B 0%, #CD7F32 100%)',
-        'cyber-gradient': 'linear-gradient(135deg, #00F0FF 0%, #8B00FF 100%)',
-        'victorian-cyber': 'linear-gradient(135deg, #B8860B 0%, #00F0FF 50%, #8B00FF 100%)',
-        'dark-brass': 'linear-gradient(135deg, #3E2723 0%, #0A0E27 100%)',
+        // Modern gradients
+        'gradient-primary': 'linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%)',
+        'gradient-accent': 'linear-gradient(135deg, #06B6D4 0%, #8B5CF6 100%)',
+        'gradient-success': 'linear-gradient(135deg, #10B981 0%, #06B6D4 100%)',
+        'gradient-dark': 'linear-gradient(135deg, #0F172A 0%, #1E293B 100%)',
+        'gradient-mesh': 'radial-gradient(at 27% 37%, rgba(99, 102, 241, 0.2) 0px, transparent 50%), radial-gradient(at 97% 21%, rgba(139, 92, 246, 0.2) 0px, transparent 50%), radial-gradient(at 52% 99%, rgba(6, 182, 212, 0.2) 0px, transparent 50%)',
+      },
+      backdropBlur: {
+        xs: '2px',
       },
     },
   },
   plugins: [],
 }
-

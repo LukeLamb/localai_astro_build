@@ -80,7 +80,7 @@ const fullCanonicalUrl = canonicalUrl || `${siteUrl}${Astro.url.pathname}`;
     <link rel="manifest" href="/site.webmanifest" />
 
     <!-- Theme and Mobile Optimization -->
-    <meta name="theme-color" content="#B8860B" />
+    <meta name="theme-color" content="#6366F1" />
     <meta name="color-scheme" content="dark" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="mobile-web-app-capable" content="yes" />
@@ -115,7 +115,7 @@ const fullCanonicalUrl = canonicalUrl || `${siteUrl}${Astro.url.pathname}`;
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;600;700;800&family=Cinzel:wght@400;600;700&family=Orbitron:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&family=EB+Garamond:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
       rel="stylesheet"
     />
 
@@ -237,8 +237,8 @@ const fullCanonicalUrl = canonicalUrl || `${siteUrl}${Astro.url.pathname}`;
           Ubuntu,
           Cantarell,
           sans-serif;
-        background: linear-gradient(135deg, #3e2723 0%, #0a0e27 100%);
-        color: #f5f5dc;
+        background: #0F172A;
+        color: #F1F5F9;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
       }
@@ -367,42 +367,35 @@ const fullCanonicalUrl = canonicalUrl || `${siteUrl}${Astro.url.pathname}`;
       }
 
       .btn-primary {
-        background: linear-gradient(135deg, #b8860b, #cd7f32);
-        border: 2px solid #654321;
-        color: #f5f5dc;
-        box-shadow:
-          inset 0 2px 5px rgba(255, 255, 255, 0.3),
-          0 5px 15px rgba(0, 0, 0, 0.3),
-          0 0 10px rgba(0, 240, 255, 0.2);
+        background: linear-gradient(135deg, #6366F1, #8B5CF6);
+        border: none;
+        color: white;
+        box-shadow: 0 0 20px rgba(99, 102, 241, 0.4), 0 0 40px rgba(99, 102, 241, 0.2);
       }
 
       .btn-primary:hover {
         transform: scale(1.05);
-        box-shadow:
-          inset 0 2px 5px rgba(255, 255, 255, 0.3),
-          0 0 20px rgba(0, 240, 255, 0.5),
-          0 5px 15px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0 30px rgba(99, 102, 241, 0.5), 0 0 60px rgba(99, 102, 241, 0.3);
       }
 
       .btn-outline {
-        border: 2px solid #00f0ff;
-        color: #00f0ff;
+        border: 2px solid #6366F1;
+        color: #6366F1;
         background: transparent;
-        box-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
       }
 
       .btn-outline:hover {
-        background: rgba(0, 240, 255, 0.1);
-        box-shadow: 0 0 20px rgba(0, 240, 255, 0.5);
+        background: #6366F1;
+        color: white;
       }
 
       /* Gradients */
       .gradient-text {
         background: linear-gradient(
           135deg,
-          #b8860b 0%,
-          #00f0ff 50%,
-          #8b00ff 100%
+          #6366F1 0%,
+          #8B5CF6 50%,
+          #06B6D4 100%
         );
         -webkit-background-clip: text;
         background-clip: text;
