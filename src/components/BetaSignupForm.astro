@@ -35,7 +35,7 @@
       <div>
         <label
           for="beta-name"
-          class="block text-sm font-medium text-gray-700 mb-2"
+          class="block text-sm font-medium text-light mb-2"
         >
           Name *
         </label>
@@ -44,7 +44,7 @@
           id="beta-name"
           name="name"
           required
-          class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+          class="w-full px-4 py-3 rounded-lg border border-dark-border bg-dark text-light focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-200"
           placeholder="Your name"
         />
       </div>
@@ -52,7 +52,7 @@
       <div>
         <label
           for="beta-email"
-          class="block text-sm font-medium text-gray-700 mb-2"
+          class="block text-sm font-medium text-light mb-2"
         >
           Email *
         </label>
@@ -61,7 +61,7 @@
           id="beta-email"
           name="email"
           required
-          class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+          class="w-full px-4 py-3 rounded-lg border border-dark-border bg-dark text-light focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-200"
           placeholder="your@email.com"
         />
       </div>
@@ -69,292 +69,44 @@
 
     <!-- Trading Experience -->
     <div>
-      <label class="block text-sm font-medium text-gray-700 mb-3">
+      <label
+        for="beta-experience"
+        class="block text-sm font-medium text-light mb-2"
+      >
         Trading Experience *
       </label>
-      <div class="space-y-2">
-        <label
-          class="flex items-center gap-3 p-4 border-2 border-gray-200 rounded-lg cursor-pointer hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 experience-option"
-        >
-          <input
-            type="radio"
-            name="experience"
-            value="none"
-            required
-            class="w-4 h-4 text-blue-600"
-          />
-          <div>
-            <span class="font-medium text-gray-900">Complete Beginner</span>
-            <p class="text-sm text-gray-600">
-              Never traded before - perfect! We'll start from zero.
-            </p>
-          </div>
-        </label>
-
-        <label
-          class="flex items-center gap-3 p-4 border-2 border-gray-200 rounded-lg cursor-pointer hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 experience-option"
-        >
-          <input
-            type="radio"
-            name="experience"
-            value="lost"
-            class="w-4 h-4 text-blue-600"
-          />
-          <div>
-            <span class="font-medium text-gray-900"
-              >Tried before, lost money 😞</span
-            >
-            <p class="text-sm text-gray-600">
-              You're not alone. Let's learn the right way together.
-            </p>
-          </div>
-        </label>
-
-        <label
-          class="flex items-center gap-3 p-4 border-2 border-gray-200 rounded-lg cursor-pointer hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 experience-option"
-        >
-          <input
-            type="radio"
-            name="experience"
-            value="some"
-            class="w-4 h-4 text-blue-600"
-          />
-          <div>
-            <span class="font-medium text-gray-900"
-              >Some experience, want to improve</span
-            >
-            <p class="text-sm text-gray-600">
-              Build on what you know with structured learning.
-            </p>
-          </div>
-        </label>
-
-        <label
-          class="flex items-center gap-3 p-4 border-2 border-gray-200 rounded-lg cursor-pointer hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 experience-option"
-        >
-          <input
-            type="radio"
-            name="experience"
-            value="experienced"
-            class="w-4 h-4 text-blue-600"
-          />
-          <div>
-            <span class="font-medium text-gray-900"
-              >Experienced, want better tools</span
-            >
-            <p class="text-sm text-gray-600">
-              Advanced features and multi-asset support for pros.
-            </p>
-          </div>
-        </label>
-      </div>
-    </div>
-
-    <!-- Gaming Background -->
-    <div>
-      <label
-        for="beta-gaming"
-        class="block text-sm font-medium text-gray-700 mb-2"
-      >
-        Gaming Background *
-      </label>
       <select
-        id="beta-gaming"
-        name="gaming"
+        id="beta-experience"
+        name="experience"
         required
-        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+        class="w-full px-4 py-3 rounded-lg border border-dark-border bg-dark text-light focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-200"
       >
-        <option value="">Select one...</option>
-        <option value="active">🎮 Active Gamer (10+ hrs/week)</option>
-        <option value="casual">🕹️ Casual Gamer</option>
-        <option value="former">👾 Former Gamer</option>
-        <option value="not">📚 Not a Gamer</option>
+        <option value="">Select your experience level...</option>
+        <option value="none">Complete Beginner</option>
+        <option value="lost">Tried before, lost money</option>
+        <option value="some">Some experience</option>
+        <option value="experienced">Experienced trader</option>
       </select>
-    </div>
-
-    <!-- Asset Interests -->
-    <div>
-      <label class="block text-sm font-medium text-gray-700 mb-3">
-        Asset Interests (Select all that apply) *
-      </label>
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
-        <label
-          class="flex items-center gap-2 p-3 border-2 border-gray-200 rounded-lg cursor-pointer hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 asset-option"
-        >
-          <input
-            type="checkbox"
-            name="asset"
-            value="stocks"
-            class="w-4 h-4 text-blue-600"
-          />
-          <span class="text-2xl">📈</span>
-          <span class="text-sm font-medium">Stocks/ETFs</span>
-        </label>
-
-        <label
-          class="flex items-center gap-2 p-3 border-2 border-gray-200 rounded-lg cursor-pointer hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 asset-option"
-        >
-          <input
-            type="checkbox"
-            name="asset"
-            value="crypto"
-            class="w-4 h-4 text-blue-600"
-          />
-          <span class="text-2xl">💎</span>
-          <span class="text-sm font-medium">Crypto</span>
-        </label>
-
-        <label
-          class="flex items-center gap-2 p-3 border-2 border-gray-200 rounded-lg cursor-pointer hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 asset-option"
-        >
-          <input
-            type="checkbox"
-            name="asset"
-            value="forex"
-            class="w-4 h-4 text-blue-600"
-          />
-          <span class="text-2xl">💱</span>
-          <span class="text-sm font-medium">Forex</span>
-        </label>
-
-        <label
-          class="flex items-center gap-2 p-3 border-2 border-gray-200 rounded-lg cursor-pointer hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 asset-option"
-        >
-          <input
-            type="checkbox"
-            name="asset"
-            value="options"
-            class="w-4 h-4 text-blue-600"
-          />
-          <span class="text-2xl">🎲</span>
-          <span class="text-sm font-medium">Options</span>
-        </label>
-
-        <label
-          class="flex items-center gap-2 p-3 border-2 border-gray-200 rounded-lg cursor-pointer hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 asset-option"
-        >
-          <input
-            type="checkbox"
-            name="asset"
-            value="commodities"
-            class="w-4 h-4 text-blue-600"
-          />
-          <span class="text-2xl">🏭</span>
-          <span class="text-sm font-medium">Commodities</span>
-        </label>
-
-        <label
-          class="flex items-center gap-2 p-3 border-2 border-gray-200 rounded-lg cursor-pointer hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 asset-option"
-        >
-          <input
-            type="checkbox"
-            name="asset"
-            value="all"
-            class="w-4 h-4 text-blue-600"
-          />
-          <span class="text-2xl">🌍</span>
-          <span class="text-sm font-medium">All Assets</span>
-        </label>
-      </div>
     </div>
 
     <!-- Beta Tier Preference -->
     <div>
-      <label class="block text-sm font-medium text-gray-700 mb-3">
-        Beta Tier Interest *
-      </label>
-      <div class="space-y-3">
-        <label
-          class="flex items-start gap-3 p-4 border-2 border-gray-200 rounded-lg cursor-pointer hover:bg-amber-50 hover:border-amber-300 transition-all duration-200 tier-option"
-        >
-          <input
-            type="radio"
-            name="tier"
-            value="free"
-            required
-            class="w-4 h-4 mt-1 text-blue-600"
-          />
-          <div class="flex-1">
-            <div class="flex items-center gap-2 mb-1">
-              <span class="text-2xl">🥉</span>
-              <span class="font-bold text-gray-900">Bronze (Free)</span>
-            </div>
-            <p class="text-sm text-gray-600">
-              Paper trading (Levels 1-10), basic education, community access
-            </p>
-          </div>
-        </label>
-
-        <label
-          class="flex items-start gap-3 p-4 border-2 border-blue-300 rounded-lg cursor-pointer hover:bg-blue-50 hover:border-blue-400 transition-all duration-200 tier-option"
-        >
-          <input
-            type="radio"
-            name="tier"
-            value="silver"
-            class="w-4 h-4 mt-1 text-blue-600"
-          />
-          <div class="flex-1">
-            <div class="flex items-center gap-2 mb-1">
-              <span class="text-2xl">🥈</span>
-              <span class="font-bold text-gray-900">Silver ($15/mo)</span>
-              <span
-                class="px-2 py-0.5 bg-blue-500 text-white text-xs rounded-full font-bold"
-                >POPULAR</span
-              >
-            </div>
-            <p class="text-sm text-gray-600">
-              Everything in Bronze + AI assistant, guilds, advanced analytics
-              (Levels 11-25)
-            </p>
-          </div>
-        </label>
-
-        <label
-          class="flex items-start gap-3 p-4 border-2 border-purple-300 rounded-lg cursor-pointer hover:bg-purple-50 hover:border-purple-400 transition-all duration-200 tier-option"
-        >
-          <input
-            type="radio"
-            name="tier"
-            value="gold"
-            class="w-4 h-4 mt-1 text-blue-600"
-          />
-          <div class="flex-1">
-            <div class="flex items-center gap-2 mb-1">
-              <span class="text-2xl">🥇</span>
-              <span class="font-bold text-gray-900">Gold ($50/mo)</span>
-            </div>
-            <p class="text-sm text-gray-600">
-              Everything in Silver + live trading, real-time data, priority
-              support (Level 26+)
-            </p>
-          </div>
-        </label>
-      </div>
-    </div>
-
-    <!-- How did you hear about us? -->
-    <div>
       <label
-        for="beta-source"
-        class="block text-sm font-medium text-gray-700 mb-2"
+        for="beta-tier"
+        class="block text-sm font-medium text-light mb-2"
       >
-        How did you hear about us? (Optional)
+        Which tier interests you? *
       </label>
       <select
-        id="beta-source"
-        name="source"
-        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+        id="beta-tier"
+        name="tier"
+        required
+        class="w-full px-4 py-3 rounded-lg border border-dark-border bg-dark text-light focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-200"
       >
-        <option value="">Select one...</option>
-        <option value="reddit">Reddit</option>
-        <option value="twitter">Twitter/X</option>
-        <option value="tiktok">TikTok</option>
-        <option value="youtube">YouTube</option>
-        <option value="discord">Discord</option>
-        <option value="friend">Friend/Referral</option>
-        <option value="search">Search Engine</option>
-        <option value="other">Other</option>
+        <option value="">Select a tier...</option>
+        <option value="free">🥉 Free - Education (Levels 1-25)</option>
+        <option value="pro">🥈 Pro ($15/mo) - Paper Trading + AI Agents</option>
+        <option value="elite">🥇 Elite ($50/mo) - Live Trading + All Features</option>
       </select>
     </div>
 
@@ -362,7 +114,7 @@
     <div>
       <button
         type="submit"
-        class="w-full px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+        class="btn btn-primary w-full text-lg font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
       >
         🚀 Join Beta Waitlist
       </button>
@@ -371,30 +123,27 @@
     <!-- Success Message (Hidden by default) -->
     <div
       id="success-message"
-      class="hidden p-6 bg-green-50 border-2 border-green-200 rounded-lg text-center"
+      class="hidden p-6 glass-card border-success text-center"
     >
       <div class="text-4xl mb-3">🎉</div>
-      <h3 class="text-xl font-bold text-green-900 mb-2">You're on the list!</h3>
-      <p class="text-green-800 mb-4">
-        Check your email for next steps. We'll send you updates as we build.
+      <h3 class="text-xl font-bold text-success mb-2 font-display">Welcome to the Journey!</h3>
+      <p class="text-light-muted mb-4">
+        Thanks for joining us! Check your email for next steps and exclusive updates as we build the future of AI-powered trading education.
       </p>
-      <div class="space-y-2 text-sm text-green-700">
-        <p>✅ Beta access guaranteed</p>
-        <p>✅ Join our Discord community</p>
-        <p>✅ Get exclusive development updates</p>
+      <div class="space-y-2 text-sm text-light-muted">
+        <p><span class="text-success">✓</span> Beta access confirmed</p>
+        <p><span class="text-success">✓</span> Join our Discord community</p>
+        <p><span class="text-success">✓</span> Get exclusive development updates</p>
       </div>
     </div>
 
     <!-- Trust Signals -->
     <div
-      class="text-center text-sm text-gray-600 space-y-2 pt-4 border-t border-gray-200"
+      class="text-center text-sm text-light-muted space-y-2 pt-4 border-t border-dark-border"
     >
-      <p class="font-semibold text-gray-900">
-        ✅ <span id="signup-count">752</span> traders have already joined
-      </p>
-      <p>✅ No spam, unsubscribe anytime</p>
-      <p>✅ Priority access guaranteed</p>
-      <p>✅ Your data is never shared</p>
+      <p><span class="text-success">✓</span> No spam, unsubscribe anytime</p>
+      <p><span class="text-success">✓</span> Priority access guaranteed</p>
+      <p><span class="text-success">✓</span> Your data is never shared</p>
     </div>
   </form>
 </div>

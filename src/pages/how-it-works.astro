@@ -1,0 +1,476 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout
+  title="How It Works"
+  description="Learn how LocalAI Finance's progression system works. From education (Levels 1-25) to paper trading (26-50) to live trading (51-100) with AI agent guidance."
+>
+  <Navigation slot="navigation" />
+
+  <!-- Hero Section -->
+  <section class="section bg-dark relative overflow-hidden">
+    <div class="absolute inset-0 bg-grid opacity-30"></div>
+    <div class="absolute inset-0 bg-mesh"></div>
+
+    <div class="container-custom relative z-10">
+      <div class="max-w-4xl mx-auto text-center">
+        <span class="font-display text-success text-sm tracking-widest uppercase block mb-4">
+          📈 Your Trading Journey
+        </span>
+        <h1 class="text-hero font-display font-bold gradient-text mb-6">
+          Learn, Practice, Trade
+        </h1>
+        <p class="text-xl text-light-muted mb-8">
+          Our structured progression system ensures you're ready before risking real capital. No shortcuts, no gambling—just proven skill development.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overview -->
+  <section class="section-compact bg-dark-lighter">
+    <div class="container-custom">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-section-title font-display font-bold gradient-text mb-8 text-center">
+          The 3-Phase System
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="glass-card text-center border-t-4 border-primary">
+            <div class="text-5xl mb-4">📚</div>
+            <h3 class="text-xl font-display font-bold text-primary mb-2">
+              Phase 1: Education
+            </h3>
+            <p class="text-3xl font-display font-bold text-light mb-2">Levels 1-25</p>
+            <p class="text-light-muted">
+              Learn fundamentals with AI guidance. No trading until you prove competency.
+            </p>
+          </div>
+
+          <div class="glass-card text-center border-t-4 border-accent">
+            <div class="text-5xl mb-4">📝</div>
+            <h3 class="text-xl font-display font-bold text-accent mb-2">
+              Phase 2: Paper Trading
+            </h3>
+            <p class="text-3xl font-display font-bold text-light mb-2">Levels 26-50</p>
+            <p class="text-light-muted">
+              Practice with fake money and all 4 AI agents. Build confidence safely.
+            </p>
+          </div>
+
+          <div class="glass-card text-center border-t-4 border-success">
+            <div class="text-5xl mb-4">💰</div>
+            <h3 class="text-xl font-display font-bold text-success mb-2">
+              Phase 3: Live Trading
+            </h3>
+            <p class="text-3xl font-display font-bold text-light mb-2">Levels 51-100</p>
+            <p class="text-light-muted">
+              Trade with real money, backed by full AI support. You've earned it.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Phase 1: Education -->
+  <section class="section bg-dark">
+    <div class="container-custom">
+      <div class="max-w-5xl mx-auto">
+        <div class="flex items-center gap-6 mb-8">
+          <div class="w-20 h-20 bg-gradient-primary rounded-xl flex items-center justify-center shadow-glow">
+            <span class="text-5xl">📚</span>
+          </div>
+          <div>
+            <h2 class="text-4xl font-display font-bold text-primary mb-2">
+              Phase 1: Education (Levels 1-25)
+            </h2>
+            <p class="text-light-muted">Foundation building - no real money trading</p>
+          </div>
+        </div>
+
+        <div class="space-y-6">
+          <div class="glass-card">
+            <h3 class="text-xl font-display font-semibold text-light mb-4">What You Learn</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <p class="font-semibold text-primary mb-3">Levels 1-10: Fundamentals</p>
+                <ul class="space-y-2 text-light-muted text-sm">
+                  <li>• What is a stock, ETF, and index?</li>
+                  <li>• How markets work (exchanges, orders, timing)</li>
+                  <li>• Reading stock charts and candlesticks</li>
+                  <li>• Understanding volume and price action</li>
+                  <li>• Market vs Limit orders</li>
+                  <li>• Introduction to risk management</li>
+                </ul>
+              </div>
+
+              <div>
+                <p class="font-semibold text-primary mb-3">Levels 11-20: Technical Analysis</p>
+                <ul class="space-y-2 text-light-muted text-sm">
+                  <li>• Moving averages and trend lines</li>
+                  <li>• Support and resistance levels</li>
+                  <li>• RSI, MACD, and key indicators</li>
+                  <li>• Chart patterns (flags, triangles, etc.)</li>
+                  <li>• Timeframe analysis (1min to daily)</li>
+                  <li>• Volume confirmation techniques</li>
+                </ul>
+              </div>
+
+              <div>
+                <p class="font-semibold text-primary mb-3">Levels 21-25: Advanced Concepts</p>
+                <ul class="space-y-2 text-light-muted text-sm">
+                  <li>• Fundamental analysis basics</li>
+                  <li>• Market psychology and sentiment</li>
+                  <li>• Sector rotation and correlations</li>
+                  <li>• Economic indicators (GDP, inflation, etc.)</li>
+                  <li>• Building a trading plan</li>
+                  <li>• Journal keeping and review process</li>
+                </ul>
+              </div>
+
+              <div>
+                <p class="font-semibold text-primary mb-3">AI Agent Access</p>
+                <ul class="space-y-2 text-light-muted text-sm">
+                  <li>• Level 1: Advisor Agent unlocked</li>
+                  <li>• Level 15: Backtest Agent unlocked</li>
+                  <li>• Level 20: Pattern Agent unlocked</li>
+                  <li>• Agents guide your learning</li>
+                  <li>• Practice analyzing with AI help</li>
+                  <li>• Build pattern recognition skills</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card bg-dark-card">
+            <h3 class="text-xl font-display font-semibold text-light mb-4">How You Progress</h3>
+            <div class="space-y-4 text-light-muted">
+              <p>Each level requires you to:</p>
+              <ul class="ml-6 space-y-2">
+                <li>✓ Complete interactive lessons and quizzes</li>
+                <li>✓ Analyze real market examples</li>
+                <li>✓ Pass competency tests (must score 80%+)</li>
+                <li>✓ Demonstrate understanding before advancing</li>
+              </ul>
+              <p class="text-accent font-semibold mt-4">
+                You cannot skip levels. You cannot trade until Level 26. No exceptions.
+              </p>
+            </div>
+          </div>
+
+          <div class="glass-card">
+            <h3 class="text-xl font-display font-semibold text-light mb-4">Estimated Time</h3>
+            <p class="text-light-muted mb-2">
+              <strong class="text-light">Average completion:</strong> 4-8 weeks if studying 1-2 hours per day
+            </p>
+            <p class="text-light-muted">
+              <strong class="text-light">Intensive pace:</strong> 2-3 weeks with full-time focus
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Phase 2: Paper Trading -->
+  <section class="section bg-dark-lighter">
+    <div class="container-custom">
+      <div class="max-w-5xl mx-auto">
+        <div class="flex items-center gap-6 mb-8">
+          <div class="w-20 h-20 bg-gradient-accent rounded-xl flex items-center justify-center shadow-glow-cyan">
+            <span class="text-5xl">📝</span>
+          </div>
+          <div>
+            <h2 class="text-4xl font-display font-bold text-accent mb-2">
+              Phase 2: Paper Trading (Levels 26-50)
+            </h2>
+            <p class="text-light-muted">Practice with fake money - all 4 AI agents available</p>
+          </div>
+        </div>
+
+        <div class="space-y-6">
+          <div class="glass-card">
+            <h3 class="text-xl font-display font-semibold text-light mb-4">What You Do</h3>
+            <p class="text-light-muted mb-4">
+              This is where theory meets practice. You get a <strong class="text-light">$100,000 virtual portfolio</strong> and access to all 4 AI agents. Every trade is simulated using real market data, but no real money is at risk.
+            </p>
+            <div class="bg-dark-card p-6 rounded-lg border border-accent/30">
+              <p class="font-semibold text-accent mb-3">Paper Trading Features:</p>
+              <ul class="space-y-2 text-light-muted">
+                <li>• Trade stocks, ETFs, and crypto (simulated)</li>
+                <li>• Real-time market data and pricing</li>
+                <li>• All 4 AI agents provide guidance</li>
+                <li>• Track your performance vs benchmarks</li>
+                <li>• Keep a trading journal with AI feedback</li>
+                <li>• Compete on leaderboards (optional)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="glass-card">
+            <h3 class="text-xl font-display font-semibold text-light mb-4">Level Progression</h3>
+            <div class="space-y-4">
+              <div>
+                <p class="font-semibold text-accent mb-2">Levels 26-35: Building Confidence</p>
+                <ul class="ml-6 space-y-1 text-light-muted text-sm">
+                  <li>• Start with simple long trades</li>
+                  <li>• Learn to use all 4 agents together</li>
+                  <li>• Focus on 1-2 positions at a time</li>
+                  <li>• Master entry and exit timing</li>
+                </ul>
+              </div>
+
+              <div>
+                <p class="font-semibold text-accent mb-2">Levels 36-45: Strategy Development</p>
+                <ul class="ml-6 space-y-1 text-light-muted text-sm">
+                  <li>• Test different trading styles</li>
+                  <li>• Backtest your strategies</li>
+                  <li>• Handle multiple positions</li>
+                  <li>• Manage losing streaks</li>
+                </ul>
+              </div>
+
+              <div>
+                <p class="font-semibold text-accent mb-2">Levels 46-50: Certification</p>
+                <ul class="ml-6 space-y-1 text-light-muted text-sm">
+                  <li>• Demonstrate consistent profitability</li>
+                  <li>• Prove risk management skills</li>
+                  <li>• Pass final competency exam</li>
+                  <li>• Get certified for live trading</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card bg-dark-card">
+            <h3 class="text-xl font-display font-semibold text-light mb-4">Certification Requirements</h3>
+            <p class="text-light-muted mb-4">
+              To advance to live trading (Level 51+), you must prove:
+            </p>
+            <ul class="space-y-2 text-light-muted">
+              <li class="flex items-start gap-3">
+                <span class="text-success text-xl">✓</span>
+                <span><strong class="text-light">Profitability:</strong> Positive returns over 3 consecutive months of paper trading</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-success text-xl">✓</span>
+                <span><strong class="text-light">Risk Management:</strong> Max drawdown below 15% during testing period</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-success text-xl">✓</span>
+                <span><strong class="text-light">Consistency:</strong> Win rate above 50% or profit factor above 1.5</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-success text-xl">✓</span>
+                <span><strong class="text-light">Journal Compliance:</strong> Documented every trade with reasoning</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-success text-xl">✓</span>
+                <span><strong class="text-light">Final Exam:</strong> Pass comprehensive trading assessment (90%+)</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="glass-card">
+            <h3 class="text-xl font-display font-semibold text-light mb-4">Estimated Time</h3>
+            <p class="text-light-muted mb-2">
+              <strong class="text-light">Minimum:</strong> 3 months of paper trading required
+            </p>
+            <p class="text-light-muted">
+              <strong class="text-light">Average:</strong> 4-6 months to achieve certification
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Phase 3: Live Trading -->
+  <section class="section bg-dark">
+    <div class="container-custom">
+      <div class="max-w-5xl mx-auto">
+        <div class="flex items-center gap-6 mb-8">
+          <div class="w-20 h-20 bg-gradient-success rounded-xl flex items-center justify-center shadow-glow-success">
+            <span class="text-5xl">💰</span>
+          </div>
+          <div>
+            <h2 class="text-4xl font-display font-bold text-success mb-2">
+              Phase 3: Live Trading (Levels 51-100)
+            </h2>
+            <p class="text-light-muted">Real money trading with full AI support</p>
+          </div>
+        </div>
+
+        <div class="space-y-6">
+          <div class="glass-card">
+            <h3 class="text-xl font-display font-semibold text-light mb-4">You've Earned It</h3>
+            <p class="text-light-muted mb-4">
+              By the time you reach Level 51, you've spent months learning and proving your skills. You understand markets, you know how to manage risk, and you've demonstrated profitability with paper trading.
+            </p>
+            <p class="text-success font-semibold">
+              Now you're ready to trade with real money—and you have the full power of all 4 AI agents backing you up.
+            </p>
+          </div>
+
+          <div class="glass-card">
+            <h3 class="text-xl font-display font-semibold text-light mb-4">Live Trading Features</h3>
+            <ul class="space-y-3 text-light-muted">
+              <li class="flex items-start gap-3">
+                <span class="text-success text-xl">•</span>
+                <span><strong class="text-light">Brokerage Integration:</strong> Connect your Alpaca, Interactive Brokers, or TD Ameritrade account</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-success text-xl">•</span>
+                <span><strong class="text-light">Real-time AI Alerts:</strong> All 4 agents monitor your portfolio 24/7</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-success text-xl">•</span>
+                <span><strong class="text-light">Automated Risk Management:</strong> Stop losses and position sizing calculated automatically</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-success text-xl">•</span>
+                <span><strong class="text-light">Performance Analytics:</strong> Track every metric that matters</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-success text-xl">•</span>
+                <span><strong class="text-light">Advanced Strategies:</strong> Options trading unlocks at Level 75</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="glass-card bg-dark-card">
+            <h3 class="text-xl font-display font-semibold text-light mb-4">Continued Learning</h3>
+            <p class="text-light-muted mb-4">
+              Levels 51-100 aren't just about trading—they're about mastery:
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <p class="font-semibold text-success mb-2">Levels 51-60: Consistency</p>
+                <p class="text-light-muted text-sm">Build sustainable trading habits with real capital</p>
+              </div>
+              <div>
+                <p class="font-semibold text-success mb-2">Levels 61-70: Scaling</p>
+                <p class="text-light-muted text-sm">Increase position sizes as you prove profitability</p>
+              </div>
+              <div>
+                <p class="font-semibold text-success mb-2">Levels 71-80: Advanced Strategies</p>
+                <p class="text-light-muted text-sm">Options, spreads, and portfolio hedging</p>
+              </div>
+              <div>
+                <p class="font-semibold text-success mb-2">Levels 81-100: Mastery</p>
+                <p class="text-light-muted text-sm">Multi-timeframe analysis and complex setups</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card">
+            <h3 class="text-xl font-display font-semibold text-light mb-4">Safety Guardrails</h3>
+            <p class="text-light-muted mb-4">
+              Even at live trading levels, we protect you:
+            </p>
+            <ul class="space-y-2 text-light-muted">
+              <li>• Daily loss limits (auto-pause if exceeded)</li>
+              <li>• Maximum position size restrictions</li>
+              <li>• Mandatory stop losses on every trade</li>
+              <li>• Risk Agent veto power (can block dangerous trades)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Tiers -->
+  <section class="section-compact bg-dark-lighter">
+    <div class="container-custom">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-section-title font-display font-bold gradient-text mb-8 text-center">
+          Pricing Tiers
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="glass-card text-center border-t-4 border-success">
+            <div class="mb-4">
+              <p class="text-sm text-success font-semibold uppercase tracking-wide mb-2">Free Forever</p>
+              <p class="text-5xl font-display font-bold text-light mb-2">$0</p>
+              <p class="text-light-muted text-sm">per month</p>
+            </div>
+            <div class="space-y-3 text-light-muted text-sm text-left">
+              <p class="font-semibold text-light mb-2">Levels 1-25:</p>
+              <ul class="space-y-2">
+                <li>✓ Full education modules</li>
+                <li>✓ Advisor Agent access</li>
+                <li>✓ Community Discord</li>
+                <li>✓ Progress tracking</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="glass-card text-center border-t-4 border-primary">
+            <div class="mb-4">
+              <p class="text-sm text-primary font-semibold uppercase tracking-wide mb-2">Pro</p>
+              <p class="text-5xl font-display font-bold text-light mb-2">$15</p>
+              <p class="text-light-muted text-sm">per month</p>
+            </div>
+            <div class="space-y-3 text-light-muted text-sm text-left">
+              <p class="font-semibold text-light mb-2">Levels 26-50:</p>
+              <ul class="space-y-2">
+                <li>✓ All Free features</li>
+                <li>✓ Paper trading</li>
+                <li>✓ All 4 AI agents</li>
+                <li>✓ Advanced analytics</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="glass-card text-center border-t-4 border-secondary">
+            <div class="mb-4">
+              <p class="text-sm text-secondary font-semibold uppercase tracking-wide mb-2">Elite</p>
+              <p class="text-5xl font-display font-bold text-light mb-2">$50</p>
+              <p class="text-light-muted text-sm">per month</p>
+            </div>
+            <div class="space-y-3 text-light-muted text-sm text-left">
+              <p class="font-semibold text-light mb-2">Levels 51-100:</p>
+              <ul class="space-y-2">
+                <li>✓ All Pro features</li>
+                <li>✓ Live trading integration</li>
+                <li>✓ Real-time AI alerts</li>
+                <li>✓ Priority support</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <p class="text-center text-accent mt-8 font-semibold">
+          Beta testers get 50% off for life!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section bg-dark">
+    <div class="container-custom">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-section-title font-display font-bold gradient-text mb-6">
+          Ready to Start Your Trading Journey?
+        </h2>
+        <p class="text-xl text-light-muted mb-8">
+          Join the beta program and start with Phase 1 education in January 2026.
+        </p>
+        <a href="/beta" class="btn btn-primary text-lg px-8 py-4">
+          Join Beta Waitlist
+        </a>
+        <p class="text-light-muted mt-6 text-sm">
+          Limited to first 500 signups • Beta Launch: January 2026
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <Footer slot="footer" />
+</Layout>

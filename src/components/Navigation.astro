@@ -6,10 +6,11 @@ const currentPath = Astro.url.pathname;
 
 const navItems = [
   { name: "Home", href: "/", current: currentPath === "/" },
-  { name: "Features", href: "/#features", current: false },
-  { name: "Beta", href: "/beta", current: currentPath === "/beta" },
+  { name: "About", href: "/about", current: currentPath === "/about" },
+  { name: "Agents", href: "/agents", current: currentPath === "/agents" },
+  { name: "How It Works", href: "/how-it-works", current: currentPath === "/how-it-works" },
+  { name: "Roadmap", href: "/roadmap", current: currentPath === "/roadmap" },
   { name: "Blog", href: "/blog", current: currentPath.startsWith("/blog") },
-  { name: "Contact", href: "/contact", current: currentPath === "/contact" },
 ];
 ---
 
@@ -30,7 +31,7 @@ const navItems = [
           loading="eager"
         />
         <span
-          class="font-cyber font-bold text-xl brass-text group-hover:text-electric transition-colors duration-300"
+          class="font-display font-bold text-xl gradient-text transition-transform duration-300"
           >LocalAI Finance</span
         >
       </a>
@@ -42,7 +43,7 @@ const navItems = [
           navItems.map((item) => (
             <a
               href={item.href}
-              class={`px-3 py-2 rounded-md text-sm font-medium font-mono transition-all duration-300 hover:text-electric focus:outline-none focus:ring-2 focus:ring-electric focus:ring-offset-2 focus:ring-offset-void ${item.current ? "text-electric bg-electric/10 shadow-neon-blue" : "text-parchment/80 hover:bg-mahogany/30"}`}
+              class={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-dark ${item.current ? "text-primary bg-primary/10 shadow-glow" : "text-light hover:bg-dark-card"}`}
               aria-current={item.current ? "page" : undefined}
             >
               {item.name}
@@ -60,7 +61,7 @@ const navItems = [
       <button
         type="button"
         id="mobile-menu-button"
-        class="inline-flex items-center justify-center p-2 rounded-md text-parchment/80 hover:text-electric hover:bg-mahogany/30 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-electric transition-colors duration-300"
+        class="inline-flex items-center justify-center p-2 rounded-md text-light hover:text-primary hover:bg-dark-card focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary transition-colors duration-300"
         aria-controls="mobile-menu"
         aria-expanded="false"
         aria-label="Toggle navigation menu"
@@ -103,7 +104,7 @@ const navItems = [
 
 <div
   id="mobile-menu"
-  class="md:hidden fixed inset-0 top-16 z-30 bg-gradient-to-b from-charcoal to-void border-t-2 border-brass/30 shadow-brass transform translate-x-full transition-transform duration-300 ease-in-out"
+  class="md:hidden fixed inset-0 top-16 z-30 bg-dark border-t-2 border-dark-border transform translate-x-full transition-transform duration-300 ease-in-out"
   style="height: calc(100vh - 4rem);"
 >
   <div class="px-2 pt-2 pb-3 space-y-1 h-full flex flex-col">
@@ -112,7 +113,7 @@ const navItems = [
         navItems.map((item) => (
           <a
             href={item.href}
-            class={`block px-3 py-3 rounded-md text-base font-medium font-mono transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-electric focus:ring-offset-2 focus:ring-offset-void ${item.current ? "text-electric bg-electric/10 shadow-neon-blue" : "text-parchment/80 hover:text-electric hover:bg-mahogany/30"}`}
+            class={`block px-3 py-3 rounded-md text-base font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-dark ${item.current ? "text-primary bg-primary/10 shadow-glow" : "text-light hover:text-primary hover:bg-dark-card"}`}
             aria-current={item.current ? "page" : undefined}
           >
             {item.name}
@@ -121,8 +122,8 @@ const navItems = [
       }
     </div>
 
-    <div class="border-t border-brass/30 pt-4 pb-6 px-3">
-      <a href="/beta" class="btn btn-primary w-full justify-center shadow-brass"
+    <div class="border-t border-dark-border pt-4 pb-6 px-3">
+      <a href="/beta" class="btn btn-primary w-full justify-center"
         >Join Beta</a
       >
     </div>

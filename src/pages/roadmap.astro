@@ -1,0 +1,351 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout
+  title="Roadmap"
+  description="LocalAI Finance development roadmap and beta timeline. Track our progress from MVP to full platform launch in 2026."
+>
+  <Navigation slot="navigation" />
+
+  <!-- Hero Section -->
+  <section class="section bg-dark relative overflow-hidden">
+    <div class="absolute inset-0 bg-grid opacity-30"></div>
+    <div class="absolute inset-0 bg-mesh"></div>
+
+    <div class="container-custom relative z-10">
+      <div class="max-w-4xl mx-auto text-center">
+        <span class="font-display text-primary text-sm tracking-widest uppercase block mb-4">
+          📅 Development Roadmap
+        </span>
+        <h1 class="text-hero font-display font-bold gradient-text mb-6">
+          From Concept to Launch
+        </h1>
+        <p class="text-xl text-light-muted mb-8">
+          We're building in public. Here's our complete roadmap from MVP to full platform with all 4 AI agents.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Current Status -->
+  <section class="section-compact bg-dark-lighter">
+    <div class="container-custom">
+      <div class="max-w-4xl mx-auto">
+        <div class="glass-card border-l-4 border-accent p-8">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-12 h-12 bg-gradient-accent rounded-full flex items-center justify-center shadow-glow-cyan">
+              <span class="text-2xl">🚀</span>
+            </div>
+            <div>
+              <h2 class="text-2xl font-display font-bold text-light">
+                Current Status: Beta Development
+              </h2>
+              <p class="text-light-muted">Last updated: October 2025</p>
+            </div>
+          </div>
+          <div class="h-2 bg-dark-card rounded-full overflow-hidden">
+            <div class="h-full bg-gradient-primary w-2/3 animate-glow-pulse"></div>
+          </div>
+          <p class="text-light mt-4">
+            <strong class="text-primary">66% Complete</strong> - Core platform infrastructure built. Now focusing on AI agent integration and beta testing.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section class="section bg-dark">
+    <div class="container-custom">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-section-title font-display font-bold gradient-text mb-12 text-center">
+          Development Timeline
+        </h2>
+
+        <div class="space-y-8">
+          <!-- Phase 1 -->
+          <div class="flex gap-6">
+            <div class="flex flex-col items-center">
+              <div class="w-12 h-12 bg-success rounded-full flex items-center justify-center shadow-glow-success flex-shrink-0">
+                <span class="text-white font-bold">✓</span>
+              </div>
+              <div class="w-0.5 bg-success/30 flex-1 mt-2"></div>
+            </div>
+            <div class="flex-1 pb-8">
+              <div class="glass-card border-l-4 border-success">
+                <div class="mb-2">
+                  <span class="inline-block px-3 py-1 bg-success/20 border border-success text-success rounded-full text-xs font-semibold font-mono mb-2">
+                    COMPLETED
+                  </span>
+                </div>
+                <h3 class="text-xl font-display font-bold text-success mb-2">
+                  Phase 1: Foundation (Jul - Sep 2025)
+                </h3>
+                <ul class="space-y-2 text-light-muted">
+                  <li class="flex items-start gap-2">
+                    <span class="text-success">✓</span>
+                    <span>Website and branding designed</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-success">✓</span>
+                    <span>Core infrastructure set up (Astro, Tailwind, Vercel)</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-success">✓</span>
+                    <span>Educational content framework created</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-success">✓</span>
+                    <span>Beta signup system implemented</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phase 2 -->
+          <div class="flex gap-6">
+            <div class="flex flex-col items-center">
+              <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center shadow-glow flex-shrink-0 animate-glow-pulse">
+                <span class="text-white font-bold">2</span>
+              </div>
+              <div class="w-0.5 bg-primary/30 flex-1 mt-2"></div>
+            </div>
+            <div class="flex-1 pb-8">
+              <div class="glass-card border-l-4 border-primary">
+                <div class="mb-2">
+                  <span class="inline-block px-3 py-1 bg-primary/20 border border-primary text-primary rounded-full text-xs font-semibold font-mono mb-2">
+                    IN PROGRESS
+                  </span>
+                </div>
+                <h3 class="text-xl font-display font-bold text-primary mb-2">
+                  Phase 2: AI Agent Development (Oct - Dec 2025)
+                </h3>
+                <ul class="space-y-2 text-light-muted">
+                  <li class="flex items-start gap-2">
+                    <span class="text-success">✓</span>
+                    <span>Advisor Agent MVP (market analysis)</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-primary">○</span>
+                    <span>Backtest Agent integration</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-primary">○</span>
+                    <span>Pattern Agent development</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-primary">○</span>
+                    <span>Risk Agent implementation</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-primary">○</span>
+                    <span>Dashboard mockups and prototypes</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phase 3 -->
+          <div class="flex gap-6">
+            <div class="flex flex-col items-center">
+              <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center shadow-glow-cyan flex-shrink-0">
+                <span class="text-white font-bold">3</span>
+              </div>
+              <div class="w-0.5 bg-accent/30 flex-1 mt-2"></div>
+            </div>
+            <div class="flex-1 pb-8">
+              <div class="glass-card border-l-4 border-accent">
+                <div class="mb-2">
+                  <span class="inline-block px-3 py-1 bg-accent/20 border border-accent text-accent rounded-full text-xs font-semibold font-mono mb-2">
+                    UPCOMING
+                  </span>
+                </div>
+                <h3 class="text-xl font-display font-bold text-accent mb-2">
+                  Phase 3: Beta Launch (Jan 2026)
+                </h3>
+                <ul class="space-y-2 text-light-muted">
+                  <li class="flex items-start gap-2">
+                    <span class="text-light-muted">○</span>
+                    <span>Invite first 100 beta testers from waitlist</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-light-muted">○</span>
+                    <span>Education modules (Levels 1-25) go live</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-light-muted">○</span>
+                    <span>Paper trading with Advisor + Backtest agents</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-light-muted">○</span>
+                    <span>Discord community launches</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-light-muted">○</span>
+                    <span>Collect feedback and iterate rapidly</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phase 4 -->
+          <div class="flex gap-6">
+            <div class="flex flex-col items-center">
+              <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center shadow-glow-purple flex-shrink-0">
+                <span class="text-white font-bold">4</span>
+              </div>
+              <div class="w-0.5 bg-secondary/30 flex-1 mt-2"></div>
+            </div>
+            <div class="flex-1 pb-8">
+              <div class="glass-card border-l-4 border-secondary">
+                <div class="mb-2">
+                  <span class="inline-block px-3 py-1 bg-secondary/20 border border-secondary text-secondary rounded-full text-xs font-semibold font-mono mb-2">
+                    Q1 2026
+                  </span>
+                </div>
+                <h3 class="text-xl font-display font-bold text-secondary mb-2">
+                  Phase 4: Pattern & Risk Agents (Feb - Mar 2026)
+                </h3>
+                <ul class="space-y-2 text-light-muted">
+                  <li class="flex items-start gap-2">
+                    <span class="text-light-muted">○</span>
+                    <span>Pattern Agent full integration</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-light-muted">○</span>
+                    <span>Risk Agent portfolio management</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-light-muted">○</span>
+                    <span>All 4 agents working together</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-light-muted">○</span>
+                    <span>Advanced paper trading (Levels 26-50)</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-light-muted">○</span>
+                    <span>Mobile app beta testing</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phase 5 -->
+          <div class="flex gap-6">
+            <div class="flex flex-col items-center">
+              <div class="w-12 h-12 bg-warning rounded-full flex items-center justify-center flex-shrink-0">
+                <span class="text-white font-bold">5</span>
+              </div>
+            </div>
+            <div class="flex-1">
+              <div class="glass-card border-l-4 border-warning">
+                <div class="mb-2">
+                  <span class="inline-block px-3 py-1 bg-warning/20 border border-warning text-warning rounded-full text-xs font-semibold font-mono mb-2">
+                    Q2 2026
+                  </span>
+                </div>
+                <h3 class="text-xl font-display font-bold text-warning mb-2">
+                  Phase 5: Live Trading Integration (Apr+ 2026)
+                </h3>
+                <ul class="space-y-2 text-light-muted">
+                  <li class="flex items-start gap-2">
+                    <span class="text-light-muted">○</span>
+                    <span>Brokerage API integration (Alpaca, Interactive Brokers)</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-light-muted">○</span>
+                    <span>Live trading for certified users (Level 51+)</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-light-muted">○</span>
+                    <span>Real-time AI agent alerts and recommendations</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-light-muted">○</span>
+                    <span>Public launch and marketing campaign</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-light-muted">○</span>
+                    <span>Scale to 1,000+ active traders</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Beta Program Details -->
+  <section class="section-compact bg-dark-lighter">
+    <div class="container-custom">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-section-title font-display font-bold gradient-text mb-8 text-center">
+          Beta Program Benefits
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="glass-card">
+            <div class="text-3xl mb-3">🎁</div>
+            <h3 class="font-display font-semibold text-primary mb-2">
+              Lifetime Discount
+            </h3>
+            <p class="text-light-muted text-sm">
+              Beta testers get 50% off for life. $7.50/month (Pro) or $25/month (Elite) instead of full price.
+            </p>
+          </div>
+
+          <div class="glass-card">
+            <div class="text-3xl mb-3">🏆</div>
+            <h3 class="font-display font-semibold text-accent mb-2">
+              Founder Badge
+            </h3>
+            <p class="text-light-muted text-sm">
+              Special "Founder" status on your profile. Recognition in the community for helping build the platform.
+            </p>
+          </div>
+
+          <div class="glass-card">
+            <div class="text-3xl mb-3">📢</div>
+            <h3 class="font-display font-semibold text-success mb-2">
+              Direct Input
+            </h3>
+            <p class="text-light-muted text-sm">
+              Private Discord channel with the development team. Your feedback shapes the platform.
+            </p>
+          </div>
+
+          <div class="glass-card">
+            <div class="text-3xl mb-3">⚡</div>
+            <h3 class="font-display font-semibold text-secondary mb-2">
+              Early Access
+            </h3>
+            <p class="text-light-muted text-sm">
+              First to try new agents, features, and updates. Help us test before public release.
+            </p>
+          </div>
+        </div>
+
+        <div class="text-center mt-12">
+          <a href="/beta" class="btn btn-primary text-lg px-8 py-4">
+            Join Beta Waitlist
+          </a>
+          <p class="text-light-muted mt-4 text-sm">
+            Limited to first 500 signups • Launch: January 2026
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer slot="footer" />
+</Layout>

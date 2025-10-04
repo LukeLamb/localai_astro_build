@@ -5,20 +5,10 @@ import neurotraderIcon from "../../public/assets/neurotrader_icon.png";
 ---
 
 <footer
-  class="section-compact bg-gradient-to-b from-charcoal to-void text-parchment relative overflow-hidden"
+  class="section-compact bg-dark text-light relative overflow-hidden border-t border-dark-border"
 >
-  <!-- Telegraph divider -->
-  <div class="divider-telegraph mb-8"></div>
-
-  <!-- Victorian gear decorations -->
-  <div
-    class="absolute top-10 right-10 w-24 h-24 border-2 border-brass/10 rounded-full animate-gear opacity-30"
-  >
-  </div>
-  <div
-    class="absolute bottom-10 left-10 w-32 h-32 border-2 border-electric/10 rounded-full animate-gear opacity-20"
-  >
-  </div>
+  <!-- Grid pattern background -->
+  <div class="absolute inset-0 bg-grid opacity-20"></div>
 
   <div class="container-custom relative z-10">
     <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
@@ -36,14 +26,13 @@ import neurotraderIcon from "../../public/assets/neurotrader_icon.png";
             >LocalAI Finance</span
           >
         </div>
-        <p class="text-parchment/70 mb-4 max-w-md font-serif">
-          Professional AI Financial Assistant - Secure, private financial
-          analysis and trading insights powered by local AI technology.
+        <p class="text-light/70 mb-4 max-w-md">
+          Master trading with AI-powered agents. Learn, practice, and trade with confidence through our gamified progression system.
         </p>
         <div class="flex space-x-4">
           <a
             href="mailto:contact@localaifinance.com"
-            class="text-brass hover:text-electric transition-colors hover:drop-shadow-[0_0_6px_rgba(0,240,255,0.8)]"
+            class="text-primary hover:text-secondary transition-colors hover:shadow-glow"
             aria-label="Contact us via email"
           >
             <span class="sr-only">Email</span>
@@ -60,7 +49,7 @@ import neurotraderIcon from "../../public/assets/neurotrader_icon.png";
             href="https://discord.gg/4YKHBRyVXJ"
             target="_blank"
             rel="noopener noreferrer"
-            class="text-brass hover:text-electric transition-colors hover:drop-shadow-[0_0_6px_rgba(0,240,255,0.8)]"
+            class="text-primary hover:text-secondary transition-colors hover:shadow-glow"
             aria-label="Join our Discord community"
           >
             <span class="sr-only">Discord</span>
@@ -74,86 +63,98 @@ import neurotraderIcon from "../../public/assets/neurotrader_icon.png";
       </div>
 
       <div>
-        <h3 class="text-lg font-victorian font-semibold mb-4 brass-text">
+        <h3 class="text-lg font-display font-semibold mb-4 gradient-text">
           Product
         </h3>
         <ul class="space-y-2">
           <li>
             <a
-              href="/#features"
-              class="text-parchment/70 hover:text-electric transition-colors font-serif flex items-center group"
+              href="/about"
+              class="text-light/70 hover:text-primary transition-colors flex items-center group"
             >
               <span
-                class="text-electric mr-2 opacity-0 group-hover:opacity-100 transition-opacity"
-                >▸</span
+                class="text-primary mr-2 opacity-0 group-hover:opacity-100 transition-opacity"
+                >→</span
               >
-              Features
+              About
             </a>
           </li>
           <li>
             <a
-              href="/#how-it-works"
-              class="text-parchment/70 hover:text-electric transition-colors font-serif flex items-center group"
+              href="/agents"
+              class="text-light/70 hover:text-primary transition-colors flex items-center group"
             >
               <span
-                class="text-electric mr-2 opacity-0 group-hover:opacity-100 transition-opacity"
-                >▸</span
+                class="text-primary mr-2 opacity-0 group-hover:opacity-100 transition-opacity"
+                >→</span
+              >
+              AI Agents
+            </a>
+          </li>
+          <li>
+            <a
+              href="/how-it-works"
+              class="text-light/70 hover:text-primary transition-colors flex items-center group"
+            >
+              <span
+                class="text-primary mr-2 opacity-0 group-hover:opacity-100 transition-opacity"
+                >→</span
               >
               How It Works
             </a>
           </li>
           <li>
             <a
-              href="/#pricing"
-              class="text-parchment/70 hover:text-electric transition-colors font-serif flex items-center group"
+              href="/roadmap"
+              class="text-light/70 hover:text-primary transition-colors flex items-center group"
             >
               <span
-                class="text-electric mr-2 opacity-0 group-hover:opacity-100 transition-opacity"
-                >▸</span
+                class="text-primary mr-2 opacity-0 group-hover:opacity-100 transition-opacity"
+                >→</span
               >
-              Pricing
+              Roadmap
             </a>
           </li>
         </ul>
       </div>
 
       <div>
-        <h3 class="text-lg font-victorian font-semibold mb-4 brass-text">
+        <h3 class="text-lg font-display font-semibold mb-4 gradient-text">
           Resources
         </h3>
         <ul class="space-y-2">
           <li>
             <a
               href="/blog/"
-              class="text-parchment/70 hover:text-electric transition-colors font-serif flex items-center group"
+              class="text-light/70 hover:text-primary transition-colors flex items-center group"
             >
               <span
-                class="text-electric mr-2 opacity-0 group-hover:opacity-100 transition-opacity"
-                >▸</span
+                class="text-primary mr-2 opacity-0 group-hover:opacity-100 transition-opacity"
+                >→</span
               >
               Blog
             </a>
           </li>
           <li>
             <a
-              href="/blog/local-ai-financial-privacy.html"
-              class="text-parchment/70 hover:text-electric transition-colors font-serif flex items-center group"
+              href="/beta"
+              class="text-light/70 hover:text-primary transition-colors flex items-center group"
             >
               <span
-                class="text-electric mr-2 opacity-0 group-hover:opacity-100 transition-opacity"
-                >▸</span
+                class="text-primary mr-2 opacity-0 group-hover:opacity-100 transition-opacity"
+                >→</span
               >
-              Privacy Guide
+              Join Beta
             </a>
           </li>
           <li>
             <a
               href="mailto:support@localaifinance.com"
-              class="text-parchment/70 hover:text-electric transition-colors font-serif flex items-center group"
+              class="text-light/70 hover:text-primary transition-colors flex items-center group"
             >
               <span
-                class="text-electric mr-2 opacity-0 group-hover:opacity-100 transition-opacity"
-                >▸</span
+                class="text-primary mr-2 opacity-0 group-hover:opacity-100 transition-opacity"
+                >→</span
               >
               Support
             </a>
@@ -162,23 +163,20 @@ import neurotraderIcon from "../../public/assets/neurotrader_icon.png";
       </div>
     </div>
 
-    <!-- Telegraph divider -->
-    <div class="divider-telegraph my-8"></div>
-
-    <div class="border-t-2 border-brass/30 pt-8">
+    <div class="border-t border-dark-border pt-8 mt-8">
       <div class="flex flex-col md:flex-row justify-between items-center">
-        <p class="text-parchment/60 text-sm font-mono">
-          © 2024 LocalAI Finance. All rights reserved.
+        <p class="text-light/60 text-sm font-mono">
+          © 2025 LocalAI Finance. All rights reserved.
         </p>
         <div class="flex space-x-6 mt-4 md:mt-0">
           <a
             href="/privacy"
-            class="text-brass hover:text-electric text-sm transition-colors font-mono"
+            class="text-primary hover:text-secondary text-sm transition-colors font-mono"
             >Privacy Policy</a
           >
           <a
             href="/terms"
-            class="text-brass hover:text-electric text-sm transition-colors font-mono"
+            class="text-primary hover:text-secondary text-sm transition-colors font-mono"
             >Terms of Service</a
           >
         </div>

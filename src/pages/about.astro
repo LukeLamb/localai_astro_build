@@ -1,0 +1,281 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout
+  title="About"
+  description="Learn about LocalAI Finance - our mission to teach trading through AI-powered education and gamified progression. Meet the 4 AI agents that guide your trading journey."
+>
+  <Navigation slot="navigation" />
+
+  <!-- Hero Section -->
+  <section class="section bg-dark relative overflow-hidden">
+    <div class="absolute inset-0 bg-grid opacity-30"></div>
+    <div class="absolute inset-0 bg-mesh"></div>
+
+    <div class="container-custom relative z-10">
+      <div class="max-w-4xl mx-auto text-center">
+        <span class="font-display text-accent text-sm tracking-widest uppercase block mb-4">
+          🤖 About LocalAI Finance
+        </span>
+        <h1 class="text-hero font-display font-bold gradient-text mb-6">
+          The Only Platform That Won't Let You Lose Money Until You Prove You Can Make It
+        </h1>
+        <p class="text-xl text-light-muted mb-8">
+          We're solving the biggest problem in trading education: 95% of traders fail because they're thrown into markets without proper training, support, or risk management.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Problem Section -->
+  <section class="section-compact bg-dark-lighter">
+    <div class="container-custom">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-section-title font-display font-bold gradient-text mb-6 text-center">
+          Why We Built This
+        </h2>
+
+        <div class="space-y-6 text-light mb-12">
+          <p class="text-lg">
+            Traditional trading platforms have a dirty secret: <strong class="text-primary">they profit when you trade more, not when you succeed</strong>. That's why they use casino-style gamification with confetti, streaks, and push notifications designed to make you trade impulsively.
+          </p>
+
+          <p class="text-lg">
+            Educational courses take the opposite approach - hundreds of hours of theory with zero practice. You learn concepts but never develop the muscle memory and real-time decision-making skills that separate profitable traders from the 95% who fail.
+          </p>
+
+          <p class="text-lg">
+            <strong class="text-accent">We needed something different.</strong> A platform that:
+          </p>
+
+          <ul class="space-y-3 text-lg list-none ml-6">
+            <li class="flex items-start gap-3">
+              <span class="text-success text-xl">✓</span>
+              <span>Forces you to learn fundamentals before risking capital</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-success text-xl">✓</span>
+              <span>Provides AI-powered guidance at every step</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-success text-xl">✓</span>
+              <span>Makes you prove competency through paper trading</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-success text-xl">✓</span>
+              <span>Only allows live trading when you've earned it</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The 4 AI Agents Section -->
+  <section class="section bg-dark">
+    <div class="container-custom">
+      <div class="text-center mb-12">
+        <span class="font-display text-primary text-sm tracking-widest uppercase block mb-2">
+          🤖 Your AI Trading Team
+        </span>
+        <h2 class="text-section-title font-display font-bold gradient-text mb-4">
+          Meet the 4 AI Agents
+        </h2>
+        <p class="text-xl text-light-muted max-w-2xl mx-auto">
+          Each agent specializes in a different aspect of trading. Together, they provide professional-grade analysis and guidance.
+        </p>
+      </div>
+
+      <div class="max-w-5xl mx-auto space-y-8">
+        <!-- Advisor Agent -->
+        <div class="glass-card border-l-4 border-primary">
+          <div class="flex items-start gap-6">
+            <div class="w-16 h-16 bg-gradient-primary rounded-xl flex items-center justify-center flex-shrink-0 shadow-glow">
+              <span class="text-3xl">🧠</span>
+            </div>
+            <div class="flex-1">
+              <h3 class="text-2xl font-display font-bold text-primary mb-2">
+                1. Advisor Agent
+              </h3>
+              <p class="text-light-muted mb-4">
+                <strong class="text-light">What it does:</strong> Analyzes current market conditions, identifies trends, and provides trade recommendations with clear reasoning.
+              </p>
+              <p class="text-light-muted mb-4">
+                <strong class="text-light">When you get it:</strong> Level 1 - Available from day one to guide your learning.
+              </p>
+              <p class="text-light-muted">
+                <strong class="text-light">Example output:</strong> "Strong bullish signal on AAPL. RSI at 42 (oversold), breaking above 50-day MA with increasing volume. Consider entry at $175.20 with stop loss at $172.50."
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backtest Agent -->
+        <div class="glass-card border-l-4 border-accent">
+          <div class="flex items-start gap-6">
+            <div class="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center flex-shrink-0 shadow-glow-cyan">
+              <span class="text-3xl">📊</span>
+            </div>
+            <div class="flex-1">
+              <h3 class="text-2xl font-display font-bold text-accent mb-2">
+                2. Backtest Agent
+              </h3>
+              <p class="text-light-muted mb-4">
+                <strong class="text-light">What it does:</strong> Tests your trading strategies against years of historical data to validate performance before you risk real money.
+              </p>
+              <p class="text-light-muted mb-4">
+                <strong class="text-light">When you get it:</strong> Level 15 - Unlocked after proving basic market knowledge.
+              </p>
+              <p class="text-light-muted">
+                <strong class="text-light">Example output:</strong> "Your strategy returned 23.4% in 2023 with max drawdown of 8.2%. Win rate: 58%. Best performing during Q1 and Q4. Struggled in choppy summer markets."
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pattern Agent -->
+        <div class="glass-card border-l-4 border-success">
+          <div class="flex items-start gap-6">
+            <div class="w-16 h-16 bg-gradient-success rounded-xl flex items-center justify-center flex-shrink-0 shadow-glow-success">
+              <span class="text-3xl">🎯</span>
+            </div>
+            <div class="flex-1">
+              <h3 class="text-2xl font-display font-bold text-success mb-2">
+                3. Pattern Agent
+              </h3>
+              <p class="text-light-muted mb-4">
+                <strong class="text-light">What it does:</strong> Scans charts 24/7 to recognize technical patterns like double bottoms, head and shoulders, flags, and more.
+              </p>
+              <p class="text-light-muted mb-4">
+                <strong class="text-light">When you get it:</strong> Level 20 - Unlocked after demonstrating pattern recognition skills.
+              </p>
+              <p class="text-light-muted">
+                <strong class="text-light">Example output:</strong> "Cup and handle forming on TSLA 4H chart. Handle consolidating near $245. Breakout above $248 targets $265 (10% potential). Volume confirms pattern."
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Risk Agent -->
+        <div class="glass-card border-l-4 border-secondary">
+          <div class="flex items-start gap-6">
+            <div class="w-16 h-16 bg-gradient-to-br from-secondary to-primary rounded-xl flex items-center justify-center flex-shrink-0 shadow-glow-purple">
+              <span class="text-3xl">🛡️</span>
+            </div>
+            <div class="flex-1">
+              <h3 class="text-2xl font-display font-bold text-secondary mb-2">
+                4. Risk Agent
+              </h3>
+              <p class="text-light-muted mb-4">
+                <strong class="text-light">What it does:</strong> Monitors your portfolio in real-time, calculates position sizes, sets stop losses, and sends alerts before you overtrade.
+              </p>
+              <p class="text-light-muted mb-4">
+                <strong class="text-light">When you get it:</strong> Level 25 - Unlocked when you're ready for paper trading.
+              </p>
+              <p class="text-light-muted">
+                <strong class="text-light">Example output:</strong> "⚠️ Portfolio risk at 85% of limit. Reduce NVDA position to 3% or skip this trade. Current exposure: Tech 45%, Energy 20%, Finance 15%."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How They Work Together -->
+  <section class="section-compact bg-dark-lighter">
+    <div class="container-custom">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-section-title font-display font-bold gradient-text mb-6 text-center">
+          How the Agents Work Together
+        </h2>
+
+        <div class="glass-card p-8">
+          <div class="space-y-6 text-light">
+            <p class="text-lg">
+              Imagine you're considering a trade on Apple (AAPL):
+            </p>
+
+            <div class="space-y-4 ml-6">
+              <div class="flex gap-4">
+                <span class="text-primary font-display font-bold">1.</span>
+                <p><strong class="text-primary">Advisor Agent</strong> identifies AAPL is showing bullish momentum based on recent earnings and technical indicators.</p>
+              </div>
+
+              <div class="flex gap-4">
+                <span class="text-accent font-display font-bold">2.</span>
+                <p><strong class="text-accent">Backtest Agent</strong> runs your strategy against AAPL's historical data and shows it would have returned 18% over the past year with this setup.</p>
+              </div>
+
+              <div class="flex gap-4">
+                <span class="text-success font-display font-bold">3.</span>
+                <p><strong class="text-success">Pattern Agent</strong> confirms a bullish flag pattern forming on the 1-hour chart with a clear breakout level.</p>
+              </div>
+
+              <div class="flex gap-4">
+                <span class="text-secondary font-display font-bold">4.</span>
+                <p><strong class="text-secondary">Risk Agent</strong> calculates you should risk no more than 2% of your portfolio ($400 if you have $20,000), suggests position size of 22 shares at $175, and sets stop loss at $167.</p>
+              </div>
+            </div>
+
+            <p class="text-lg text-center mt-8 text-accent">
+              <strong>You make the final decision, but you're not alone.</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="section bg-dark">
+    <div class="container-custom">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-section-title font-display font-bold gradient-text mb-6">
+          Our Mission
+        </h2>
+
+        <p class="text-xl text-light mb-8">
+          To create the <strong class="text-primary">most ethical, effective, and educational</strong> trading platform in the world. One that respects your intelligence, values your time, and actually wants you to succeed.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+          <div class="glass-card text-center">
+            <div class="text-4xl mb-3">🎓</div>
+            <h3 class="font-display font-semibold text-primary mb-2">Education First</h3>
+            <p class="text-light-muted text-sm">
+              Mandatory learning before trading. No shortcuts.
+            </p>
+          </div>
+
+          <div class="glass-card text-center">
+            <div class="text-4xl mb-3">🤖</div>
+            <h3 class="font-display font-semibold text-accent mb-2">AI-Powered</h3>
+            <p class="text-light-muted text-sm">
+              Professional-grade analysis accessible to everyone.
+            </p>
+          </div>
+
+          <div class="glass-card text-center">
+            <div class="text-4xl mb-3">⚖️</div>
+            <h3 class="font-display font-semibold text-success mb-2">Ethical Design</h3>
+            <p class="text-light-muted text-sm">
+              No dark patterns, no gambling mechanics, just results.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-12">
+          <a href="/beta" class="btn btn-primary text-lg px-8 py-4">
+            Join the Beta Waitlist
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer slot="footer" />
+</Layout>

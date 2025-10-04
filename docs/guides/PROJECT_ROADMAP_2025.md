@@ -181,7 +181,7 @@ Beta Launch: January 2026
 - Emotional trading
 - No guidance
 
-**The Solution: AI-Powered Progression**
+### The Solution: AI-Powered Progression
 
 - **Levels 1-25:** Learn fundamentals with Advisor Agent
 - **Levels 26-50:** Paper trade with all 4 agents

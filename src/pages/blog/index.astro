@@ -21,37 +21,36 @@ const posts = allPosts
 
   <main>
     <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-mahogany via-void to-charcoal py-20 relative overflow-hidden">
-      <!-- Circuit board pattern background -->
-      <div class="absolute inset-0 bg-circuit opacity-20"></div>
-      
+    <section class="bg-dark py-20 relative overflow-hidden">
+      <!-- Grid pattern background -->
+      <div class="absolute inset-0 bg-grid opacity-20"></div>
+
       <div class="container mx-auto px-4 relative z-10">
         <div class="max-w-4xl mx-auto text-center">
-          <!-- Victorian accent -->
           <div class="inline-block mb-4">
-            <span class="font-victorian text-brass text-sm tracking-widest uppercase">
-              ⚡ Knowledge Archives ⚡
+            <span class="font-display text-primary text-sm tracking-widest uppercase">
+              Knowledge Hub
             </span>
           </div>
-          
-          <h1 class="text-4xl md:text-5xl font-cyber font-bold gradient-text mb-6 text-shadow-brass">
-            📚 Level Up Your Knowledge
+
+          <h1 class="text-4xl md:text-5xl font-display font-bold gradient-text mb-6">
+            Trading Education Blog
           </h1>
-          <p class="text-xl text-parchment/80 mb-8 max-w-2xl mx-auto font-serif">
-            Trading education for gamers. Learn the skills, avoid the scams, and build wealth the right way.
+          <p class="text-xl text-light-muted mb-8 max-w-2xl mx-auto">
+            Learn the skills, avoid the scams, and build wealth the right way with AI-powered guidance.
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/beta"
-              class="btn btn-primary text-lg px-6 py-3 shadow-brass hover:shadow-neon-blue"
+              class="btn btn-primary text-lg px-6 py-3"
             >
               Join Beta Waitlist
             </a>
             <a
-              href="https://discord.gg/localaifinance"
-              class="btn btn-secondary text-lg px-6 py-3"
+              href="/agents"
+              class="btn btn-outline text-lg px-6 py-3"
             >
-              Join Discord
+              Explore AI Agents
             </a>
           </div>
         </div>
@@ -59,26 +58,23 @@ const posts = allPosts
     </section>
 
     <!-- Blog Posts Grid -->
-    <section class="py-16 bg-gradient-to-b from-charcoal to-void">
-      <!-- Telegraph divider -->
-      <div class="divider-telegraph mb-12 container mx-auto"></div>
-      
+    <section class="py-16 bg-dark-card">
       <div class="container mx-auto px-4">
         <div class="max-w-6xl mx-auto">
           <div class="text-center mb-12">
-            <span class="font-victorian text-brass text-sm tracking-widest uppercase block mb-2">
-              ⚙️ Published Works ⚙️
+            <span class="font-display text-primary text-sm tracking-widest uppercase block mb-2">
+              Latest Articles
             </span>
-            <h2 class="text-3xl font-cyber font-bold gradient-text mb-4">
-              📖 All Posts
+            <h2 class="text-3xl font-display font-bold gradient-text mb-4">
+              All Posts
             </h2>
-            <div class="w-20 h-1 bg-gradient-to-r from-brass via-electric to-brass mx-auto shadow-brass"></div>
+            <div class="w-20 h-1 bg-gradient-to-r from-primary via-secondary to-accent mx-auto"></div>
           </div>
 
           <!-- Posts Grid -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             {posts.map((post) => (
-              <article class="card border-2 border-brass/30 overflow-hidden hover:border-electric hover:shadow-neon-blue transition-all duration-300 group">
+              <article class="glass-card overflow-hidden hover:border-primary transition-all duration-300 group">
                 <!-- Post Image -->
                 {post.frontmatter.image && (
                   <a href={post.url} class="block relative overflow-hidden">
@@ -87,49 +83,49 @@ const posts = allPosts
                       alt={post.frontmatter.title}
                       class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
-                    <div class="absolute inset-0 bg-gradient-to-t from-void/80 to-transparent opacity-60"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-60"></div>
                   </a>
                 )}
                 
                 <!-- Post Content -->
                 <div class="p-6">
-                  <div class="flex items-center text-sm text-brass/80 mb-3 font-mono">
+                  <div class="flex items-center text-sm text-light-muted mb-3 font-mono">
                     <time datetime={post.frontmatter.pubDate}>
-                      {new Date(post.frontmatter.pubDate).toLocaleDateString('en-US', { 
-                        year: 'numeric', 
-                        month: 'long', 
-                        day: 'numeric' 
+                      {new Date(post.frontmatter.pubDate).toLocaleDateString('en-US', {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric'
                       })}
                     </time>
-                    <span class="mx-2 text-electric">•</span>
+                    <span class="mx-2 text-primary">•</span>
                     <span>{post.frontmatter.author || 'Luke Lamb'}</span>
                   </div>
-                  
-                  <h3 class="text-xl font-bold brass-text mb-3 font-victorian">
-                    <a 
-                      href={post.url} 
-                      class="hover:text-electric transition-colors"
+
+                  <h3 class="text-xl font-bold text-light mb-3 font-display">
+                    <a
+                      href={post.url}
+                      class="hover:text-primary transition-colors"
                     >
                       {post.frontmatter.title}
                     </a>
                   </h3>
-                  
-                  <p class="text-parchment/70 mb-4 leading-relaxed line-clamp-3 font-serif">
+
+                  <p class="text-light-muted mb-4 leading-relaxed line-clamp-3">
                     {post.frontmatter.description}
                   </p>
-                  
+
                   <!-- Tags -->
                   <div class="flex flex-wrap gap-2 mb-4">
                     {post.frontmatter.tags?.slice(0, 3).map((tag: string) => (
-                      <span class="text-xs bg-brass/20 border border-brass/30 text-brass px-2 py-1 rounded font-mono">
+                      <span class="text-xs bg-primary/20 border border-primary/30 text-primary px-2 py-1 rounded font-mono">
                         {tag}
                       </span>
                     ))}
                   </div>
-                  
-                  <a 
+
+                  <a
                     href={post.url}
-                    class="inline-flex items-center text-electric hover:text-neon-blue font-medium transition-colors group/link"
+                    class="inline-flex items-center text-primary hover:text-secondary font-medium transition-colors group/link"
                   >
                     <span class="font-mono">Read More</span>
                     <svg class="w-4 h-4 ml-2 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -147,24 +143,19 @@ const posts = allPosts
     <!-- Newsletter Subscription -->
     <section
       id="subscribe"
-      class="py-16 bg-gradient-to-br from-void via-mahogany to-charcoal relative overflow-hidden"
+      class="py-16 bg-dark relative overflow-hidden"
     >
-      <!-- Telegraph divider -->
-      <div class="divider-telegraph mb-12 container mx-auto"></div>
-      
-      <!-- Victorian gear accents -->
-      <div class="absolute top-10 left-10 w-32 h-32 border-2 border-brass/20 rounded-full animate-gear"></div>
-      <div class="absolute bottom-10 right-10 w-24 h-24 border-2 border-electric/20 rounded-full animate-gear"></div>
-      
+      <div class="absolute inset-0 bg-grid opacity-20"></div>
+
       <div class="container mx-auto px-4 relative z-10">
         <div class="max-w-2xl mx-auto">
-          <div class="victorian-frame bg-mahogany/30 text-center">
-            <span class="font-victorian text-brass text-sm tracking-widest uppercase block mb-2">
-              ⚡ Telegraph Network ⚡
+          <div class="glass-card text-center">
+            <span class="font-display text-primary text-sm tracking-widest uppercase block mb-2">
+              Newsletter
             </span>
-            <h2 class="text-3xl font-cyber font-bold gradient-text mb-4">🔔 Stay Updated</h2>
-            <p class="text-parchment/80 mb-8 font-serif">
-              Get notified when we publish new posts. Trading education for gamers, delivered to your inbox.
+            <h2 class="text-3xl font-display font-bold gradient-text mb-4">Stay Updated</h2>
+            <p class="text-light-muted mb-8">
+              Get notified when we publish new posts. Trading education delivered to your inbox.
             </p>
 
           <!-- Newsletter Form -->
@@ -206,17 +197,17 @@ const posts = allPosts
               name="email"
               required
               placeholder="Enter your email address"
-              class="flex-1 px-4 py-3 rounded-lg border-2 border-brass/30 bg-charcoal text-parchment placeholder-parchment/50 focus:ring-2 focus:ring-electric focus:border-electric font-serif"
+              class="flex-1 px-4 py-3 rounded-lg border border-dark-border bg-dark text-light placeholder-light/50 focus:ring-2 focus:ring-primary focus:border-primary"
             />
             <button
               type="submit"
-              class="btn btn-primary px-6 py-3 shadow-brass hover:shadow-neon-blue font-semibold"
+              class="btn btn-primary px-6 py-3 font-semibold"
             >
               Subscribe
             </button>
           </form>
 
-          <p class="text-parchment/60 text-sm mt-4 font-mono">
+          <p class="text-light/60 text-sm mt-4 font-mono">
             No spam, unsubscribe at any time. Your privacy is our priority.
           </p>
           </div>

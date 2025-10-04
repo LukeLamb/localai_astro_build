@@ -13,89 +13,83 @@ import BetaSignupForm from "../components/BetaSignupForm.astro";
 
   <!-- Hero Section -->
   <section
-    class="section bg-gradient-to-br from-mahogany via-void to-charcoal relative overflow-hidden"
+    class="section bg-dark relative overflow-hidden"
   >
-    <!-- Circuit board pattern -->
-    <div class="absolute inset-0 bg-circuit opacity-20"></div>
+    <!-- Grid pattern background -->
+    <div class="absolute inset-0 bg-grid opacity-20"></div>
 
     <div class="container-custom relative z-10">
       <div class="text-center max-w-4xl mx-auto">
         <div
-          class="inline-block px-4 py-2 bg-electric/20 border border-electric text-electric rounded-full text-sm font-semibold mb-6 animate-neon-pulse font-mono"
+          class="inline-block px-4 py-2 bg-primary/20 border border-primary text-primary rounded-full text-sm font-semibold mb-6 font-mono"
         >
           🚀 Beta Program • Launching January 2026
         </div>
 
         <h1
-          class="text-hero font-cyber font-bold gradient-text mb-6 text-shadow-brass"
+          class="text-hero font-display font-bold gradient-text mb-6"
         >
           Join the Beta Program
         </h1>
 
-        <p class="text-xl md:text-2xl text-parchment/80 mb-8 font-serif">
+        <p class="text-xl md:text-2xl text-light-muted mb-8">
           Be among the first to experience the platform. Shape the future with
           your feedback.
-          <strong>Priority access guaranteed.</strong>
+          <strong class="text-light">Priority access guaranteed.</strong>
         </p>
 
         <!-- Progress Timeline -->
         <div class="flex items-center justify-center gap-4 mb-8">
           <div class="flex items-center gap-2">
             <div
-              class="w-8 h-8 bg-matrix border-2 border-matrix rounded-full flex items-center justify-center text-void font-bold shadow-neon-green"
+              class="w-8 h-8 bg-success border-2 border-success rounded-full flex items-center justify-center text-dark font-bold"
             >
               ✓
             </div>
-            <span class="text-sm font-medium text-parchment/80 font-mono"
+            <span class="text-sm font-medium text-light font-mono"
               >Research</span
             >
           </div>
           <div
-            class="w-16 h-1 bg-gradient-to-r from-matrix to-electric border border-brass/30"
+            class="w-16 h-1 bg-gradient-to-r from-success to-primary"
           >
           </div>
           <div class="flex items-center gap-2">
             <div
-              class="w-8 h-8 bg-electric border-2 border-electric rounded-full flex items-center justify-center text-void font-bold animate-neon-pulse shadow-neon-blue"
+              class="w-8 h-8 bg-primary border-2 border-primary rounded-full flex items-center justify-center text-white font-bold"
             >
               •
             </div>
-            <span class="text-sm font-medium text-parchment font-mono"
+            <span class="text-sm font-medium text-light font-mono"
               >Building</span
             >
           </div>
-          <div class="w-16 h-1 bg-charcoal border border-brass/30"></div>
+          <div class="w-16 h-1 bg-dark-border"></div>
           <div class="flex items-center gap-2">
             <div
-              class="w-8 h-8 bg-charcoal border-2 border-brass/30 rounded-full flex items-center justify-center text-parchment/50 font-bold"
+              class="w-8 h-8 bg-dark-card border-2 border-dark-border rounded-full flex items-center justify-center text-light-muted font-bold"
             >
               3
             </div>
-            <span class="text-sm font-medium text-parchment/50 font-mono"
+            <span class="text-sm font-medium text-light-muted font-mono"
               >Beta Launch</span
             >
           </div>
         </div>
 
         <!-- Key Stats -->
-        <div class="grid grid-cols-3 gap-6 max-w-2xl mx-auto">
+        <div class="grid grid-cols-2 gap-6 max-w-2xl mx-auto">
           <div
-            class="card border-2 border-brass/30 hover:border-electric hover:shadow-neon-blue transition-all"
-          >
-            <div class="text-3xl font-bold gradient-text mb-1">752+</div>
-            <div class="text-sm text-parchment/70 font-serif">Beta Signups</div>
-          </div>
-          <div
-            class="card border-2 border-brass/30 hover:border-electric hover:shadow-neon-blue transition-all"
+            class="glass-card hover:border-primary transition-all"
           >
             <div class="text-3xl font-bold gradient-text mb-1">Jan 2026</div>
-            <div class="text-sm text-parchment/70 font-serif">Launch Date</div>
+            <div class="text-sm text-light-muted">Launch Date</div>
           </div>
           <div
-            class="card border-2 border-brass/30 hover:border-electric hover:shadow-neon-blue transition-all"
+            class="glass-card hover:border-primary transition-all"
           >
             <div class="text-3xl font-bold gradient-text mb-1">3 Tiers</div>
-            <div class="text-sm text-parchment/70 font-serif">
+            <div class="text-sm text-light-muted">
               Free to $50/mo
             </div>
           </div>
@@ -105,23 +99,20 @@ import BetaSignupForm from "../components/BetaSignupForm.astro";
   </section>
 
   <!-- What You Get Section -->
-  <section class="section bg-gradient-to-b from-charcoal to-void">
-    <!-- Telegraph divider -->
-    <div class="divider-telegraph mb-12"></div>
-
+  <section class="section bg-dark-card">
     <div class="container-custom">
       <div class="text-center mb-12">
         <span
-          class="font-victorian text-brass text-sm tracking-widest uppercase block mb-2"
+          class="font-display text-primary text-sm tracking-widest uppercase block mb-2"
         >
-          ⚙️ Beta Privileges ⚙️
+          Beta Privileges
         </span>
         <h2
-          class="text-section-title font-cyber font-bold gradient-text mb-4"
+          class="text-section-title font-display font-bold gradient-text mb-4"
         >
           What Beta Testers Get
         </h2>
-        <p class="text-xl text-parchment/80 max-w-2xl mx-auto font-serif">
+        <p class="text-xl text-light-muted max-w-2xl mx-auto">
           More than early access. You'll shape the platform with direct
           influence.
         </p>
@@ -130,77 +121,65 @@ import BetaSignupForm from "../components/BetaSignupForm.astro";
       <div
         class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto"
       >
-        <div
-          class="card border-2 border-electric/30 hover:border-electric hover:shadow-neon-blue transition-all"
-        >
+        <div class="glass-card hover:border-primary transition-all">
           <div class="text-4xl mb-4">🎯</div>
-          <h3 class="text-xl font-bold brass-text mb-2 font-victorian">
+          <h3 class="text-xl font-bold text-light mb-2 font-display">
             Early Access
           </h3>
-          <p class="text-parchment/70 font-serif">
+          <p class="text-light-muted">
             Be the first to try new features. Get months ahead of the public
             launch.
           </p>
         </div>
 
-        <div
-          class="card border-2 border-neon-pink/30 hover:border-neon-pink hover:shadow-neon-pink transition-all"
-        >
+        <div class="glass-card hover:border-secondary transition-all">
           <div class="text-4xl mb-4">🗣️</div>
-          <h3 class="text-xl font-bold brass-text mb-2 font-victorian">
+          <h3 class="text-xl font-bold text-light mb-2 font-display">
             Direct Influence
           </h3>
-          <p class="text-parchment/70 font-serif">
+          <p class="text-light-muted">
             Your feedback shapes development. Weekly calls with the founding
             team.
           </p>
         </div>
 
-        <div
-          class="card border-2 border-neon-purple/30 hover:border-neon-purple hover:shadow-neon-purple transition-all"
-        >
+        <div class="glass-card hover:border-accent transition-all">
           <div class="text-4xl mb-4">🎁</div>
-          <h3 class="text-xl font-bold brass-text mb-2 font-victorian">
+          <h3 class="text-xl font-bold text-light mb-2 font-display">
             Exclusive Perks
           </h3>
-          <p class="text-parchment/70 font-serif">
+          <p class="text-light-muted">
             Lifetime discounts, special badges, founding member status.
           </p>
         </div>
 
-        <div
-          class="card border-2 border-matrix/30 hover:border-matrix hover:shadow-neon-green transition-all"
-        >
+        <div class="glass-card hover:border-success transition-all">
           <div class="text-4xl mb-4">👥</div>
-          <h3 class="text-xl font-bold brass-text mb-2 font-victorian">
+          <h3 class="text-xl font-bold text-light mb-2 font-display">
             Private Community
           </h3>
-          <p class="text-parchment/70 font-serif">
+          <p class="text-light-muted">
             Join our exclusive Discord. Network with other beta testers.
           </p>
         </div>
 
-        <div
-          class="card border-2 border-brass/30 hover:border-brass hover:shadow-brass transition-all"
-        >
+        <div class="glass-card hover:border-primary transition-all">
           <div class="text-4xl mb-4">📚</div>
-          <h3 class="text-xl font-bold brass-text mb-2 font-victorian">
+          <h3 class="text-xl font-bold text-light mb-2 font-display">
             Free Education
           </h3>
-          <p class="text-parchment/70 font-serif">
+          <p class="text-light-muted">
             Access all educational content free during beta. Keep learning
             forever.
           </p>
         </div>
 
-        <div
-          class="card border-2 border-copper/30 hover:border-copper hover:shadow-brass transition-all"
-        >
+        <div class="glass-card hover:border-warning transition-all">
           <div class="text-4xl mb-4">🏆</div>
-          <h3 class="text-xl font-bold brass-text mb-2 font-victorian">
+          <h3 class="text-xl font-bold text-light mb-2 font-display">
             Founder Status
           </h3>
-          <p class="text-parchment/70 font-serif">
+          <p class="text-light-muted">
             Permanent "Founding Member" badge. Recognition in our community.
           </p>
         </div>
@@ -209,25 +188,22 @@ import BetaSignupForm from "../components/BetaSignupForm.astro";
   </section>
 
   <!-- Pricing Tiers Section -->
-  <section class="section bg-gradient-to-b from-void to-mahogany relative">
-    <!-- Telegraph divider -->
-    <div class="divider-telegraph mb-12"></div>
-
+  <section class="section bg-dark relative">
     <div class="container-custom">
       <div class="text-center mb-12">
         <span
-          class="font-victorian text-brass text-sm tracking-widest uppercase block mb-2"
+          class="font-display text-primary text-sm tracking-widest uppercase block mb-2"
         >
-          🎫 Access Tiers 🎫
+          Access Tiers
         </span>
         <h2
-          class="text-section-title font-cyber font-bold gradient-text mb-4"
+          class="text-section-title font-display font-bold gradient-text mb-4"
         >
           Choose Your Beta Tier
         </h2>
-        <p class="text-xl text-parchment/80 max-w-2xl mx-auto font-serif">
+        <p class="text-xl text-light-muted max-w-2xl mx-auto">
           Start free, upgrade anytime. All beta testers get <strong
-            class="text-electric">50% off</strong
+            class="text-primary">50% off</strong
           > for life.
         </p>
       </div>
@@ -235,37 +211,33 @@ import BetaSignupForm from "../components/BetaSignupForm.astro";
       <div
         class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12"
       >
-        <!-- Bronze Tier -->
-        <div
-          class="border-2 border-gray-300 rounded-2xl p-8 bg-white hover:shadow-xl transition-all duration-200"
-        >
-          <div class="text-center">
-            <div class="text-5xl mb-3">🥉</div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-2">Bronze</h3>
-            <div class="text-4xl font-bold text-gray-900 mb-2">Free</div>
-            <p class="text-sm text-gray-600 mb-6">Forever free tier</p>
-          </div>
+        <!-- Free Tier -->
+        <div class="glass-card text-center">
+          <div class="text-5xl mb-3">🥉</div>
+          <h3 class="text-2xl font-bold text-light mb-2 font-display">Free</h3>
+          <div class="text-4xl font-bold gradient-text mb-2">$0</div>
+          <p class="text-sm text-light-muted mb-6">Forever free tier</p>
 
-          <div class="space-y-3 mb-8">
+          <div class="space-y-3 mb-8 text-left">
             <div class="flex items-start gap-2">
-              <span class="text-green-600 flex-shrink-0 mt-1">✓</span>
-              <span class="text-gray-700">Paper trading (Levels 1-10)</span>
+              <span class="text-success flex-shrink-0 mt-1">✓</span>
+              <span class="text-light-muted">Education (Levels 1-25)</span>
             </div>
             <div class="flex items-start gap-2">
-              <span class="text-green-600 flex-shrink-0 mt-1">✓</span>
-              <span class="text-gray-700">Basic educational content</span>
+              <span class="text-success flex-shrink-0 mt-1">✓</span>
+              <span class="text-light-muted">Advisor Agent access</span>
             </div>
             <div class="flex items-start gap-2">
-              <span class="text-green-600 flex-shrink-0 mt-1">✓</span>
-              <span class="text-gray-700">Community Discord access</span>
+              <span class="text-success flex-shrink-0 mt-1">✓</span>
+              <span class="text-light-muted">Community Discord</span>
             </div>
             <div class="flex items-start gap-2">
-              <span class="text-green-600 flex-shrink-0 mt-1">✓</span>
-              <span class="text-gray-700">Progress tracking dashboard</span>
+              <span class="text-success flex-shrink-0 mt-1">✓</span>
+              <span class="text-light-muted">Progress tracking</span>
             </div>
             <div class="flex items-start gap-2">
-              <span class="text-green-600 flex-shrink-0 mt-1">✓</span>
-              <span class="text-gray-700">Weekly market insights</span>
+              <span class="text-success flex-shrink-0 mt-1">✓</span>
+              <span class="text-light-muted">Weekly insights</span>
             </div>
           </div>
 
@@ -274,64 +246,60 @@ import BetaSignupForm from "../components/BetaSignupForm.astro";
           </a>
         </div>
 
-        <!-- Silver Tier -->
+        <!-- Pro Tier -->
         <div
-          class="border-4 border-blue-500 rounded-2xl p-8 bg-gradient-to-b from-blue-50 to-white relative hover:shadow-2xl transition-all duration-200 transform hover:scale-105"
+          class="glass-card text-center border-primary shadow-glow relative"
         >
           <div
-            class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-blue-500 text-white px-6 py-2 rounded-full text-sm font-bold shadow-lg"
+            class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white px-6 py-2 rounded-full text-sm font-bold"
           >
             MOST POPULAR
           </div>
 
           <div class="text-center mt-2">
             <div class="text-5xl mb-3">🥈</div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-2">Silver</h3>
-            <div class="text-4xl font-bold text-gray-900 mb-1">
-              $15<span class="text-xl text-gray-600">/mo</span>
+            <h3 class="text-2xl font-bold text-primary mb-2 font-display">Pro</h3>
+            <div class="text-4xl font-bold gradient-text mb-1">
+              $15<span class="text-xl text-light-muted">/mo</span>
             </div>
-            <p class="text-sm text-gray-600 mb-2">$12/mo if paid annually</p>
-            <p class="text-xs text-blue-600 font-semibold mb-6">
+            <p class="text-sm text-light-muted mb-2">$12/mo billed annually</p>
+            <p class="text-xs text-primary font-semibold mb-6">
               🎉 Beta discount: 50% off for life
             </p>
           </div>
 
-          <div class="space-y-3 mb-8">
+          <div class="space-y-3 mb-8 text-left">
             <div class="flex items-start gap-2">
-              <span class="text-blue-600 flex-shrink-0 mt-1 font-bold">✓</span>
-              <span class="text-gray-700"
-                ><strong>Everything in Bronze</strong></span
+              <span class="text-success flex-shrink-0 mt-1">✓</span>
+              <span class="text-light-muted"
+                ><strong class="text-light">Everything in Free</strong></span
               >
             </div>
             <div class="flex items-start gap-2">
-              <span class="text-blue-600 flex-shrink-0 mt-1 font-bold">✓</span>
-              <span class="text-gray-700"
-                >Advanced paper trading (Levels 11-25)</span
+              <span class="text-success flex-shrink-0 mt-1">✓</span>
+              <span class="text-light-muted"
+                >Paper trading (Levels 26-50)</span
               >
             </div>
             <div class="flex items-start gap-2">
-              <span class="text-blue-600 flex-shrink-0 mt-1 font-bold">✓</span>
-              <span class="text-gray-700"
-                >AI trading assistant (local & private)</span
+              <span class="text-success flex-shrink-0 mt-1">✓</span>
+              <span class="text-light-muted"
+                >Backtest + Pattern agents</span
               >
             </div>
             <div class="flex items-start gap-2">
-              <span class="text-blue-600 flex-shrink-0 mt-1 font-bold">✓</span>
-              <span class="text-gray-700"
-                >Join guilds (10-person learning teams)</span
+              <span class="text-success flex-shrink-0 mt-1">✓</span>
+              <span class="text-light-muted"
+                >Advanced analytics</span
               >
             </div>
             <div class="flex items-start gap-2">
-              <span class="text-blue-600 flex-shrink-0 mt-1 font-bold">✓</span>
-              <span class="text-gray-700">Advanced analytics & reports</span>
+              <span class="text-success flex-shrink-0 mt-1">✓</span>
+              <span class="text-light-muted">Strategy backtesting</span>
             </div>
             <div class="flex items-start gap-2">
-              <span class="text-blue-600 flex-shrink-0 mt-1 font-bold">✓</span>
-              <span class="text-gray-700">Strategy backtesting tools</span>
-            </div>
-            <div class="flex items-start gap-2">
-              <span class="text-blue-600 flex-shrink-0 mt-1 font-bold">✓</span>
-              <span class="text-gray-700">Email & chat support</span>
+              <span class="text-success flex-shrink-0 mt-1">✓</span>
+              <span class="text-light-muted">Priority support</span>
             </div>
           </div>
 
@@ -340,74 +308,56 @@ import BetaSignupForm from "../components/BetaSignupForm.astro";
           </a>
         </div>
 
-        <!-- Gold Tier -->
-        <div
-          class="border-2 border-purple-300 rounded-2xl p-8 bg-white hover:shadow-xl transition-all duration-200"
-        >
-          <div class="text-center">
-            <div class="text-5xl mb-3">🥇</div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-2">Gold</h3>
-            <div class="text-4xl font-bold text-gray-900 mb-1">
-              $50<span class="text-xl text-gray-600">/mo</span>
-            </div>
-            <p class="text-sm text-gray-600 mb-2">$40/mo if paid annually</p>
-            <p class="text-xs text-purple-600 font-semibold mb-6">
-              🎉 Beta discount: 50% off for life
-            </p>
+        <!-- Elite Tier -->
+        <div class="glass-card text-center">
+          <div class="text-5xl mb-3">🥇</div>
+          <h3 class="text-2xl font-bold text-accent mb-2 font-display">Elite</h3>
+          <div class="text-4xl font-bold gradient-text mb-1">
+            $50<span class="text-xl text-light-muted">/mo</span>
           </div>
+          <p class="text-sm text-light-muted mb-2">$40/mo billed annually</p>
+          <p class="text-xs text-accent font-semibold mb-6">
+            🎉 Beta discount: 50% off for life
+          </p>
 
-          <div class="space-y-3 mb-8">
+          <div class="space-y-3 mb-8 text-left">
             <div class="flex items-start gap-2">
-              <span class="text-purple-600 flex-shrink-0 mt-1 font-bold">✓</span
-              >
-              <span class="text-gray-700"
-                ><strong>Everything in Silver</strong></span
+              <span class="text-success flex-shrink-0 mt-1">✓</span>
+              <span class="text-light-muted"
+                ><strong class="text-light">Everything in Pro</strong></span
               >
             </div>
             <div class="flex items-start gap-2">
-              <span class="text-purple-600 flex-shrink-0 mt-1 font-bold">✓</span
-              >
-              <span class="text-gray-700"
-                >Live trading integration (Level 26+)</span
-              >
-            </div>
-            <div class="flex items-start gap-2">
-              <span class="text-purple-600 flex-shrink-0 mt-1 font-bold">✓</span
-              >
-              <span class="text-gray-700">Real-time market data feeds</span>
-            </div>
-            <div class="flex items-start gap-2">
-              <span class="text-purple-600 flex-shrink-0 mt-1 font-bold">✓</span
-              >
-              <span class="text-gray-700">Multi-asset portfolio tracking</span>
-            </div>
-            <div class="flex items-start gap-2">
-              <span class="text-purple-600 flex-shrink-0 mt-1 font-bold">✓</span
-              >
-              <span class="text-gray-700">Priority support (24h response)</span>
-            </div>
-            <div class="flex items-start gap-2">
-              <span class="text-purple-600 flex-shrink-0 mt-1 font-bold">✓</span
-              >
-              <span class="text-gray-700">Advanced AI features & insights</span>
-            </div>
-            <div class="flex items-start gap-2">
-              <span class="text-purple-600 flex-shrink-0 mt-1 font-bold">✓</span
-              >
-              <span class="text-gray-700"
-                >1-on-1 strategy sessions (monthly)</span
+              <span class="text-success flex-shrink-0 mt-1">✓</span>
+              <span class="text-light-muted"
+                >Live trading (Levels 51-100)</span
               >
             </div>
             <div class="flex items-start gap-2">
-              <span class="text-purple-600 flex-shrink-0 mt-1 font-bold">✓</span
-              >
-              <span class="text-gray-700">API access (coming soon)</span>
+              <span class="text-success flex-shrink-0 mt-1">✓</span>
+              <span class="text-light-muted">All 4 AI agents</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-success flex-shrink-0 mt-1">✓</span>
+              <span class="text-light-muted">Real-time market data</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-success flex-shrink-0 mt-1">✓</span>
+              <span class="text-light-muted">White-glove support</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-success flex-shrink-0 mt-1">✓</span>
+              <span class="text-light-muted">1-on-1 strategy sessions</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-success flex-shrink-0 mt-1">✓</span>
+              <span class="text-light-muted">API access</span>
             </div>
           </div>
 
           <a
             href="#signup"
-            class="btn bg-gradient-to-r from-purple-600 to-pink-600 text-white hover:shadow-xl w-full text-center"
+            class="btn btn-accent w-full text-center"
           >
             Join Beta
           </a>
@@ -416,181 +366,15 @@ import BetaSignupForm from "../components/BetaSignupForm.astro";
 
       <!-- Comparison Note -->
       <div
-        class="text-center max-w-2xl mx-auto p-6 bg-blue-50 border-2 border-blue-200 rounded-xl"
+        class="text-center max-w-2xl mx-auto p-6 glass-card border-primary/50"
       >
-        <p class="text-gray-700">
+        <p class="text-light">
           <strong>Beta Special:</strong> All beta testers get <span
-            class="text-blue-600 font-bold">50% off for life</span
+            class="text-primary font-bold">50% off for life</span
           >
-          when we launch. That's $7.50/mo for Silver or $25/mo for Gold. Lock in
+          when we launch. That's $7.50/mo for Pro or $25/mo for Elite. Lock in
           your discount now! 🎉
         </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Timeline Section -->
-  <section class="section bg-white">
-    <div class="container-custom">
-      <div class="text-center mb-12">
-        <h2 class="text-section-title font-bold text-gray-900 mb-4">
-          Beta Launch Timeline
-        </h2>
-        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-          We're building in public. Here's what to expect over the next 6
-          months.
-        </p>
-      </div>
-
-      <div class="max-w-4xl mx-auto space-y-8">
-        <!-- Phase 1 -->
-        <div class="flex gap-6">
-          <div class="flex-shrink-0">
-            <div
-              class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center text-white font-bold text-xl"
-            >
-              ✓
-            </div>
-          </div>
-          <div class="flex-1">
-            <div class="flex items-center gap-3 mb-2">
-              <h3 class="text-2xl font-bold text-gray-900">
-                Phase 0: Research
-              </h3>
-              <span
-                class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-semibold"
-                >COMPLETE</span
-              >
-            </div>
-            <p class="text-gray-600 mb-3">October 2025</p>
-            <ul class="space-y-1 text-gray-700">
-              <li>✓ Market research completed</li>
-              <li>✓ Platform strategy defined</li>
-              <li>✓ Beta program launched</li>
-              <li>✓ Community building started</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Phase 2 -->
-        <div class="flex gap-6">
-          <div class="flex-shrink-0">
-            <div
-              class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl animate-pulse"
-            >
-              2
-            </div>
-          </div>
-          <div class="flex-1">
-            <div class="flex items-center gap-3 mb-2">
-              <h3 class="text-2xl font-bold text-gray-900">
-                Phase 1: MVP Development
-              </h3>
-              <span
-                class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold"
-                >IN PROGRESS</span
-              >
-            </div>
-            <p class="text-gray-600 mb-3">November 2025 - January 2026</p>
-            <ul class="space-y-1 text-gray-700">
-              <li>🔨 Authentication & onboarding</li>
-              <li>🔨 Learning management system</li>
-              <li>🔨 Progression mechanics (Levels 1-25)</li>
-              <li>🔨 Paper trading integration</li>
-              <li>🔨 AI assistant (basic)</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Phase 3 -->
-        <div class="flex gap-6">
-          <div class="flex-shrink-0">
-            <div
-              class="w-16 h-16 bg-purple-300 rounded-full flex items-center justify-center text-white font-bold text-xl"
-            >
-              3
-            </div>
-          </div>
-          <div class="flex-1">
-            <div class="flex items-center gap-3 mb-2">
-              <h3 class="text-2xl font-bold text-gray-900">
-                Phase 2: Beta Launch
-              </h3>
-              <span
-                class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-semibold"
-                >UPCOMING</span
-              >
-            </div>
-            <p class="text-gray-600 mb-3">January - April 2026</p>
-            <ul class="space-y-1 text-gray-700">
-              <li>📅 First 100 beta testers onboarded</li>
-              <li>📅 Guild system launch</li>
-              <li>📅 Mobile responsive improvements</li>
-              <li>📅 Advanced learning modules</li>
-              <li>📅 Community features expansion</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Phase 4 -->
-        <div class="flex gap-6">
-          <div class="flex-shrink-0">
-            <div
-              class="w-16 h-16 bg-gray-300 rounded-full flex items-center justify-center text-white font-bold text-xl"
-            >
-              4
-            </div>
-          </div>
-          <div class="flex-1">
-            <div class="flex items-center gap-3 mb-2">
-              <h3 class="text-2xl font-bold text-gray-900">
-                Phase 3: Live Trading
-              </h3>
-              <span
-                class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-semibold"
-                >PLANNED</span
-              >
-            </div>
-            <p class="text-gray-600 mb-3">May - July 2026</p>
-            <ul class="space-y-1 text-gray-700">
-              <li>📅 Broker integration (Alpaca, IBKR)</li>
-              <li>📅 Certification system (Level 26+ unlock)</li>
-              <li>📅 Real-time market data</li>
-              <li>📅 Risk management tools</li>
-              <li>📅 Advanced AI features</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Phase 5 -->
-        <div class="flex gap-6">
-          <div class="flex-shrink-0">
-            <div
-              class="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center text-white font-bold text-xl"
-            >
-              5
-            </div>
-          </div>
-          <div class="flex-1">
-            <div class="flex items-center gap-3 mb-2">
-              <h3 class="text-2xl font-bold text-gray-900">
-                Phase 4: Public Launch
-              </h3>
-              <span
-                class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm font-semibold"
-                >2026 Q4</span
-              >
-            </div>
-            <p class="text-gray-600 mb-3">August - October 2026</p>
-            <ul class="space-y-1 text-gray-700">
-              <li>📅 Full platform launch</li>
-              <li>📅 Mobile app (iOS & Android)</li>
-              <li>📅 All asset classes supported</li>
-              <li>📅 API access for Gold tier</li>
-              <li>📅 White-label options</li>
-            </ul>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -598,16 +382,17 @@ import BetaSignupForm from "../components/BetaSignupForm.astro";
   <!-- Beta Signup Form Section -->
   <section
     id="signup"
-    class="section bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50"
+    class="section bg-dark relative overflow-hidden"
   >
-    <div class="container-custom">
+    <div class="absolute inset-0 bg-grid opacity-20"></div>
+    <div class="container-custom relative z-10">
       <div class="max-w-3xl mx-auto">
-        <div class="bg-white rounded-2xl shadow-2xl p-8 md:p-12">
+        <div class="glass-card p-8 md:p-12">
           <div class="text-center mb-8">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 class="text-3xl md:text-4xl font-bold gradient-text mb-4 font-display">
               🚀 Join the Waitlist
             </h2>
-            <p class="text-lg text-gray-600">
+            <p class="text-lg text-light-muted">
               Be among the first to experience the platform. Beta launches
               January 2026.
             </p>
@@ -620,105 +405,108 @@ import BetaSignupForm from "../components/BetaSignupForm.astro";
   </section>
 
   <!-- FAQ Section -->
-  <section class="section bg-white">
+  <section class="section bg-dark-card">
     <div class="container-custom">
       <div class="text-center mb-12">
-        <h2 class="text-section-title font-bold text-gray-900 mb-4">
+        <span class="font-display text-primary text-sm tracking-widest uppercase block mb-2">
+          FAQ
+        </span>
+        <h2 class="text-section-title font-bold gradient-text mb-4 font-display">
           Frequently Asked Questions
         </h2>
       </div>
 
       <div class="max-w-3xl mx-auto space-y-6">
-        <details class="group p-6 bg-gray-50 rounded-xl cursor-pointer">
+        <details class="group p-6 glass-card cursor-pointer">
           <summary
-            class="font-semibold text-lg text-gray-900 list-none flex items-center justify-between"
+            class="font-semibold text-lg text-light list-none flex items-center justify-between font-display"
           >
             When does the beta launch?
             <span class="text-2xl group-open:rotate-180 transition-transform"
               >›</span
             >
           </summary>
-          <p class="mt-4 text-gray-600">
+          <p class="mt-4 text-light-muted">
             Phase 1 beta launches in <strong>January 2026</strong>. We'll email
             all waitlist members 2 weeks before launch with preparation
             instructions.
           </p>
         </details>
 
-        <details class="group p-6 bg-gray-50 rounded-xl cursor-pointer">
+        <details class="group p-6 glass-card cursor-pointer">
           <summary
-            class="font-semibold text-lg text-gray-900 list-none flex items-center justify-between"
+            class="font-semibold text-lg text-light list-none flex items-center justify-between font-display"
           >
             Is the beta really free?
             <span class="text-2xl group-open:rotate-180 transition-transform"
               >›</span
             >
           </summary>
-          <p class="mt-4 text-gray-600">
+          <p class="mt-4 text-light-muted">
             Yes! The Bronze tier is <strong>forever free</strong>. You can
             upgrade to Silver ($15/mo) or Gold ($50/mo) anytime. All beta
             testers get <strong>50% off for life</strong> when we launch.
           </p>
         </details>
 
-        <details class="group p-6 bg-gray-50 rounded-xl cursor-pointer">
+        <details class="group p-6 glass-card cursor-pointer">
           <summary
-            class="font-semibold text-lg text-gray-900 list-none flex items-center justify-between"
+            class="font-semibold text-lg text-light list-none flex items-center justify-between font-display"
           >
             What if I've never traded before?
             <span class="text-2xl group-open:rotate-180 transition-transform"
               >›</span
             >
           </summary>
-          <p class="mt-4 text-gray-600">
+          <p class="mt-4 text-light-muted">
             Perfect! We're designed for <strong>complete beginners</strong>.
             You'll start at Level 1 with paper trading (fake money) and won't be
             able to risk real money until you've proven competency at Level 26+.
           </p>
         </details>
 
-        <details class="group p-6 bg-gray-50 rounded-xl cursor-pointer">
+        <details class="group p-6 glass-card cursor-pointer">
           <summary
-            class="font-semibold text-lg text-gray-900 list-none flex items-center justify-between"
+            class="font-semibold text-lg text-light list-none flex items-center justify-between font-display"
           >
             Can I change tiers later?
             <span class="text-2xl group-open:rotate-180 transition-transform"
               >›</span
             >
           </summary>
-          <p class="mt-4 text-gray-600">
+          <p class="mt-4 text-light-muted">
             Absolutely! Start free and upgrade anytime. Downgrade anytime too.
             No penalties, no questions asked. Your progress and data are always
             saved.
           </p>
         </details>
 
-        <details class="group p-6 bg-gray-50 rounded-xl cursor-pointer">
+        <details class="group p-6 glass-card cursor-pointer">
           <summary
-            class="font-semibold text-lg text-gray-900 list-none flex items-center justify-between"
+            class="font-semibold text-lg text-light list-none flex items-center justify-between font-display"
           >
             Is my data private?
             <span class="text-2xl group-open:rotate-180 transition-transform"
               >›</span
             >
           </summary>
-          <p class="mt-4 text-gray-600">
+          <p class="mt-4 text-light-muted">
             Yes! We use <strong>local-first AI</strong> architecture. Your financial
             data is processed on your device, not in the cloud. We never sell your
             data. Ever.
           </p>
         </details>
 
-        <details class="group p-6 bg-gray-50 rounded-xl cursor-pointer">
+        <details class="group p-6 glass-card cursor-pointer">
           <summary
-            class="font-semibold text-lg text-gray-900 list-none flex items-center justify-between"
+            class="font-semibold text-lg text-light list-none flex items-center justify-between font-display"
           >
             What makes this different from Robinhood?
             <span class="text-2xl group-open:rotate-180 transition-transform"
               >›</span
             >
           </summary>
-          <p class="mt-4 text-gray-600">
+          <p class="mt-4 text-light-muted">
             We're the <strong>anti-Robinhood</strong>. No confetti. No dark
             patterns. No FOMO tactics. We succeed when you <strong>learn</strong
             >, not when you trade more. Mandatory education before live trading.
@@ -726,32 +514,32 @@ import BetaSignupForm from "../components/BetaSignupForm.astro";
           </p>
         </details>
 
-        <details class="group p-6 bg-gray-50 rounded-xl cursor-pointer">
+        <details class="group p-6 glass-card cursor-pointer">
           <summary
-            class="font-semibold text-lg text-gray-900 list-none flex items-center justify-between"
+            class="font-semibold text-lg text-light list-none flex items-center justify-between font-display"
           >
             Can I provide feedback during beta?
             <span class="text-2xl group-open:rotate-180 transition-transform"
               >›</span
             >
           </summary>
-          <p class="mt-4 text-gray-600">
+          <p class="mt-4 text-light-muted">
             We <strong>want</strong> your feedback! Weekly surveys, Discord channels,
             feedback forms, and optional 1-on-1 calls with the founding team. You'll
             literally shape the platform.
           </p>
         </details>
 
-        <details class="group p-6 bg-gray-50 rounded-xl cursor-pointer">
+        <details class="group p-6 glass-card cursor-pointer">
           <summary
-            class="font-semibold text-lg text-gray-900 list-none flex items-center justify-between"
+            class="font-semibold text-lg text-light list-none flex items-center justify-between font-display"
           >
             What happens after beta ends?
             <span class="text-2xl group-open:rotate-180 transition-transform"
               >›</span
             >
           </summary>
-          <p class="mt-4 text-gray-600">
+          <p class="mt-4 text-light-muted">
             You keep your account and all your progress. Beta testers get <strong
               >permanent perks</strong
             >: lifetime 50% discount, founding member badge, and early access to
@@ -764,18 +552,19 @@ import BetaSignupForm from "../components/BetaSignupForm.astro";
 
   <!-- Final CTA -->
   <section
-    class="section bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600"
+    class="section bg-gradient-to-br from-primary via-secondary to-accent relative overflow-hidden"
   >
-    <div class="container-custom text-center">
-      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
-        Ready to Level Up?
+    <div class="absolute inset-0 bg-grid opacity-20"></div>
+    <div class="container-custom text-center relative z-10">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 font-display">
+        Ready to Master Trading?
       </h2>
-      <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-        Join 752+ traders building their skills the right way.
+      <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+        Learn to trade with AI guidance. Start your journey today.
       </p>
       <a
         href="#signup"
-        class="btn bg-white text-purple-600 hover:bg-gray-50 text-lg px-8 py-4 shadow-xl transform hover:scale-105 transition-all duration-200 inline-block"
+        class="btn bg-white text-primary hover:bg-white/90 text-lg px-8 py-4 shadow-glow transform hover:scale-105 transition-all duration-200 inline-block"
       >
         🚀 Join Beta Waitlist
       </a>
