@@ -1,6 +1,6 @@
 # Social Media Account Setup Guide
 
-**LocalAI Finance Business Accounts**
+## LocalAI Finance Business Accounts
 
 Created: October 4, 2025
 
@@ -8,10 +8,13 @@ Created: October 4, 2025
 
 ## 📧 Business Email
 
-**Email**: contact@localaifinance.com  
+**Email**: info@localaifinance.com  
 **Use this email for ALL social media account registrations**
 
+*(Already configured and working via ImprovMX - no setup needed!)*
+
 **Benefits**:
+
 - ✅ Keeps business separate from personal accounts
 - ✅ Professional appearance
 - ✅ Centralized notifications
@@ -25,29 +28,33 @@ Created: October 4, 2025
 ### Priority 1 - Essential (Create Today)
 
 #### 🐦 Twitter/X (@LocalAIFinance)
+
 **Purpose**: Main community engagement, beta announcements, tech updates
 
 **Setup Steps**:
-1. Go to https://twitter.com/i/flow/signup
+
+1. Go to <https://twitter.com/i/flow/signup>
 2. Click "Create account"
-3. **Email**: contact@localaifinance.com
+3. **Email**: <contact@localaifinance.com>
 4. **Display Name**: LocalAI Finance
 5. **Username**: @LocalAIFinance (or @LocalAI_Finance if taken)
 6. **Birth Date**: Use business formation date
-7. Verify email (check contact@localaifinance.com inbox)
+7. Verify email (check <contact@localaifinance.com> inbox)
 8. Complete phone verification if required
 9. Skip "Who to follow" suggestions (or follow crypto/fintech accounts)
 10. Enable 2FA in Settings > Security
 
 **Profile Setup**:
+
 - **Profile Picture**: Upload `twitter-profile-400x400.png`
 - **Header Image**: Upload `twitter-header-1500x500.png`
 - **Bio**: "Private AI-powered financial analysis. Your data stays on your machine. No cloud. No tracking. 🔒⚡ Beta launching January 2026."
 - **Location**: "Everywhere" or your city
-- **Website**: https://localaifinance.com
+- **Website**: <https://localaifinance.com>
 - **Birth Date**: Hide from public view
 
 **First Actions**:
+
 - Pin tweet: "🎩⚡ Introducing LocalAI Finance - Private, local AI for traders. Your financial data never leaves your machine. Join beta → localaifinance.com/beta"
 - Follow: @Bitcoin, @CoinDesk, @TradingView, relevant crypto/AI accounts
 - Turn on notifications for Discord announcements
@@ -55,12 +62,14 @@ Created: October 4, 2025
 ---
 
 #### 📸 Instagram (@localaifinance)
+
 **Purpose**: Visual brand presence, beta showcase, community highlights
 
 **Setup Steps**:
-1. Download Instagram app (or use web: https://www.instagram.com/)
+
+1. Download Instagram app (or use web: <https://www.instagram.com/>)
 2. Click "Sign up"
-3. **Email**: contact@localaifinance.com
+3. **Email**: <contact@localaifinance.com>
 4. **Username**: @localaifinance
 5. **Full Name**: LocalAI Finance
 6. **Password**: Use strong unique password
@@ -68,23 +77,28 @@ Created: October 4, 2025
 8. Complete profile
 
 **Profile Setup**:
+
 - **Profile Picture**: Upload `twitter-profile-400x400.png` (Instagram will crop to circle)
-- **Bio**: 
+- **Bio**:
+
   ```
   🎩 Private AI Financial Analysis
   🔒 Your Data Stays On Your Machine
   ⚡ No Cloud | No Tracking
   👇 Join Beta (50% Off Forever)
   ```
-- **Website**: https://localaifinance.com/beta
+
+- **Website**: <https://localaifinance.com/beta>
 - **Category**: Finance
 
 **First Post**:
+
 - Upload `instagram-beta-1080x1080.png`
 - Caption: "Your financial data deserves privacy 🔒 Introducing LocalAI Finance - AI-powered analysis that runs entirely on YOUR machine. No cloud uploads. Complete control. Join our beta program and lock in 50% off forever! 🎩⚡ Link in bio #LocalAI #Privacy #Trading #FinTech #AI"
 - Hashtags: #LocalAI #PrivacyFirst #CryptoTrading #AIFinance #BetaProgram #FinTech #TradingTools #DataPrivacy
 
 **Account Settings**:
+
 - Switch to "Business Account" → Finance category
 - Enable "Show contact info" with email
 - Connect to Facebook (optional, for cross-posting)
@@ -92,11 +106,13 @@ Created: October 4, 2025
 ---
 
 #### 💼 LinkedIn (Company Page)
+
 **Purpose**: Professional networking, B2B outreach, thought leadership
 
 **Setup Steps**:
-1. Go to https://www.linkedin.com/
-2. Sign up with **contact@localaifinance.com**
+
+1. Go to <https://www.linkedin.com/>
+2. Sign up with **<contact@localaifinance.com>**
 3. Create **Personal Profile** first (required for company page):
    - Name: Your name or "LocalAI Finance Admin"
    - Headline: "Founder @ LocalAI Finance | Private AI Financial Tools"
@@ -106,16 +122,18 @@ Created: October 4, 2025
    - Choose "Company"
    - **Company Name**: LocalAI Finance
    - **LinkedIn Public URL**: linkedin.com/company/localaifinance
-   - **Website**: https://localaifinance.com
+   - **Website**: <https://localaifinance.com>
    - **Industry**: Financial Services
    - **Company Size**: 1-10 employees
    - **Company Type**: Privately Held
    - **Tagline**: "Private AI-Powered Financial Analysis. Your Data Stays On Your Machine."
 
 **Company Page Setup**:
+
 - **Logo**: Upload `twitter-profile-400x400.png`
 - **Cover Image**: Upload `linkedin-banner-1584x396.png` (create this next)
-- **Overview**: 
+- **Overview**:
+
   ```
   LocalAI Finance is revolutionizing financial analysis with AI that respects your privacy. 
   
@@ -128,9 +146,11 @@ Created: October 4, 2025
   
   Join our beta program launching January 2026 and lock in 50% off forever.
   ```
+
 - **Specialties**: Artificial Intelligence, Financial Technology, Privacy, Local AI, Trading Analysis, Portfolio Management
 
 **First Post**:
+
 - Announce beta program
 - Share link to website
 - Professional tone (less emojis than Twitter/Instagram)
@@ -140,19 +160,23 @@ Created: October 4, 2025
 ### Priority 2 - Important (Create This Week)
 
 #### 🎥 YouTube (Channel)
+
 **Purpose**: Tutorial videos, feature demos, market analysis content
 
 **Setup Steps**:
-1. Go to https://www.youtube.com/
-2. Sign in with Google account or create new one using contact@localaifinance.com
+
+1. Go to <https://www.youtube.com/>
+2. Sign in with Google account or create new one using <contact@localaifinance.com>
 3. Click profile icon → "Create a channel"
 4. **Channel Name**: LocalAI Finance
 5. **Handle**: @localaifinance
 
 **Channel Setup**:
+
 - **Profile Picture**: Upload `twitter-profile-400x400.png`
 - **Banner**: Upload `youtube-banner-2560x1440.png` (create this next)
 - **Description**:
+
   ```
   Welcome to LocalAI Finance - Private AI-powered financial analysis that respects your privacy.
   
@@ -168,13 +192,15 @@ Created: October 4, 2025
   
   Join our beta program: https://localaifinance.com/beta
   ```
-- **Links**: 
-  - Website: https://localaifinance.com
+
+- **Links**:
+  - Website: <https://localaifinance.com>
   - Discord: [Your Discord invite link]
-  - Twitter: https://twitter.com/LocalAIFinance
-- **Contact Email**: contact@localaifinance.com
+  - Twitter: <https://twitter.com/LocalAIFinance>
+- **Contact Email**: <contact@localaifinance.com>
 
 **First Video Ideas**:
+
 - "Introducing LocalAI Finance - Private AI Trading Analysis"
 - "Why Your Financial Data Should NEVER Touch The Cloud"
 - "LocalAI Finance Beta Demo - See It In Action"
@@ -182,11 +208,13 @@ Created: October 4, 2025
 ---
 
 #### 👥 Facebook (Business Page)
+
 **Purpose**: Broader audience reach, ads platform access, community groups
 
 **Setup Steps**:
-1. Go to https://www.facebook.com/
-2. Sign up with contact@localaifinance.com (or use existing personal account)
+
+1. Go to <https://www.facebook.com/>
+2. Sign up with <contact@localaifinance.com> (or use existing personal account)
 3. Create **Business Page**:
    - Click "Pages" → "Create New Page"
    - **Page Name**: LocalAI Finance
@@ -194,9 +222,11 @@ Created: October 4, 2025
    - **Bio**: "Private AI-powered financial analysis. Your data stays on your machine."
 
 **Page Setup**:
+
 - **Profile Picture**: Upload `twitter-profile-400x400.png`
 - **Cover Photo**: Upload `facebook-cover-820x312.png` (create this next)
 - **About Section**:
+
   ```
   LocalAI Finance provides AI-powered financial analysis that runs entirely on your local machine. Unlike cloud-based platforms, your trading data, portfolio information, and strategies never leave your computer.
   
@@ -207,11 +237,13 @@ Created: October 4, 2025
   
   Join our beta program and lock in 50% off forever!
   ```
-- **Website**: https://localaifinance.com
-- **Email**: contact@localaifinance.com
+
+- **Website**: <https://localaifinance.com>
+- **Email**: <contact@localaifinance.com>
 - **Category**: Financial Service, Software Company
 
 **Settings**:
+
 - Enable "Reviews" (for credibility)
 - Set up "Automated Responses" for common questions
 - Connect Instagram for cross-posting
@@ -219,9 +251,11 @@ Created: October 4, 2025
 ---
 
 #### 🎮 Discord (Already Created ✅)
+
 **Status**: Already set up and integrated on website!
 
 **Ensure These Settings**:
+
 - Server name: LocalAI Finance
 - Icon: NeuroTrader dragonfly icon
 - Channels properly organized
@@ -229,27 +263,32 @@ Created: October 4, 2025
 - Verification gate (optional for spam prevention)
 
 **Next Action**:
+
 - Post beta signup link in #announcements after Twitter/Instagram are live
 
 ---
 
 #### 💬 Reddit (u/LocalAIFinance)
+
 **Purpose**: Community engagement, AMAs, technical discussions
 
 **Setup Steps**:
-1. Go to https://www.reddit.com/register/
-2. **Email**: contact@localaifinance.com
+
+1. Go to <https://www.reddit.com/register/>
+2. **Email**: <contact@localaifinance.com>
 3. **Username**: LocalAIFinance or LocalAI_Finance
 4. Verify email
 5. Build karma before promotional posts (Reddit is anti-spam)
 
 **Profile Setup**:
+
 - **Display Name**: LocalAI Finance
 - **About**: "Private AI financial analysis. Your data stays on your machine. Beta launching Jan 2026."
 - **Avatar**: Upload icon (circle crop)
 - **Banner**: Custom design
 
 **Subreddits to Join**:
+
 - r/algotrading
 - r/CryptoCurrency
 - r/Bitcoin
@@ -260,6 +299,7 @@ Created: October 4, 2025
 - r/wallstreetbets (engage carefully, very strict rules)
 
 **Strategy**:
+
 - **Don't spam** - Reddit HATES self-promotion
 - Participate genuinely in discussions first
 - Build karma (>100) before mentioning your product
@@ -271,20 +311,24 @@ Created: October 4, 2025
 ### Priority 3 - Optional/Future
 
 #### 📌 Pinterest (@localaifinance)
+
 **Purpose**: Infographics, visual content discovery
 **Audience**: Less relevant for B2B/tech, skip unless visual marketing focus
 
 #### 🎵 TikTok (@localaifinance)
+
 **Purpose**: Short-form video content, younger audience
 **Potential**: High if you create engaging "why privacy matters" or "AI trading" content
 **Effort**: High (video editing required)
 
 #### 🧵 Threads (@localaifinance)
+
 **Purpose**: Twitter alternative (Meta's platform)
 **Status**: Growing, links with Instagram
 **Setup**: Easy if you have Instagram account
 
 #### 🐘 Mastodon/Fediverse
+
 **Purpose**: Privacy-focused social network
 **Audience**: Tech-savvy, privacy-conscious users (YOUR target market!)
 **Consider**: Join instances like fosstodon.org or mastodon.social
@@ -294,12 +338,15 @@ Created: October 4, 2025
 ## 🔐 Security Best Practices
 
 ### Password Management
+
 1. **Use unique passwords** for each platform
 2. **Use a password manager** (Bitwarden, 1Password, LastPass)
 3. **Password format**: Consider pattern like `LocalAI-Twitter-[random]`
 
 ### Two-Factor Authentication (2FA)
+
 **Enable 2FA on ALL accounts**:
+
 - Twitter/X ✅
 - Instagram ✅
 - LinkedIn ✅
@@ -312,7 +359,8 @@ Created: October 4, 2025
 **Backup Codes**: Save to secure location (password manager or encrypted file)
 
 ### Email Access
-- Set up email forwarding: contact@localaifinance.com → your main email
+
+- Set up email forwarding: <contact@localaifinance.com> → your main email
 - Or use email client to monitor business email separately
 - Create filters/labels for social media notifications
 
@@ -321,7 +369,8 @@ Created: October 4, 2025
 ## 📋 Account Setup Checklist
 
 ### Preparation (Before Starting)
-- [ ] Verify contact@localaifinance.com is accessible
+
+- [ ] Verify <contact@localaifinance.com> is accessible
 - [ ] Install password manager
 - [ ] Install authenticator app
 - [ ] Prepare graphics files:
@@ -333,6 +382,7 @@ Created: October 4, 2025
   - [ ] facebook-cover-820x312.png (create next)
 
 ### Priority 1 Accounts (Do Today)
+
 - [ ] Twitter/X - Create account
 - [ ] Twitter/X - Upload profile picture
 - [ ] Twitter/X - Upload header
@@ -352,6 +402,7 @@ Created: October 4, 2025
 - [ ] LinkedIn - First post
 
 ### Priority 2 Accounts (This Week)
+
 - [ ] YouTube - Create channel
 - [ ] YouTube - Upload branding
 - [ ] YouTube - Complete description
@@ -364,8 +415,9 @@ Created: October 4, 2025
 - [ ] Reddit - Build karma (participate genuinely)
 
 ### After Setup
+
 - [ ] Add all social media links to website footer
-- [ ] Create social media link tree: https://localaifinance.com/links
+- [ ] Create social media link tree: <https://localaifinance.com/links>
 - [ ] Update email signature with social links
 - [ ] Cross-promote accounts (follow from each platform)
 - [ ] Schedule first week of content
@@ -376,6 +428,7 @@ Created: October 4, 2025
 ## 📅 Content Calendar Template
 
 ### Week 1 - Launch Week
+
 **Monday**: Twitter launch + pin beta announcement  
 **Tuesday**: Instagram first post  
 **Wednesday**: LinkedIn company page announcement  
@@ -383,21 +436,27 @@ Created: October 4, 2025
 **Friday**: Cross-platform engagement, respond to comments  
 
 ### Week 2 - Beta Push
+
 **Theme**: Why privacy matters in financial tech  
+
 - Twitter: Thread about data privacy
 - Instagram: Infographic about cloud vs local
 - LinkedIn: Professional article
 - YouTube: Video demo (if ready)
 
 ### Week 3 - Education
+
 **Theme**: How LocalAI works  
+
 - Twitter: Feature highlights
 - Instagram: UI screenshots/previews
 - LinkedIn: Technical deep dive
 - Discord: Q&A session
 
 ### Week 4 - Community
+
 **Theme**: User testimonials and beta updates  
+
 - Share beta tester feedback
 - Behind-the-scenes development
 - Roadmap previews
@@ -420,6 +479,7 @@ Created: October 4, 2025
 | GitHub | (personal vs org?) | Optional |
 
 **Backup Usernames** (if primary taken):
+
 - @LocalAI_Finance
 - @LocalAIFinanceAI
 - @Local_AI_Finance
@@ -430,10 +490,11 @@ Created: October 4, 2025
 ## 📞 Support Resources
 
 **If Account Issues**:
-- Twitter Support: https://help.twitter.com/
-- Instagram Help: https://help.instagram.com/
-- LinkedIn Help: https://www.linkedin.com/help/
-- YouTube Help: https://support.google.com/youtube/
+
+- Twitter Support: <https://help.twitter.com/>
+- Instagram Help: <https://help.instagram.com/>
+- LinkedIn Help: <https://www.linkedin.com/help/>
+- YouTube Help: <https://support.google.com/youtube/>
 
 **Brand Assets Location**: `/public/assets/social-media/`  
 **Documentation**: `/docs/marketing/SOCIAL_MEDIA_GRAPHICS.md`
@@ -445,13 +506,13 @@ Created: October 4, 2025
 **Do these 3 things in the next 30 minutes**:
 
 1. **Create Twitter/X Account** (10 min)
-   - Sign up with contact@localaifinance.com
+   - Sign up with <contact@localaifinance.com>
    - Upload profile picture and header
    - Write bio
    - Post first tweet
 
 2. **Create Instagram Account** (10 min)
-   - Sign up with contact@localaifinance.com
+   - Sign up with <contact@localaifinance.com>
    - Upload profile picture
    - Write bio
    - Post beta announcement graphic

@@ -5,24 +5,30 @@
 ---
 
 ## 📧 Business Email
-**contact@localaifinance.com** ← Use for ALL signups
+
+**info@localaifinance.com** ← Use for ALL signups
+
+*(Already configured and working via ImprovMX)*
 
 ---
 
 ## 🎯 Brand Information (Copy-Paste Ready)
 
 ### Company Name
-```
+
+```bash
 LocalAI Finance
 ```
 
 ### Tagline
-```
+
+```bash
 Private AI-Powered Financial Analysis. Your Data Stays On Your Machine.
 ```
 
 ### Short Description (Twitter/Instagram Bio)
-```
+
+```bash
 🎩 Private AI Financial Analysis
 🔒 Your Data Stays On Your Machine
 ⚡ No Cloud | No Tracking
@@ -30,7 +36,8 @@ Private AI-Powered Financial Analysis. Your Data Stays On Your Machine.
 ```
 
 ### Long Description (LinkedIn/Facebook About)
-```
+
+```bash
 LocalAI Finance is revolutionizing financial analysis with AI that respects your privacy. 
 
 Unlike cloud-based platforms that upload your sensitive financial data, LocalAI runs entirely on your local machine. Your trading strategies, portfolio details, and market analysis never leave your computer.
@@ -44,12 +51,14 @@ Join our beta program launching January 2026 and lock in 50% off forever.
 ```
 
 ### Website URL
-```
+
+```bash
 https://localaifinance.com
 ```
 
 ### Beta Signup URL
-```
+
+```bash
 https://localaifinance.com/beta
 ```
 
@@ -87,7 +96,8 @@ https://localaifinance.com/beta
 ## ✍️ First Post Templates
 
 ### Twitter/X (Pin This Tweet)
-```
+
+```bash
 🎩⚡ Introducing LocalAI Finance - Private, local AI for traders.
 
 Your financial data never leaves your machine.
@@ -102,7 +112,8 @@ Lock in 50% off forever. Your privacy. Your data. Your control.
 ```
 
 ### Instagram First Post Caption
-```
+
+```bash
 Your financial data deserves privacy 🔒 
 
 Introducing LocalAI Finance - AI-powered analysis that runs entirely on YOUR machine. No cloud uploads. Complete control.
@@ -121,7 +132,8 @@ Link in bio → localaifinance.com/beta
 ```
 
 ### LinkedIn First Post
-```
+
+```bash
 🎩 Introducing LocalAI Finance - The Future of Private Financial Analysis
 
 We're revolutionizing how traders and investors analyze markets while maintaining complete data privacy.
@@ -157,7 +169,8 @@ Your financial data deserves privacy. Join the movement.
 ## 🔐 Security Checklist (For Each Account)
 
 When creating EACH account:
-- [ ] Use email: contact@localaifinance.com
+
+- [ ] Use email: info@localaifinance.com
 - [ ] Use password manager to generate unique password
 - [ ] Save password in password manager
 - [ ] Enable 2FA immediately after signup
@@ -177,13 +190,13 @@ When creating EACH account:
 **Do these 3 TODAY (30-45 minutes total):**
 
 1. **Twitter/X** (15 min)
-   - Signup URL: https://twitter.com/signup
+   - Signup URL: <https://twitter.com/signup>
    - Most important for tech/crypto audience
    - Enable 2FA with authenticator app
    - Pin first tweet immediately
 
 2. **Instagram** (15 min)
-   - Signup URL: https://instagram.com/accounts/emailsignup/
+   - Signup URL: <https://instagram.com/accounts/emailsignup/>
    - Switch to Business account after creation
    - Post beta announcement graphic
    - Add website link to bio
@@ -195,6 +208,7 @@ When creating EACH account:
    - Connect with fintech/AI professionals
 
 **Do these THIS WEEK (Priority 2):**
+
 - YouTube (for video content later)
 - Facebook (broader reach + ads platform)
 - Reddit (build karma first, then engage)
@@ -222,22 +236,26 @@ When creating EACH account:
 ## 🆘 Troubleshooting
 
 **Username Taken?**
+
 - Try: @LocalAI_Finance (with underscore)
 - Or: @LocalAIFinanceAI
 - Or: @GetLocalAI
 - Keep it consistent across platforms if possible
 
 **Email Already Used?**
-- Make sure you're using contact@localaifinance.com
+
+- Make sure you're using info@localaifinance.com
 - Check if you created account before and forgot
 - Try password recovery first
 
 **2FA Not Working?**
+
 - Ensure phone time is synced (for authenticator app)
 - Try backup codes if saved
 - Contact platform support if stuck
 
 **Account Suspended/Flagged?**
+
 - Don't panic - happens with new accounts
 - Verify email/phone
 - Wait 24 hours and try again
@@ -255,7 +273,7 @@ When creating EACH account:
 
 **Ready? Let's start with Twitter/X!** 🚀
 
-Open this URL in a new tab: https://twitter.com/signup
+Open this URL in a new tab: <https://twitter.com/signup>
 Have your password manager ready!
 
 ---
