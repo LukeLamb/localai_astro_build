@@ -58,7 +58,7 @@
 
 ### B. Add Emails
 
-#### Email 1: Welcome (Day 0)
+**Email 1: Welcome (Day 0)**
 
 1. Click **"Add Email"**
 2. **Subject:** "🎩 Welcome to LocalAI Finance - Your Financial Privacy Starts Now"
@@ -66,7 +66,7 @@
 4. **Send:** Immediately
 5. Save
 
-#### Email 2: How It Works (Day 2)
+**Email 2: How It Works (Day 2)**
 
 1. Click **"+"** below Email 1
 2. Click **"Wait"** → Set to **2 days**
@@ -75,7 +75,7 @@
 5. **Body:** Copy from `EMAIL_TEMPLATES.md` - Email #2
 6. Save
 
-#### Email 3: Join Beta (Day 4)
+**Email 3: Join Beta (Day 4)**
 
 1. Click **"+"** below Email 2  
 2. Click **"Wait"** → Set to **2 days**

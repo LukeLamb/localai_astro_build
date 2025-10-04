@@ -227,7 +227,7 @@ Created: October 4, 2025
 - **Cover Photo**: Upload `facebook-cover-820x312.png` (create this next)
 - **About Section**:
 
-  ```
+  ```bash
   LocalAI Finance provides AI-powered financial analysis that runs entirely on your local machine. Unlike cloud-based platforms, your trading data, portfolio information, and strategies never leave your computer.
   
   🔒 100% Private - No cloud uploads

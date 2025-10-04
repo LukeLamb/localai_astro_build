@@ -6,9 +6,9 @@
 
 ## 📧 Business Email
 
-**info@localaifinance.com** ← Use for ALL signups
+**<info@localaifinance.com>** ← Use for ALL signups
 
-*(Already configured and working via ImprovMX)*
+(Already configured and working via ImprovMX)
 
 ---
 
@@ -170,7 +170,7 @@ Your financial data deserves privacy. Join the movement.
 
 When creating EACH account:
 
-- [ ] Use email: info@localaifinance.com
+- [ ] Use email: <info@localaifinance.com>
 - [ ] Use password manager to generate unique password
 - [ ] Save password in password manager
 - [ ] Enable 2FA immediately after signup
@@ -244,7 +244,7 @@ When creating EACH account:
 
 **Email Already Used?**
 
-- Make sure you're using info@localaifinance.com
+- Make sure you're using <info@localaifinance.com>
 - Check if you created account before and forgot
 - Try password recovery first
 
