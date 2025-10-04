@@ -16,6 +16,7 @@ A professional financial AI assistant website promoting secure, private financia
 
 ```text
 localai_astro_build/
+├── docs/                # 📚 Project documentation (organized by category)
 ├── public/              # Static assets
 ├── src/
 │   ├── components/      # Reusable Astro components
@@ -32,6 +33,19 @@ Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page
 There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
 Any static assets, like images, can be placed in the `public/` directory.
+
+## 📚 Documentation
+
+**All project documentation is organized in the `/docs` folder:**
+
+- **Design** (`docs/design/`) - Victorian-Cyberpunk aesthetic, typography, branding
+- **Development** (`docs/development/`) - Component updates, migrations, technical docs
+- **Deployment** (`docs/deployment/`) - Deployment guides and troubleshooting
+- **Marketing** (`docs/marketing/`) - Social media, email automation, Discord
+- **Guides** (`docs/guides/`) - Quick references and status updates
+- **Archive** (`docs/archive/`) - Completed phases and historical documentation
+
+👉 **See [docs/README.md](docs/README.md) for the complete documentation index.**
 
 ## 🧞 Commands
 

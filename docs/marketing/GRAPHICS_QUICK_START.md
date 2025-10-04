@@ -29,7 +29,7 @@
 
 #### 🔥 PRIORITY 1: Essential (Create These First)
 
-**1. Twitter Profile Picture (400x400)**
+##### 1. Twitter Profile Picture (400x400)
 
 - Click "Custom size" → 400 x 400 px
 - Set background to #1A1A1A
@@ -38,7 +38,7 @@
 - Make frame brass color (#B8860B)
 - Export as PNG
 
-**2. Twitter Header (1500x500)**
+##### 2. Twitter Header (1500x500)
 
 - Click "Custom size" → 1500 x 500 px
 - Background: Dark gradient (#4A2617 to #1A1A1A)
@@ -53,7 +53,7 @@
 - Add Victorian corner ornaments (search "Victorian corner")
 - Export as PNG
 
-**3. Instagram Beta Post (1080x1080)**
+##### 3. Instagram Beta Post (1080x1080)
 
 - Click "Instagram Post" template (1080x1080)
 - Background: #1A1A1A
@@ -62,7 +62,7 @@
 - Center: NeuroTrader icon (300x300)
 - Below icon:
 
-  ```
+  ```bash
   "Your Financial Data
   Stays On Your Machine"
   
@@ -72,15 +72,13 @@
   ✅ Multi-Asset Trading
   
   Join Beta → LocalAIFinance.com
-  ```
-
 - Export as PNG
 
 ---
 
 #### ⭐ PRIORITY 2: Important (Create Next)
 
-**4. LinkedIn Banner (1584x396)**
+##### 4. LinkedIn Banner (1584x396)
 
 - Custom size: 1584 x 396 px
 - Professional dark gradient background
@@ -95,7 +93,7 @@
   - 🔒 100% Private Local Processing
 - Export as PNG
 
-**5. YouTube Thumbnail Template (1280x720)**
+##### 5. YouTube Thumbnail Template (1280x720)
 
 - Custom size: 1280 x 720 px
 - Background: Dark with Victorian pattern
@@ -107,7 +105,7 @@
 - Save as template for future videos
 - Export as PNG
 
-**6. Facebook Cover (820x312)**
+##### 6. Facebook Cover (820x312)
 
 - Custom size: 820 x 312 px
 - Dark mahogany gradient background
@@ -121,9 +119,7 @@
 
 ---
 
-## 🎨 Design Tips for Canva
-
-### Finding Victorian Elements
+```bash
 
 1. Search **"Victorian frame"** → Add brass-colored borders
 2. Search **"ornate divider"** → Add decorative separators
@@ -215,13 +211,13 @@ Save downloads to: `c:\Users\infob\Desktop\Agents\website\localai_astro_build\pu
 
 **Quick Version (Priority 1 only):** 15-20 minutes
 
-- Twitter profile (5 min)
+- **Quick Version (Priority 1 only):** 15-20 minutes
 - Twitter header (5 min)
 - Instagram post (5 min)
 
 **Full Set (All 6):** 30-45 minutes
 
-- Priority 1: 15-20 min
+- **Full Set (All 6):** 30-45 minutes
 - Priority 2: 15-25 min
 
 ---
@@ -249,7 +245,7 @@ If you want to try AI-generated graphics:
 
 Prompt template:
 
-```
+```bash
 Create a [SIZE] Victorian-style social media graphic with:
 - Dark charcoal background (#1A1A1A)
 - Ornate brass gold borders and frames (#B8860B)
@@ -262,7 +258,7 @@ Create a [SIZE] Victorian-style social media graphic with:
 
 ### Option 2: Midjourney
 
-```
+```bash
 Victorian steampunk social media banner, dark mahogany background, 
 ornate brass frames, dragonfly logo, electric cyan accents, 
 elegant serif typography, Art Nouveau style --ar [RATIO]
@@ -274,23 +270,27 @@ elegant serif typography, Art Nouveau style --ar [RATIO]
 
 **Can't find Victorian elements in Canva?**
 
-- Try searching: "vintage", "retro", "elegant", "ornate", "baroque"
+### Can't find Victorian elements in Canva?
+
 - Use basic gold borders and add multiple overlapping frames
 
 **Colors look wrong?**
 
-- Make sure you're using HEX codes exactly: #1A1A1A, #B8860B, #00F0FF
+### Colors look wrong?
+
 - Check your screen brightness - dark backgrounds can appear differently
 
 **Icon looks blurry?**
 
-- Upload the highest resolution version of neurotrader_icon.png
+### Icon looks blurry?
+
 - Don't stretch it beyond original size
 - Export as PNG, not JPG
 
 **Text too small to read?**
 
-- Remember these will be viewed on mobile screens
+### Text too small to read?
+
 - Minimum font size: 24px for body text, 48px+ for headlines
 - Test by viewing at 50% zoom - should still be readable
 

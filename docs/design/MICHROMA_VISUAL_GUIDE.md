@@ -6,31 +6,35 @@ All major headings across your website now use **Michroma** instead of Playfair 
 
 ## See The Difference
 
-### Homepage (http://localhost:4321/)
+### Homepage (<http://localhost:4321/>)
 
 **Main Hero Heading:**
-```
+
+```bash
 Before: "Level Up Your Financial Skills" (Playfair Display - elegant serif)
 After:  "LEVEL UP YOUR FINANCIAL SKILLS" (Michroma - geometric cyberpunk)
 ```
 
 **Visual Impact:**
+
 - ✨ More futuristic and tech-forward
 - 💪 Stronger, more confident presence
 - ⚡ Perfect match for "cyberpunk" aesthetic
 - 🎯 Better visual hierarchy
 
-### Contact Page (http://localhost:4321/contact)
+### Contact Page (<http://localhost:4321/contact>)
 
 **Main Heading:**
-```
+
+```bash
 Before: "Get in Touch" (traditional serif)
 After:  "GET IN TOUCH" (modern geometric)
 ```
 
-### Beta Page (http://localhost:4321/beta)
+### Beta Page (<http://localhost:4321/beta>)
 
 **Hero Heading:**
+
 ```
 Before: "Join the LocalAI Finance Beta" (Victorian elegant)
 After:  "JOIN THE LOCALAI FINANCE BETA" (Cyberpunk powerful)
@@ -38,28 +42,31 @@ After:  "JOIN THE LOCALAI FINANCE BETA" (Cyberpunk powerful)
 
 ## Font Characteristics
 
-### Michroma Visual Style:
+### Michroma Visual Style
+
 - **Letterforms**: Wide, geometric, architectural
 - **Spacing**: Generous letter-spacing for tech feel
 - **Weight**: Strong, bold presence
 - **Style**: Inspired by industrial/cyberpunk design
 - **Best at**: Large sizes (headings, titles, CTAs)
 
-### Perfect For:
+### Perfect For
+
 ✅ "LOCALAI FINANCE" logo text  
 ✅ "JOIN BETA" buttons  
 ✅ "100% PRIVATE" feature badges  
 ✅ "LEVEL UP" gaming-style headings  
 ✅ Tech-focused section titles  
 
-### NOT For:
+### NOT For
+
 ❌ Long paragraphs (use EB Garamond)  
 ❌ Small body text (readability issues)  
 ❌ Victorian accent labels (use Cinzel)  
 
 ## Typography Stack Now
 
-```
+```bash
 ┌─────────────────────────────────────────┐
 │  MAIN HEADINGS (Michroma)               │  ← Cyberpunk
 │  "Level Up Your Financial Skills"       │
@@ -77,9 +84,10 @@ After:  "JOIN THE LOCALAI FINANCE BETA" (Cyberpunk powerful)
 
 ## Color Combinations
 
-### Best Color Pairings with Michroma:
+### Best Color Pairings with Michroma
 
 **1. Brass Gradient (Main Brand)**
+
 ```css
 class="font-cyber gradient-text"
 Colors: Brass (#B8860B) → Copper (#CD7F32)
@@ -87,6 +95,7 @@ Effect: Victorian-meets-cyber gold shimmer
 ```
 
 **2. Electric Cyan (Tech Highlight)**
+
 ```css
 class="font-cyber text-electric"
 Color: #00F0FF
@@ -94,6 +103,7 @@ Effect: Pure cyberpunk neon glow
 ```
 
 **3. White on Dark (Maximum Contrast)**
+
 ```css
 class="font-cyber text-parchment"
 Color: #F5F5DC on dark backgrounds
@@ -105,16 +115,19 @@ Effect: Clean, professional, readable
 Michroma scales beautifully across devices:
 
 **Desktop (1920px+):**
+
 - Hero headings: 72px+ (massive impact)
 - Section titles: 48px
 - Subsections: 32px
 
 **Tablet (768px-1919px):**
+
 - Hero headings: 48-60px
 - Section titles: 36px
 - Subsections: 24px
 
 **Mobile (< 768px):**
+
 - Hero headings: 32-40px
 - Section titles: 24px
 - Subsections: 20px
@@ -123,27 +136,32 @@ Michroma scales beautifully across devices:
 
 Visit each page and verify:
 
-### Homepage:
+### Homepage
+
 - [ ] Hero: "Level Up Your Financial Skills" in Michroma
 - [ ] Problem section: "Why Do 95% of New Traders Fail?" in Michroma
 - [ ] Features: All section headings in Michroma
 - [ ] Beta CTA: "Join the Beta Program" in Michroma
 
-### Contact Page:
+### Contact Page
+
 - [ ] Hero: "Get in Touch" in Michroma
 - [ ] Section headers in Michroma
 - [ ] Form headings in Michroma
 
-### Beta Page:
+### Beta Page
+
 - [ ] All major headings in Michroma
 - [ ] Pricing tier headers
 - [ ] FAQ section titles
 
-### Navigation:
+### Navigation
+
 - [ ] "LocalAI Finance" logo in Michroma
 - [ ] Consistent across all pages
 
-### Footer:
+### Footer
+
 - [ ] Brand name in Michroma
 - [ ] Matches navigation
 
@@ -157,6 +175,7 @@ Michroma loads from Google Fonts and is supported in:
 ✅ Mobile browsers (iOS/Android)  
 
 **Fallback**: If Michroma fails to load, font stack falls back to:
+
 1. Orbitron (similar cyberpunk font)
 2. Exo 2 (backup geometric sans)
 3. System monospace
@@ -164,11 +183,13 @@ Michroma loads from Google Fonts and is supported in:
 ## Performance Impact
 
 **Font Loading:**
+
 - Initial Load: ~15KB (Michroma Regular)
 - Cached: < 1KB (subsequent visits)
 - Load Time: < 100ms on modern connections
 
 **Rendering:**
+
 - No layout shift (font-display: swap)
 - Smooth transition from system font
 - GPU-accelerated text rendering
@@ -183,6 +204,7 @@ Michroma loads from Google Fonts and is supported in:
 ## Social Media Preview
 
 When sharing links, meta images will show:
+
 - Main headings in Michroma
 - Perfect for Twitter/X cards
 - Eye-catching on LinkedIn
@@ -190,7 +212,8 @@ When sharing links, meta images will show:
 
 ## Quick Comparison Examples
 
-### Old Style (Playfair Display):
+### Old Style (Playfair Display)
+
 ```
 "Level Up Your Financial Skills"
 - Elegant, traditional, sophisticated
@@ -198,7 +221,8 @@ When sharing links, meta images will show:
 - Classic serif letterforms
 ```
 
-### New Style (Michroma):
+### New Style (Michroma)
+
 ```
 "LEVEL UP YOUR FINANCIAL SKILLS"
 - Bold, modern, tech-forward
@@ -231,7 +255,7 @@ Phase 3: Interactive Experience (Future)
 
 ## Dev Notes
 
-### To Use Michroma in New Components:
+### To Use Michroma in New Components
 
 ```astro
 <!-- Heading -->
@@ -250,7 +274,8 @@ Phase 3: Interactive Experience (Future)
 </span>
 ```
 
-### Available Classes:
+### Available Classes
+
 - `font-cyber` - Applies Michroma font
 - `gradient-text` - Brass-to-Electric gradient
 - `text-electric` - Cyan color (#00F0FF)
@@ -266,9 +291,10 @@ Phase 3: Interactive Experience (Future)
 
 ---
 
-**The transformation is complete!** 
+**The transformation is complete!**
 
 Your website now perfectly embodies the Victorian-Cyberpunk fusion:
+
 - 🎩 Victorian wisdom and elegance (body text, accents)
 - ⚡ Cyberpunk power and future (headings, CTAs)
 - 🔒 Privacy-first technology (core values)
