@@ -78,9 +78,11 @@ const posts = allPosts
                 <!-- Post Image -->
                 {post.frontmatter.image && (
                   <a href={post.url} class="block relative overflow-hidden">
-                    <img 
-                      src={post.frontmatter.image} 
+                    <img
+                      src={post.frontmatter.image}
                       alt={post.frontmatter.title}
+                      loading="lazy"
+                      decoding="async"
                       class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-60"></div>
