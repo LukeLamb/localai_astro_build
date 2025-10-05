@@ -32,7 +32,7 @@ import Footer from "../components/Footer.astro";
           Master Trading with AI Agents
         </h1>
         <p class="text-xl md:text-2xl text-light mb-8 max-w-3xl mx-auto animate-slide-up">
-          Learn → Practice → Trade with confidence using our <strong class="gradient-text">4 AI-powered agents</strong>
+          Learn → Practice → Trade with confidence using our <strong class="gradient-text">5 AI-powered agents</strong>
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up">
           <a href="#beta" class="btn btn-primary text-lg px-8 py-4">
@@ -117,43 +117,27 @@ import Footer from "../components/Footer.astro";
           🤖 Meet Your AI Team
         </span>
         <h2 class="text-section-title font-display font-bold gradient-text mb-4">
-          4 AI Agents Working Together
+          5 AI Agents Working Together
         </h2>
         <p class="text-xl text-light-muted max-w-2xl mx-auto">
           Each agent specializes in a different aspect of trading. Together, they guide you from beginner to expert.
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <!-- Advisor Agent -->
-        <div class="glass-card text-center hover:border-primary">
-          <div class="w-16 h-16 bg-gradient-primary rounded-xl flex items-center justify-center mx-auto mb-4 shadow-glow">
-            <span class="text-3xl">🧠</span>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+        <!-- Market Data Agent -->
+        <div class="glass-card text-center hover:border-warning">
+          <div class="w-16 h-16 bg-gradient-to-br from-warning to-amber-600 rounded-xl flex items-center justify-center mx-auto mb-4 shadow-glow-warning">
+            <span class="text-3xl">📡</span>
           </div>
-          <h3 class="text-xl font-semibold text-primary mb-3 font-display">
-            Advisor Agent
+          <h3 class="text-xl font-semibold text-warning mb-3 font-display">
+            Market Data
           </h3>
           <p class="text-light-muted mb-3">
-            Analyzes market conditions and provides trade recommendations based on current trends.
+            Real-time data collection from multiple sources. The foundation of all trading decisions.
           </p>
-          <span class="inline-block px-3 py-1 bg-primary/20 border border-primary text-primary rounded-full text-sm font-semibold font-mono">
+          <span class="inline-block px-3 py-1 bg-warning/20 border border-warning text-warning rounded-full text-sm font-semibold font-mono">
             Level 1+
-          </span>
-        </div>
-
-        <!-- Backtest Agent -->
-        <div class="glass-card text-center hover:border-accent">
-          <div class="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center mx-auto mb-4 shadow-glow-cyan">
-            <span class="text-3xl">📊</span>
-          </div>
-          <h3 class="text-xl font-semibold text-accent mb-3 font-display">
-            Backtest Agent
-          </h3>
-          <p class="text-light-muted mb-3">
-            Tests your strategies against historical data to validate performance before risking capital.
-          </p>
-          <span class="inline-block px-3 py-1 bg-accent/20 border border-accent text-accent rounded-full text-sm font-semibold font-mono">
-            Level 15+
           </span>
         </div>
 
@@ -169,7 +153,7 @@ import Footer from "../components/Footer.astro";
             Recognizes technical patterns in real-time charts and identifies trading opportunities.
           </p>
           <span class="inline-block px-3 py-1 bg-success/20 border border-success text-success rounded-full text-sm font-semibold font-mono">
-            Level 20+
+            Level 10+
           </span>
         </div>
 
@@ -185,7 +169,39 @@ import Footer from "../components/Footer.astro";
             Manages portfolio risk, position sizing, and protects your capital with smart alerts.
           </p>
           <span class="inline-block px-3 py-1 bg-secondary/20 border border-secondary text-secondary rounded-full text-sm font-semibold font-mono">
-            Level 25+
+            Level 20+
+          </span>
+        </div>
+
+        <!-- Backtest Agent -->
+        <div class="glass-card text-center hover:border-accent">
+          <div class="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center mx-auto mb-4 shadow-glow-cyan">
+            <span class="text-3xl">📊</span>
+          </div>
+          <h3 class="text-xl font-semibold text-accent mb-3 font-display">
+            Backtest Agent
+          </h3>
+          <p class="text-light-muted mb-3">
+            Tests your strategies against historical data to validate performance before risking capital.
+          </p>
+          <span class="inline-block px-3 py-1 bg-accent/20 border border-accent text-accent rounded-full text-sm font-semibold font-mono">
+            Level 30+
+          </span>
+        </div>
+
+        <!-- Advisor Agent -->
+        <div class="glass-card text-center hover:border-primary">
+          <div class="w-16 h-16 bg-gradient-primary rounded-xl flex items-center justify-center mx-auto mb-4 shadow-glow">
+            <span class="text-3xl">🧠</span>
+          </div>
+          <h3 class="text-xl font-semibold text-primary mb-3 font-display">
+            Advisor Agent
+          </h3>
+          <p class="text-light-muted mb-3">
+            Analyzes market conditions and provides trade recommendations based on current trends.
+          </p>
+          <span class="inline-block px-3 py-1 bg-primary/20 border border-primary text-primary rounded-full text-sm font-semibold font-mono">
+            Level 40+
           </span>
         </div>
       </div>
@@ -224,7 +240,7 @@ import Footer from "../components/Footer.astro";
             Levels 26-50: Paper Trading
           </h3>
           <p class="text-light-muted text-sm">
-            Practice with all 4 AI agents using fake money. Build confidence and refine strategies safely.
+            Practice with all 5 AI agents using fake money. Build confidence and refine strategies safely.
           </p>
         </div>
 
@@ -234,7 +250,7 @@ import Footer from "../components/Footer.astro";
             Levels 51-100: Live Trading
           </h3>
           <p class="text-light-muted text-sm">
-            Trade with real money backed by all 4 AI agents. You've earned it through proven skill.
+            Trade with real money backed by all 5 AI agents. You've earned it through proven skill.
           </p>
         </div>
       </div>
@@ -384,7 +400,7 @@ import Footer from "../components/Footer.astro";
               <li class="flex items-start gap-2">
                 <span class="text-success flex-shrink-0">✓</span>
                 <span class="text-light-muted"
-                  >All 4 AI agents</span
+                  >All 5 AI agents</span
                 >
               </li>
               <li class="flex items-start gap-2">

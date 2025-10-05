@@ -6,7 +6,7 @@ import Footer from "../components/Footer.astro";
 
 <Layout
   title="About"
-  description="Learn about LocalAI Finance - our mission to teach trading through AI-powered education and gamified progression. Meet the 4 AI agents that guide your trading journey."
+  description="Learn about LocalAI Finance - our mission to teach trading through AI-powered education and gamified progression. Meet the 5 AI agents that guide your trading journey."
 >
   <Navigation slot="navigation" />
 
@@ -74,7 +74,7 @@ import Footer from "../components/Footer.astro";
     </div>
   </section>
 
-  <!-- The 4 AI Agents Section -->
+  <!-- The 5 AI Agents Section -->
   <section class="section bg-dark">
     <div class="container-custom">
       <div class="text-center mb-12">
@@ -82,7 +82,7 @@ import Footer from "../components/Footer.astro";
           🤖 Your AI Trading Team
         </span>
         <h2 class="text-section-title font-display font-bold gradient-text mb-4">
-          Meet the 4 AI Agents
+          Meet the 5 AI Agents
         </h2>
         <p class="text-xl text-light-muted max-w-2xl mx-auto">
           Each agent specializes in a different aspect of trading. Together, they provide professional-grade analysis and guidance.
@@ -90,47 +90,24 @@ import Footer from "../components/Footer.astro";
       </div>
 
       <div class="max-w-5xl mx-auto space-y-8">
-        <!-- Advisor Agent -->
-        <div class="glass-card border-l-4 border-primary">
+        <!-- Market Data Agent -->
+        <div class="glass-card border-l-4 border-warning">
           <div class="flex items-start gap-6">
-            <div class="w-16 h-16 bg-gradient-primary rounded-xl flex items-center justify-center flex-shrink-0 shadow-glow">
-              <span class="text-3xl">🧠</span>
+            <div class="w-16 h-16 bg-gradient-to-br from-warning to-amber-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-glow-warning">
+              <span class="text-3xl">📡</span>
             </div>
             <div class="flex-1">
-              <h3 class="text-2xl font-display font-bold text-primary mb-2">
-                1. Advisor Agent
+              <h3 class="text-2xl font-display font-bold text-warning mb-2">
+                1. Market Data Agent
               </h3>
               <p class="text-light-muted mb-4">
-                <strong class="text-light">What it does:</strong> Analyzes current market conditions, identifies trends, and provides trade recommendations with clear reasoning.
+                <strong class="text-light">What it does:</strong> Collects and validates real-time market data from multiple sources, ensuring accuracy and reliability for all other agents.
               </p>
               <p class="text-light-muted mb-4">
-                <strong class="text-light">When you get it:</strong> Level 1 - Available from day one to guide your learning.
+                <strong class="text-light">When you get it:</strong> Level 1+ - The foundation layer, always active.
               </p>
               <p class="text-light-muted">
-                <strong class="text-light">Example output:</strong> "Strong bullish signal on AAPL. RSI at 42 (oversold), breaking above 50-day MA with increasing volume. Consider entry at $175.20 with stop loss at $172.50."
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Backtest Agent -->
-        <div class="glass-card border-l-4 border-accent">
-          <div class="flex items-start gap-6">
-            <div class="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center flex-shrink-0 shadow-glow-cyan">
-              <span class="text-3xl">📊</span>
-            </div>
-            <div class="flex-1">
-              <h3 class="text-2xl font-display font-bold text-accent mb-2">
-                2. Backtest Agent
-              </h3>
-              <p class="text-light-muted mb-4">
-                <strong class="text-light">What it does:</strong> Tests your trading strategies against years of historical data to validate performance before you risk real money.
-              </p>
-              <p class="text-light-muted mb-4">
-                <strong class="text-light">When you get it:</strong> Level 15 - Unlocked after proving basic market knowledge.
-              </p>
-              <p class="text-light-muted">
-                <strong class="text-light">Example output:</strong> "Your strategy returned 23.4% in 2023 with max drawdown of 8.2%. Win rate: 58%. Best performing during Q1 and Q4. Struggled in choppy summer markets."
+                <strong class="text-light">Example output:</strong> "AAPL: $175.23 (↑0.8%) | Vol: 52.3M | Data quality: 98% | Sources: 3/3 online | Last update: 2s ago"
               </p>
             </div>
           </div>
@@ -144,13 +121,13 @@ import Footer from "../components/Footer.astro";
             </div>
             <div class="flex-1">
               <h3 class="text-2xl font-display font-bold text-success mb-2">
-                3. Pattern Agent
+                2. Pattern Agent
               </h3>
               <p class="text-light-muted mb-4">
                 <strong class="text-light">What it does:</strong> Scans charts 24/7 to recognize technical patterns like double bottoms, head and shoulders, flags, and more.
               </p>
               <p class="text-light-muted mb-4">
-                <strong class="text-light">When you get it:</strong> Level 20 - Unlocked after demonstrating pattern recognition skills.
+                <strong class="text-light">When you get it:</strong> Level 10+ - Unlocked after demonstrating pattern recognition skills.
               </p>
               <p class="text-light-muted">
                 <strong class="text-light">Example output:</strong> "Cup and handle forming on TSLA 4H chart. Handle consolidating near $245. Breakout above $248 targets $265 (10% potential). Volume confirms pattern."
@@ -167,16 +144,62 @@ import Footer from "../components/Footer.astro";
             </div>
             <div class="flex-1">
               <h3 class="text-2xl font-display font-bold text-secondary mb-2">
-                4. Risk Agent
+                3. Risk Agent
               </h3>
               <p class="text-light-muted mb-4">
                 <strong class="text-light">What it does:</strong> Monitors your portfolio in real-time, calculates position sizes, sets stop losses, and sends alerts before you overtrade.
               </p>
               <p class="text-light-muted mb-4">
-                <strong class="text-light">When you get it:</strong> Level 25 - Unlocked when you're ready for paper trading.
+                <strong class="text-light">When you get it:</strong> Level 20+ - Unlocked when you're ready for paper trading.
               </p>
               <p class="text-light-muted">
                 <strong class="text-light">Example output:</strong> "⚠️ Portfolio risk at 85% of limit. Reduce NVDA position to 3% or skip this trade. Current exposure: Tech 45%, Energy 20%, Finance 15%."
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backtest Agent -->
+        <div class="glass-card border-l-4 border-accent">
+          <div class="flex items-start gap-6">
+            <div class="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center flex-shrink-0 shadow-glow-cyan">
+              <span class="text-3xl">📊</span>
+            </div>
+            <div class="flex-1">
+              <h3 class="text-2xl font-display font-bold text-accent mb-2">
+                4. Backtest Agent
+              </h3>
+              <p class="text-light-muted mb-4">
+                <strong class="text-light">What it does:</strong> Tests your trading strategies against years of historical data to validate performance before you risk real money.
+              </p>
+              <p class="text-light-muted mb-4">
+                <strong class="text-light">When you get it:</strong> Level 30+ - Unlocked after proving basic market knowledge.
+              </p>
+              <p class="text-light-muted">
+                <strong class="text-light">Example output:</strong> "Your strategy returned 23.4% in 2023 with max drawdown of 8.2%. Win rate: 58%. Best performing during Q1 and Q4. Struggled in choppy summer markets."
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Advisor Agent -->
+        <div class="glass-card border-l-4 border-primary">
+          <div class="flex items-start gap-6">
+            <div class="w-16 h-16 bg-gradient-primary rounded-xl flex items-center justify-center flex-shrink-0 shadow-glow">
+              <span class="text-3xl">🧠</span>
+            </div>
+            <div class="flex-1">
+              <h3 class="text-2xl font-display font-bold text-primary mb-2">
+                5. Advisor Agent
+              </h3>
+              <p class="text-light-muted mb-4">
+                <strong class="text-light">What it does:</strong> Analyzes current market conditions, identifies trends, and provides trade recommendations based on insights from all other agents.
+              </p>
+              <p class="text-light-muted mb-4">
+                <strong class="text-light">When you get it:</strong> Level 40+ - The culmination of your journey, synthesizing all agents.
+              </p>
+              <p class="text-light-muted">
+                <strong class="text-light">Example output:</strong> "Strong bullish signal on AAPL. RSI at 42 (oversold), breaking above 50-day MA with increasing volume. Consider entry at $175.20 with stop loss at $172.50."
               </p>
             </div>
           </div>
@@ -201,23 +224,28 @@ import Footer from "../components/Footer.astro";
 
             <div class="space-y-4 ml-6">
               <div class="flex gap-4">
-                <span class="text-primary font-display font-bold">1.</span>
-                <p><strong class="text-primary">Advisor Agent</strong> identifies AAPL is showing bullish momentum based on recent earnings and technical indicators.</p>
+                <span class="text-warning font-display font-bold">1.</span>
+                <p><strong class="text-warning">Market Data Agent</strong> collects real-time price data for AAPL from multiple sources, validates accuracy, and provides a 98% data quality score.</p>
               </div>
 
               <div class="flex gap-4">
-                <span class="text-accent font-display font-bold">2.</span>
-                <p><strong class="text-accent">Backtest Agent</strong> runs your strategy against AAPL's historical data and shows it would have returned 18% over the past year with this setup.</p>
-              </div>
-
-              <div class="flex gap-4">
-                <span class="text-success font-display font-bold">3.</span>
+                <span class="text-success font-display font-bold">2.</span>
                 <p><strong class="text-success">Pattern Agent</strong> confirms a bullish flag pattern forming on the 1-hour chart with a clear breakout level.</p>
               </div>
 
               <div class="flex gap-4">
-                <span class="text-secondary font-display font-bold">4.</span>
+                <span class="text-secondary font-display font-bold">3.</span>
                 <p><strong class="text-secondary">Risk Agent</strong> calculates you should risk no more than 2% of your portfolio ($400 if you have $20,000), suggests position size of 22 shares at $175, and sets stop loss at $167.</p>
+              </div>
+
+              <div class="flex gap-4">
+                <span class="text-accent font-display font-bold">4.</span>
+                <p><strong class="text-accent">Backtest Agent</strong> runs your strategy against AAPL's historical data and shows it would have returned 18% over the past year with this setup.</p>
+              </div>
+
+              <div class="flex gap-4">
+                <span class="text-primary font-display font-bold">5.</span>
+                <p><strong class="text-primary">Advisor Agent</strong> synthesizes all the data and identifies AAPL is showing bullish momentum based on recent earnings, technical indicators, and confirmed patterns.</p>
               </div>
             </div>
 
