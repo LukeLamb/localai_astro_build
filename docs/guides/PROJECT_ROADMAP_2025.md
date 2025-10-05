@@ -139,7 +139,7 @@ Code/Data: JetBrains Mono (technical)
 #### Day 5: Beta Program Infrastructure
 
 - [x] **Fix beta signup system** ✅
-  - Verified Web3Forms → info@localaifinance.com integration
+  - Verified Web3Forms → <info@localaifinance.com> integration
   - Tested email delivery - working perfectly
   - Simplified form to 4 fields (Name, Email, Experience, Tier)
   - Added "Welcome to the Journey!" confirmation message
@@ -471,10 +471,11 @@ Beta Launch: January 2026
 ### ✅ What's Complete
 
 **Website Infrastructure:**
+
 - Modern futuristic design system implemented
 - All core pages live (Home, About, Agents, How It Works, Roadmap, Blog, Beta)
 - Beta signup forms working and tested
-- Email delivery to info@localaifinance.com confirmed
+- Email delivery to <info@localaifinance.com> confirmed
 - Discord community setup and integrated
 - Google Analytics 4 tracking active
 - GDPR-compliant cookie consent implemented
@@ -482,6 +483,7 @@ Beta Launch: January 2026
 - Navigation modernized
 
 **Technical Stack:**
+
 - Astro v5.14.1
 - Tailwind CSS with custom theme
 - Web3Forms for submissions
@@ -491,24 +493,54 @@ Beta Launch: January 2026
 
 ### 🎯 What's Next - Priority Tasks
 
-**Content & Marketing (High Priority):**
-1. Create MailerLite welcome email sequence (3 emails)
-2. Write 2-3 new blog posts per week
-3. Launch social media presence (Twitter/X, LinkedIn)
-4. Create social media content calendar
-5. Product Hunt preparation
+**OPTION A: Email Marketing Setup (HIGH PRIORITY - RECOMMENDED)** 📧
 
-**Visual Assets (Medium Priority):**
-6. Design agent character/avatar concepts
-7. Create dashboard mockup/prototype
-8. Design social media graphics
-9. Create demo videos/walkthroughs
+- [ ] Create MailerLite welcome email sequence
+  - Email 1: Welcome + What to Expect (sent immediately after signup)
+  - Email 2: The 4 AI Agents Explained (Day 3)
+  - Email 3: Roadmap + How to Prepare for Beta (Day 7)
+- [ ] Set up email automation workflows in MailerLite
+- [ ] Design email templates matching brand
+- [ ] Test email deliverability
 
-**Technical Enhancements (Lower Priority):**
-10. Add error tracking (Sentry)
-11. Implement service worker for offline
-12. Create referral/invite system
-13. Build progress tracker visualization
+**OPTION B: Content Creation (HIGH PRIORITY)** ✍️
+
+- [ ] Write "Introducing Our 4 AI Trading Agents" blog post
+- [ ] Write "Why 95% of Traders Fail (And How We Fix It)" post
+- [ ] Write "The Psychology of Paper Trading" post
+- [ ] Create content calendar for weekly posts
+- [ ] Optimize blog posts for SEO
+
+**OPTION C: Social Media Launch (HIGH PRIORITY)** 📱
+
+- [ ] Create Twitter/X account (@LocalAIFinance)
+  - Bio: "AI-powered trading education | Learn → Practice → Trade | 4 AI agents | Beta Jan 2026"
+  - Profile image and header
+  - Pin announcement tweet
+- [ ] Launch LinkedIn company page
+- [ ] Post beta announcement across channels
+- [ ] Share AI agent teasers and previews
+- [ ] Engage with #BuildInPublic, #AI, #Trading communities
+
+**OPTION D: Visual Assets (MEDIUM PRIORITY)** 🎨
+
+- [ ] Design agent character/avatar concepts
+  - Advisor Agent visual identity
+  - Backtest Agent visual identity
+  - Pattern Agent visual identity
+  - Risk Agent visual identity
+- [ ] Create dashboard mockup/prototype (Figma)
+- [ ] Design social media graphics templates
+- [ ] Write demo video scripts
+- [ ] Create Product Hunt launch graphics
+
+**OPTION E: Technical Enhancements (LOWER PRIORITY)** 🔧
+
+- [ ] Add error tracking (Sentry)
+- [ ] Implement service worker for offline support
+- [ ] Create referral/invite system
+- [ ] Build progress tracker visualization
+- [ ] Add email preferences center
 
 ---
 
