@@ -6,7 +6,7 @@ import Footer from "../components/Footer.astro";
 
 <Layout
   title="AI Agents"
-  description="Meet the 4 AI agents powering LocalAI Finance: Advisor, Backtest, Pattern, and Risk. Professional-grade trading analysis accessible to everyone."
+  description="Meet the 5 AI agents powering LocalAI Finance: Market Data, Pattern, Risk, Backtest, and Advisor. Professional-grade trading analysis accessible to everyone."
 >
   <Navigation slot="navigation" />
 
@@ -21,7 +21,7 @@ import Footer from "../components/Footer.astro";
           🤖 AI Trading Team
         </span>
         <h1 class="text-hero font-display font-bold gradient-text mb-6">
-          4 AI Agents, 1 Mission: Your Success
+          5 AI Agents, 1 Mission: Your Success
         </h1>
         <p class="text-xl text-light-muted mb-8">
           Each agent specializes in a critical aspect of trading. Together, they provide institutional-grade analysis that would cost thousands per month from traditional services.
@@ -33,28 +33,16 @@ import Footer from "../components/Footer.astro";
   <!-- Overview Grid -->
   <section class="section-compact bg-dark-lighter">
     <div class="container-custom">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-        <a href="#advisor" class="glass-card text-center hover:border-primary transition-all group">
-          <div class="w-16 h-16 bg-gradient-primary rounded-xl flex items-center justify-center mx-auto mb-4 shadow-glow group-hover:scale-110 transition-transform">
-            <span class="text-3xl">🧠</span>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-7xl mx-auto">
+        <a href="#market-data" class="glass-card text-center hover:border-warning transition-all group">
+          <div class="w-16 h-16 bg-gradient-to-br from-warning to-amber-600 rounded-xl flex items-center justify-center mx-auto mb-4 shadow-glow-warning group-hover:scale-110 transition-transform">
+            <span class="text-3xl">📡</span>
           </div>
-          <h3 class="text-lg font-display font-semibold text-primary mb-2">
-            Advisor Agent
+          <h3 class="text-lg font-display font-semibold text-warning mb-2">
+            Market Data
           </h3>
           <p class="text-light-muted text-sm">
-            Market Analysis
-          </p>
-        </a>
-
-        <a href="#backtest" class="glass-card text-center hover:border-accent transition-all group">
-          <div class="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center mx-auto mb-4 shadow-glow-cyan group-hover:scale-110 transition-transform">
-            <span class="text-3xl">📊</span>
-          </div>
-          <h3 class="text-lg font-display font-semibold text-accent mb-2">
-            Backtest Agent
-          </h3>
-          <p class="text-light-muted text-sm">
-            Strategy Testing
+            Real-Time Data
           </p>
         </a>
 
@@ -81,23 +69,130 @@ import Footer from "../components/Footer.astro";
             Portfolio Protection
           </p>
         </a>
+
+        <a href="#backtest" class="glass-card text-center hover:border-accent transition-all group">
+          <div class="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center mx-auto mb-4 shadow-glow-cyan group-hover:scale-110 transition-transform">
+            <span class="text-3xl">📊</span>
+          </div>
+          <h3 class="text-lg font-display font-semibold text-accent mb-2">
+            Backtest Agent
+          </h3>
+          <p class="text-light-muted text-sm">
+            Strategy Testing
+          </p>
+        </a>
+
+        <a href="#advisor" class="glass-card text-center hover:border-primary transition-all group">
+          <div class="w-16 h-16 bg-gradient-primary rounded-xl flex items-center justify-center mx-auto mb-4 shadow-glow group-hover:scale-110 transition-transform">
+            <span class="text-3xl">🧠</span>
+          </div>
+          <h3 class="text-lg font-display font-semibold text-primary mb-2">
+            Advisor Agent
+          </h3>
+          <p class="text-light-muted text-sm">
+            Strategic Decisions
+          </p>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- Advisor Agent Deep Dive -->
-  <section id="advisor" class="section bg-dark">
+  <!-- Market Data Agent Deep Dive -->
+  <section id="market-data" class="section bg-dark">
     <div class="container-custom">
       <div class="max-w-5xl mx-auto">
         <div class="flex items-center gap-6 mb-8">
-          <div class="w-20 h-20 bg-gradient-primary rounded-xl flex items-center justify-center shadow-glow">
-            <span class="text-5xl">🧠</span>
+          <div class="w-20 h-20 bg-gradient-to-br from-warning to-amber-600 rounded-xl flex items-center justify-center shadow-glow-warning">
+            <span class="text-5xl">📡</span>
           </div>
           <div>
-            <h2 class="text-4xl font-display font-bold text-primary mb-2">
-              Advisor Agent
+            <h2 class="text-4xl font-display font-bold text-warning mb-2">
+              Market Data Agent
             </h2>
-            <p class="text-light-muted">Your AI Market Analyst</p>
+            <p class="text-light-muted">The Foundation Layer</p>
+          </div>
+        </div>
+
+        <div class="space-y-6">
+          <div class="glass-card border-warning/30">
+            <h3 class="text-xl font-display font-semibold text-light mb-4">What It Does</h3>
+            <p class="text-light-muted mb-4">
+              The Market Data Agent is the foundation of our entire system. It continuously collects real-time market data from multiple sources, validates it, and feeds it to all other agents. Without reliable data, nothing else works.
+            </p>
+            <p class="text-light-muted">
+              Think of it as the central nervous system - it ensures every other agent has accurate, timely information to make decisions.
+            </p>
+          </div>
+
+          <div class="glass-card">
+            <h3 class="text-xl font-display font-semibold text-light mb-4">Data Sources</h3>
+            <ul class="space-y-3 text-light-muted">
+              <li class="flex items-start gap-3">
+                <span class="text-warning text-xl">•</span>
+                <span><strong class="text-light">Multi-Source Collection:</strong> Yahoo Finance, Alpha Vantage, Finnhub, IEX Cloud, Polygon, TwelveData</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-warning text-xl">•</span>
+                <span><strong class="text-light">Intelligent Failover:</strong> If one source fails, automatically switches to backup sources</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-warning text-xl">•</span>
+                <span><strong class="text-light">Data Validation:</strong> Cross-references multiple sources to ensure accuracy</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-warning text-xl">•</span>
+                <span><strong class="text-light">Quality Scoring:</strong> Rates data reliability in real-time</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-warning text-xl">•</span>
+                <span><strong class="text-light">Performance Optimized:</strong> Caching and compression for lightning-fast access</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="glass-card bg-dark-card">
+            <h3 class="text-xl font-display font-semibold text-light mb-4">Live Data Example</h3>
+            <div class="bg-dark p-4 rounded-lg border border-warning/30 font-mono text-sm text-light">
+              <p class="text-warning font-semibold mb-2">📡 REAL-TIME MARKET DATA</p>
+              <p class="mb-2"><span class="text-light-muted">Symbol:</span> AAPL (Apple Inc.)</p>
+              <p class="mb-2"><span class="text-light-muted">Price:</span> $175.43 <span class="text-success">▲ +2.15 (+1.24%)</span></p>
+              <p class="mb-2"><span class="text-light-muted">Volume:</span> 52,431,892</p>
+              <p class="mb-4"><span class="text-light-muted">Last Updated:</span> 2 seconds ago</p>
+              <p class="text-light-muted mb-2">DATA QUALITY:</p>
+              <ul class="ml-4 space-y-1 text-light-muted mb-4">
+                <li>• Sources: 6/6 active</li>
+                <li>• Validation: PASS (99.8% accuracy)</li>
+                <li>• Latency: 47ms average</li>
+                <li>• Reliability: Excellent</li>
+              </ul>
+              <p class="text-success">✓ Data validated and distributed to all agents</p>
+            </div>
+          </div>
+
+          <div class="glass-card">
+            <h3 class="text-xl font-display font-semibold text-light mb-4">When You Get It</h3>
+            <p class="text-light-muted">
+              <strong class="text-warning">Level 1+</strong> - Active from day one. The Market Data Agent runs in the background, powering everything you see and do on the platform.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pattern Agent Deep Dive -->
+  <section id="pattern" class="section bg-dark-lighter">
+    <div class="container-custom">
+      <div class="max-w-5xl mx-auto">
+        <div class="flex items-center gap-6 mb-8">
+          <div class="w-20 h-20 bg-gradient-success rounded-xl flex items-center justify-center shadow-glow-success">
+            <span class="text-5xl">🎯</span>
+          </div>
+          <div>
+            <h2 class="text-4xl font-display font-bold text-success mb-2">
+              Pattern Agent
+            </h2>
+            <p class="text-light-muted">Your Pattern Recognition System</p>
           </div>
         </div>
 
@@ -105,10 +200,93 @@ import Footer from "../components/Footer.astro";
           <div class="glass-card">
             <h3 class="text-xl font-display font-semibold text-light mb-4">What It Does</h3>
             <p class="text-light-muted mb-4">
-              The Advisor Agent is your personal market analyst, available 24/7. It continuously monitors market conditions, identifies trends, and provides trade recommendations with clear, understandable reasoning.
+              The Pattern Agent scans thousands of charts 24/7, identifying technical patterns that human traders might miss. It recognizes classic patterns like head and shoulders, double bottoms, flags, triangles, and dozens more.
             </p>
             <p class="text-light-muted">
-              Think of it as having a professional analyst who watches the markets while you sleep, eat, work - and never gets tired or emotional about money.
+              Professional traders spend years learning to spot these patterns. This agent gives you that expertise from day one.
+            </p>
+          </div>
+
+          <div class="glass-card">
+            <h3 class="text-xl font-display font-semibold text-light mb-4">Patterns It Recognizes</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <p class="font-semibold text-light mb-2">Reversal Patterns:</p>
+                <ul class="space-y-1 text-light-muted text-sm ml-4">
+                  <li>• Head and Shoulders</li>
+                  <li>• Double Top/Bottom</li>
+                  <li>• Triple Top/Bottom</li>
+                  <li>• Inverse Head and Shoulders</li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-semibold text-light mb-2">Continuation Patterns:</p>
+                <ul class="space-y-1 text-light-muted text-sm ml-4">
+                  <li>• Flags and Pennants</li>
+                  <li>• Triangles (Ascending/Descending)</li>
+                  <li>• Cup and Handle</li>
+                  <li>• Rectangles</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card bg-dark-card">
+            <h3 class="text-xl font-display font-semibold text-light mb-4">Example Output</h3>
+            <div class="bg-dark p-4 rounded-lg border border-success/30 font-mono text-sm text-light">
+              <p class="text-success font-semibold mb-2">🎯 PATTERN DETECTED: TSLA (Tesla)</p>
+              <p class="mb-2"><span class="text-light-muted">Pattern:</span> Cup and Handle</p>
+              <p class="mb-2"><span class="text-light-muted">Timeframe:</span> 4-Hour Chart</p>
+              <p class="mb-2"><span class="text-light-muted">Status:</span> Forming (85% complete)</p>
+              <p class="mb-4"><span class="text-light-muted">Reliability:</span> High (72%)</p>
+              <p class="text-light-muted mb-2">PATTERN DETAILS:</p>
+              <ul class="ml-4 space-y-1 text-light-muted mb-4">
+                <li>• Cup formed: Jun 15 - Aug 2</li>
+                <li>• Handle consolidating near $245</li>
+                <li>• Breakout level: $248</li>
+                <li>• Target price: $265 (10% potential)</li>
+                <li>• Volume confirming pattern</li>
+              </ul>
+              <p class="text-success">RECOMMENDATION:</p>
+              <p class="ml-4 text-light-muted">Watch for breakout above $248 with strong volume. Entry above $248.50 with stop at $242.</p>
+            </div>
+          </div>
+
+          <div class="glass-card">
+            <h3 class="text-xl font-display font-semibold text-light mb-4">When You Get It</h3>
+            <p class="text-light-muted">
+              <strong class="text-success">Level 10+</strong> - Unlocked after you've demonstrated basic market knowledge. The agent enhances your pattern recognition abilities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Risk Agent Deep Dive -->
+  <section id="risk" class="section bg-dark">
+    <div class="container-custom">
+      <div class="max-w-5xl mx-auto">
+        <div class="flex items-center gap-6 mb-8">
+          <div class="w-20 h-20 bg-gradient-to-br from-secondary to-primary rounded-xl flex items-center justify-center shadow-glow-purple">
+            <span class="text-5xl">🛡️</span>
+          </div>
+          <div>
+            <h2 class="text-4xl font-display font-bold text-secondary mb-2">
+              Risk Agent
+            </h2>
+            <p class="text-light-muted">Your Portfolio Guardian</p>
+          </div>
+        </div>
+
+        <div class="space-y-6">
+          <div class="glass-card">
+            <h3 class="text-xl font-display font-semibold text-light mb-4">What It Does</h3>
+            <p class="text-light-muted mb-4">
+              The Risk Agent is your portfolio's guardian. It monitors every position, calculates optimal position sizes, sets stop losses, and sends alerts before you overtrade or take excessive risk.
+            </p>
+            <p class="text-light-muted">
+              This is the agent that keeps you in the game long-term. It prevents the catastrophic losses that wipe out 95% of traders.
             </p>
           </div>
 
@@ -116,52 +294,53 @@ import Footer from "../components/Footer.astro";
             <h3 class="text-xl font-display font-semibold text-light mb-4">Key Features</h3>
             <ul class="space-y-3 text-light-muted">
               <li class="flex items-start gap-3">
-                <span class="text-primary text-xl">•</span>
-                <span><strong class="text-light">Real-time Market Scanning:</strong> Analyzes thousands of stocks, crypto, and assets simultaneously</span>
+                <span class="text-secondary text-xl">•</span>
+                <span><strong class="text-light">Position Sizing:</strong> Calculates exact share quantities based on your risk tolerance</span>
               </li>
               <li class="flex items-start gap-3">
-                <span class="text-primary text-xl">•</span>
-                <span><strong class="text-light">Technical Indicator Analysis:</strong> RSI, MACD, Moving Averages, Volume, and 20+ more indicators</span>
+                <span class="text-secondary text-xl">•</span>
+                <span><strong class="text-light">Portfolio Monitoring:</strong> Tracks total exposure across all positions</span>
               </li>
               <li class="flex items-start gap-3">
-                <span class="text-primary text-xl">•</span>
-                <span><strong class="text-light">Sentiment Analysis:</strong> Tracks news, social media, and market sentiment</span>
+                <span class="text-secondary text-xl">•</span>
+                <span><strong class="text-light">Stop Loss Placement:</strong> Suggests optimal stop loss levels for each trade</span>
               </li>
               <li class="flex items-start gap-3">
-                <span class="text-primary text-xl">•</span>
-                <span><strong class="text-light">Clear Recommendations:</strong> Buy, Sell, or Hold with specific entry/exit prices</span>
+                <span class="text-secondary text-xl">•</span>
+                <span><strong class="text-light">Correlation Analysis:</strong> Warns when positions are too correlated (diversification check)</span>
               </li>
               <li class="flex items-start gap-3">
-                <span class="text-primary text-xl">•</span>
-                <span><strong class="text-light">Risk Assessment:</strong> Every recommendation includes risk level and confidence score</span>
+                <span class="text-secondary text-xl">•</span>
+                <span><strong class="text-light">Real-time Alerts:</strong> Notifies you before you exceed risk limits</span>
               </li>
             </ul>
           </div>
 
           <div class="glass-card bg-dark-card">
             <h3 class="text-xl font-display font-semibold text-light mb-4">Example Output</h3>
-            <div class="bg-dark p-4 rounded-lg border border-primary/30 font-mono text-sm text-light">
-              <p class="text-primary font-semibold mb-2">📊 TRADE SIGNAL: AAPL (Apple Inc.)</p>
-              <p class="mb-2"><span class="text-success">RECOMMENDATION:</span> BUY</p>
-              <p class="mb-2"><span class="text-light-muted">Entry Price:</span> $175.20</p>
-              <p class="mb-2"><span class="text-light-muted">Stop Loss:</span> $172.50</p>
-              <p class="mb-2"><span class="text-light-muted">Take Profit:</span> $182.00</p>
-              <p class="mb-4"><span class="text-light-muted">Risk/Reward:</span> 1:2.5</p>
-              <p class="text-light-muted mb-2">ANALYSIS:</p>
-              <ul class="ml-4 space-y-1 text-light-muted">
-                <li>• RSI at 42 (oversold territory)</li>
-                <li>• Price breaking above 50-day MA with volume</li>
-                <li>• Positive earnings surprise last quarter</li>
-                <li>• Strong institutional buying detected</li>
+            <div class="bg-dark p-4 rounded-lg border border-secondary/30 font-mono text-sm text-light">
+              <p class="text-secondary font-semibold mb-2">🛡️ RISK ANALYSIS: New Trade Request</p>
+              <p class="mb-2"><span class="text-light-muted">Asset:</span> NVDA (NVIDIA)</p>
+              <p class="mb-2"><span class="text-light-muted">Intended Position:</span> $5,000 (25% of portfolio)</p>
+              <p class="mb-4"><span class="text-danger font-semibold">⚠️ RISK WARNING</span></p>
+              <p class="text-light-muted mb-2">CURRENT PORTFOLIO:</p>
+              <ul class="ml-4 space-y-1 text-light-muted mb-4">
+                <li>• Total Value: $20,000</li>
+                <li>• Tech Exposure: 45%</li>
+                <li>• NVDA Correlation: High (0.85 with AAPL, MSFT)</li>
+                <li>• Risk Level: 85% of maximum</li>
               </ul>
-              <p class="mt-4 text-accent">Confidence: 78% | Risk: Medium</p>
+              <p class="text-warning mb-2">RECOMMENDATION:</p>
+              <p class="ml-4 text-light-muted mb-4">Reduce NVDA position to 3% ($600) OR close existing tech position first. Your tech exposure is too concentrated.</p>
+              <p class="text-success">SAFE ALTERNATIVE:</p>
+              <p class="ml-4 text-light-muted">Position size: 30 shares at $450 = $600<br/>Stop loss: $430 (4.4% risk)<br/>Max loss: $120 (0.6% of portfolio)</p>
             </div>
           </div>
 
           <div class="glass-card">
             <h3 class="text-xl font-display font-semibold text-light mb-4">When You Get It</h3>
             <p class="text-light-muted">
-              <strong class="text-primary">Level 1+</strong> - Available from the moment you join. The Advisor Agent guides your entire learning journey, helping you understand market analysis before you trade.
+              <strong class="text-secondary">Level 20+</strong> - Unlocked when you're ready to start paper trading. Risk management is critical before touching any money, even fake money.
             </p>
           </div>
         </div>
@@ -254,7 +433,7 @@ import Footer from "../components/Footer.astro";
           <div class="glass-card">
             <h3 class="text-xl font-display font-semibold text-light mb-4">When You Get It</h3>
             <p class="text-light-muted">
-              <strong class="text-accent">Level 15+</strong> - Unlocked after you've proven basic market knowledge. By this point, you understand enough to create strategies worth testing.
+              <strong class="text-accent">Level 30+</strong> - Unlocked after you've proven your strategy-building skills. By this point, you have strategies worth testing.
             </p>
           </div>
         </div>
@@ -262,19 +441,19 @@ import Footer from "../components/Footer.astro";
     </div>
   </section>
 
-  <!-- Pattern Agent Deep Dive -->
-  <section id="pattern" class="section bg-dark">
+  <!-- Advisor Agent Deep Dive -->
+  <section id="advisor" class="section bg-dark">
     <div class="container-custom">
       <div class="max-w-5xl mx-auto">
         <div class="flex items-center gap-6 mb-8">
-          <div class="w-20 h-20 bg-gradient-success rounded-xl flex items-center justify-center shadow-glow-success">
-            <span class="text-5xl">🎯</span>
+          <div class="w-20 h-20 bg-gradient-primary rounded-xl flex items-center justify-center shadow-glow">
+            <span class="text-5xl">🧠</span>
           </div>
           <div>
-            <h2 class="text-4xl font-display font-bold text-success mb-2">
-              Pattern Agent
+            <h2 class="text-4xl font-display font-bold text-primary mb-2">
+              Advisor Agent
             </h2>
-            <p class="text-light-muted">Your Pattern Recognition System</p>
+            <p class="text-light-muted">Your AI Market Analyst</p>
           </div>
         </div>
 
@@ -282,93 +461,10 @@ import Footer from "../components/Footer.astro";
           <div class="glass-card">
             <h3 class="text-xl font-display font-semibold text-light mb-4">What It Does</h3>
             <p class="text-light-muted mb-4">
-              The Pattern Agent scans thousands of charts 24/7, identifying technical patterns that human traders might miss. It recognizes classic patterns like head and shoulders, double bottoms, flags, triangles, and dozens more.
+              The Advisor Agent is your personal market analyst, available 24/7. It continuously monitors market conditions, identifies trends, and provides trade recommendations with clear, understandable reasoning.
             </p>
             <p class="text-light-muted">
-              Professional traders spend years learning to spot these patterns. This agent gives you that expertise from day one.
-            </p>
-          </div>
-
-          <div class="glass-card">
-            <h3 class="text-xl font-display font-semibold text-light mb-4">Patterns It Recognizes</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
-                <p class="font-semibold text-light mb-2">Reversal Patterns:</p>
-                <ul class="space-y-1 text-light-muted text-sm ml-4">
-                  <li>• Head and Shoulders</li>
-                  <li>• Double Top/Bottom</li>
-                  <li>• Triple Top/Bottom</li>
-                  <li>• Inverse Head and Shoulders</li>
-                </ul>
-              </div>
-              <div>
-                <p class="font-semibold text-light mb-2">Continuation Patterns:</p>
-                <ul class="space-y-1 text-light-muted text-sm ml-4">
-                  <li>• Flags and Pennants</li>
-                  <li>• Triangles (Ascending/Descending)</li>
-                  <li>• Cup and Handle</li>
-                  <li>• Rectangles</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="glass-card bg-dark-card">
-            <h3 class="text-xl font-display font-semibold text-light mb-4">Example Output</h3>
-            <div class="bg-dark p-4 rounded-lg border border-success/30 font-mono text-sm text-light">
-              <p class="text-success font-semibold mb-2">🎯 PATTERN DETECTED: TSLA (Tesla)</p>
-              <p class="mb-2"><span class="text-light-muted">Pattern:</span> Cup and Handle</p>
-              <p class="mb-2"><span class="text-light-muted">Timeframe:</span> 4-Hour Chart</p>
-              <p class="mb-2"><span class="text-light-muted">Status:</span> Forming (85% complete)</p>
-              <p class="mb-4"><span class="text-light-muted">Reliability:</span> High (72%)</p>
-              <p class="text-light-muted mb-2">PATTERN DETAILS:</p>
-              <ul class="ml-4 space-y-1 text-light-muted mb-4">
-                <li>• Cup formed: Jun 15 - Aug 2</li>
-                <li>• Handle consolidating near $245</li>
-                <li>• Breakout level: $248</li>
-                <li>• Target price: $265 (10% potential)</li>
-                <li>• Volume confirming pattern</li>
-              </ul>
-              <p class="text-success">RECOMMENDATION:</p>
-              <p class="ml-4 text-light-muted">Watch for breakout above $248 with strong volume. Entry above $248.50 with stop at $242.</p>
-            </div>
-          </div>
-
-          <div class="glass-card">
-            <h3 class="text-xl font-display font-semibold text-light mb-4">When You Get It</h3>
-            <p class="text-light-muted">
-              <strong class="text-success">Level 20+</strong> - Unlocked after you've demonstrated pattern recognition skills yourself. The agent enhances your abilities, not replaces them.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Risk Agent Deep Dive -->
-  <section id="risk" class="section bg-dark-lighter">
-    <div class="container-custom">
-      <div class="max-w-5xl mx-auto">
-        <div class="flex items-center gap-6 mb-8">
-          <div class="w-20 h-20 bg-gradient-to-br from-secondary to-primary rounded-xl flex items-center justify-center shadow-glow-purple">
-            <span class="text-5xl">🛡️</span>
-          </div>
-          <div>
-            <h2 class="text-4xl font-display font-bold text-secondary mb-2">
-              Risk Agent
-            </h2>
-            <p class="text-light-muted">Your Portfolio Guardian</p>
-          </div>
-        </div>
-
-        <div class="space-y-6">
-          <div class="glass-card">
-            <h3 class="text-xl font-display font-semibold text-light mb-4">What It Does</h3>
-            <p class="text-light-muted mb-4">
-              The Risk Agent is your portfolio's guardian. It monitors every position, calculates optimal position sizes, sets stop losses, and sends alerts before you overtrade or take excessive risk.
-            </p>
-            <p class="text-light-muted">
-              This is the agent that keeps you in the game long-term. It prevents the catastrophic losses that wipe out 95% of traders.
+              Think of it as having a professional analyst who watches the markets while you sleep, eat, work - and never gets tired or emotional about money.
             </p>
           </div>
 
@@ -376,53 +472,52 @@ import Footer from "../components/Footer.astro";
             <h3 class="text-xl font-display font-semibold text-light mb-4">Key Features</h3>
             <ul class="space-y-3 text-light-muted">
               <li class="flex items-start gap-3">
-                <span class="text-secondary text-xl">•</span>
-                <span><strong class="text-light">Position Sizing:</strong> Calculates exact share quantities based on your risk tolerance</span>
+                <span class="text-primary text-xl">•</span>
+                <span><strong class="text-light">Real-time Market Scanning:</strong> Analyzes thousands of stocks, crypto, and assets simultaneously</span>
               </li>
               <li class="flex items-start gap-3">
-                <span class="text-secondary text-xl">•</span>
-                <span><strong class="text-light">Portfolio Monitoring:</strong> Tracks total exposure across all positions</span>
+                <span class="text-primary text-xl">•</span>
+                <span><strong class="text-light">Technical Indicator Analysis:</strong> RSI, MACD, Moving Averages, Volume, and 20+ more indicators</span>
               </li>
               <li class="flex items-start gap-3">
-                <span class="text-secondary text-xl">•</span>
-                <span><strong class="text-light">Stop Loss Placement:</strong> Suggests optimal stop loss levels for each trade</span>
+                <span class="text-primary text-xl">•</span>
+                <span><strong class="text-light">Sentiment Analysis:</strong> Tracks news, social media, and market sentiment</span>
               </li>
               <li class="flex items-start gap-3">
-                <span class="text-secondary text-xl">•</span>
-                <span><strong class="text-light">Correlation Analysis:</strong> Warns when positions are too correlated (diversification check)</span>
+                <span class="text-primary text-xl">•</span>
+                <span><strong class="text-light">Clear Recommendations:</strong> Buy, Sell, or Hold with specific entry/exit prices</span>
               </li>
               <li class="flex items-start gap-3">
-                <span class="text-secondary text-xl">•</span>
-                <span><strong class="text-light">Real-time Alerts:</strong> Notifies you before you exceed risk limits</span>
+                <span class="text-primary text-xl">•</span>
+                <span><strong class="text-light">Risk Assessment:</strong> Every recommendation includes risk level and confidence score</span>
               </li>
             </ul>
           </div>
 
           <div class="glass-card bg-dark-card">
             <h3 class="text-xl font-display font-semibold text-light mb-4">Example Output</h3>
-            <div class="bg-dark p-4 rounded-lg border border-secondary/30 font-mono text-sm text-light">
-              <p class="text-secondary font-semibold mb-2">🛡️ RISK ANALYSIS: New Trade Request</p>
-              <p class="mb-2"><span class="text-light-muted">Asset:</span> NVDA (NVIDIA)</p>
-              <p class="mb-2"><span class="text-light-muted">Intended Position:</span> $5,000 (25% of portfolio)</p>
-              <p class="mb-4"><span class="text-danger font-semibold">⚠️ RISK WARNING</span></p>
-              <p class="text-light-muted mb-2">CURRENT PORTFOLIO:</p>
-              <ul class="ml-4 space-y-1 text-light-muted mb-4">
-                <li>• Total Value: $20,000</li>
-                <li>• Tech Exposure: 45%</li>
-                <li>• NVDA Correlation: High (0.85 with AAPL, MSFT)</li>
-                <li>• Risk Level: 85% of maximum</li>
+            <div class="bg-dark p-4 rounded-lg border border-primary/30 font-mono text-sm text-light">
+              <p class="text-primary font-semibold mb-2">📊 TRADE SIGNAL: AAPL (Apple Inc.)</p>
+              <p class="mb-2"><span class="text-success">RECOMMENDATION:</span> BUY</p>
+              <p class="mb-2"><span class="text-light-muted">Entry Price:</span> $175.20</p>
+              <p class="mb-2"><span class="text-light-muted">Stop Loss:</span> $172.50</p>
+              <p class="mb-2"><span class="text-light-muted">Take Profit:</span> $182.00</p>
+              <p class="mb-4"><span class="text-light-muted">Risk/Reward:</span> 1:2.5</p>
+              <p class="text-light-muted mb-2">ANALYSIS:</p>
+              <ul class="ml-4 space-y-1 text-light-muted">
+                <li>• RSI at 42 (oversold territory)</li>
+                <li>• Price breaking above 50-day MA with volume</li>
+                <li>• Positive earnings surprise last quarter</li>
+                <li>• Strong institutional buying detected</li>
               </ul>
-              <p class="text-warning mb-2">RECOMMENDATION:</p>
-              <p class="ml-4 text-light-muted mb-4">Reduce NVDA position to 3% ($600) OR close existing tech position first. Your tech exposure is too concentrated.</p>
-              <p class="text-success">SAFE ALTERNATIVE:</p>
-              <p class="ml-4 text-light-muted">Position size: 30 shares at $450 = $600<br/>Stop loss: $430 (4.4% risk)<br/>Max loss: $120 (0.6% of portfolio)</p>
+              <p class="mt-4 text-accent">Confidence: 78% | Risk: Medium</p>
             </div>
           </div>
 
           <div class="glass-card">
             <h3 class="text-xl font-display font-semibold text-light mb-4">When You Get It</h3>
             <p class="text-light-muted">
-              <strong class="text-secondary">Level 25+</strong> - Unlocked when you're ready to start paper trading. Risk management is critical before touching real money, even fake money.
+              <strong class="text-primary">Level 40+</strong> - The final agent unlocks after you master the fundamentals. The Advisor synthesizes insights from all other agents to provide strategic recommendations.
             </p>
           </div>
         </div>
@@ -438,7 +533,7 @@ import Footer from "../components/Footer.astro";
           Ready to Trade with AI Guidance?
         </h2>
         <p class="text-xl text-light-muted mb-8">
-          Join the beta program and be among the first to experience all 4 AI agents working together.
+          Join the beta program and be among the first to experience all 5 AI agents working together.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="/beta" class="btn btn-primary text-lg px-8 py-4">
